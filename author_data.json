@@ -1,0 +1,474 @@
+{
+  "Amanda Whitaker": [
+    {
+      "title": "Cooling January Inflation Keeps Fed Easing in Play",
+      "link": "./finance/cooling-january-inflation-fed-easing-view.html",
+      "image": "images/news/cooling-january-inflation-fed-easing-view.webp",
+      "date": "Feb. 20, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Europe\u00e2\u20ac\u2122s Earnings Gain Pace While Lofty Valuations Cap Rewards",
+      "link": "./finance/europe-earnings-gain-pace-valuations-limit-upside.html",
+      "image": "images/news/europe-earnings-gain-pace-valuations-limit-upside-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "CONGRESS"
+    },
+    {
+      "title": "US health regulators to consider safety status of processed ingredients, RFK Jr. says",
+      "link": "./health/us-health-regulators-processed-ingredients-safety-review.html",
+      "image": "images/news/us-health-regulators-processed-ingredients-safety-review.webp",
+      "date": "Feb. 20, 2026",
+      "category": "U.K NEWS"
+    },
+    {
+      "title": "WHO Prequalifies New Polio Vaccine to Boost Global Outbreak Response",
+      "link": "./health/who-prequalifies-new-polio-vaccine-to-strengthen-global-outbreak-response.html",
+      "image": "images/news/who-prequalifies-new-polio-vaccine-to-strengthen-global-outbreak-response-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "News"
+    },
+    {
+      "title": "US FDA Approves Labeling Changes to Menopause Hormone Therapies",
+      "link": "./health/us-fda-approves-labeling-changes-menopause-hormone-therapies.html",
+      "image": "images/news/us-fda-approves-labeling-changes-menopause-hormone-therapies-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Newborn Dies of Listeria Linked to Raw Milk, New Mexico Health Officials Warn",
+      "link": "./health/new-mexico-newborn-listeria-raw-milk-warning.html",
+      "image": "images/news/new-mexico-newborn-listeria-raw-milk-warning-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Health"
+    },
+    {
+      "title": "Measles Outbreak in Southern California: Disneyland and LAX Among Exposure Sites",
+      "link": "./health/measles-outbreak-southern-california-disneyland-lax-exposure.html",
+      "image": "images/news/measles-outbreak-southern-california-disneyland-lax-exposure-0.webp",
+      "date": "Feb. 21, 2026",
+      "category": "Health"
+    },
+    {
+      "title": "Lilly\u00e2\u20ac\u2122s Bowel Disease Drug Gets Approval in China",
+      "link": "./health/lilly-bowel-disease-drug-wins-approval-in-china.html",
+      "image": "images/news/lilly-bowel-disease-drug-wins-approval-in-china-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Health"
+    },
+    {
+      "title": "Caffeinated Beverages May Help Protect the Brain, Study Says",
+      "link": "./health/caffeinated-beverages-may-help-protect-brain-study-says.html",
+      "image": "images/news/caffeinated-beverages-may-help-protect-brain-study-says.webp",
+      "date": "Feb. 22, 2026",
+      "category": "Health"
+    },
+    {
+      "title": "Alphabet Q4 Earnings Beat Expectations as Google Cloud Surges 48% on AI Demand",
+      "link": "./markets/alphabet-q4-earnings-google-cloud-ai-spending.html",
+      "image": "images/news/alphabet-q4-earnings-google-cloud-ai-spending-0.webp",
+      "date": "Feb. 22, 2026",
+      "category": "Markets"
+    },
+    {
+      "title": "Ethiopia Revokes Accreditation of Reuters Journalists",
+      "link": "./media/ethiopia-revokes-accreditation-reuters-journalists.html",
+      "image": "images/news/ethiopia-revokes-accreditation-reuters-journalists-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "News"
+    },
+    {
+      "title": "UK\u00e2\u20ac\u2122s Starmer Seeks Greater Powers to Regulate Online Access",
+      "link": "./media/uk-starmer-seeks-greater-powers-regulate-online-access.html",
+      "image": "images/news/uk-starmer-seeks-greater-powers-regulate-online-access.webp",
+      "date": "Feb. 20, 2026",
+      "category": "News"
+    },
+    {
+      "title": "US Used Anthropic\u00e2\u20ac\u2122s Claude During the Venezuela Raid, WSJ Reports",
+      "link": "./technology/us-used-anthropics-claude-in-venezuela-raid-wsj.html",
+      "image": "images/news/us-used-anthropics-claude-in-venezuela-raid-wsj.webp",
+      "date": "Feb. 20, 2026",
+      "category": "U.K NEWS"
+    },
+    {
+      "title": "From OpenAI to Google, India Hosts Global AI Summit",
+      "link": "./technology/india-hosts-global-ai-summit-openai-google-tech-leaders.html",
+      "image": "images/news/india-hosts-global-ai-summit-openai-google-tech-leaders.webp",
+      "date": "Feb. 19, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Albanian Actor Sues Government for Using Her Image as \u00e2\u20ac\u0153AI Minister\u00e2\u20ac\u009d",
+      "link": "./technology/albanian-actor-sues-government-over-ai-minister-image-use.html",
+      "image": "images/news/albanian-actor-sues-government-over-ai-minister-image-use-0.webp",
+      "date": "Feb. 18, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Amodei Warns Against Selling AI Chips to China: 'Massive National Security Risk",
+      "link": "./technology/amodei-warns-us-ai-chips-china-national-security.html",
+      "image": "images/news/amodei-warns-us-ai-chips-china-national-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Technology"
+    },
+    {
+      "title": "Chinese AI Models Festoon Spring Festival a Year After DeepSeek Shock",
+      "link": "./technology/chinese-ai-models-spring-festival-deepseek-anniversary.html",
+      "image": "images/news/chinese-ai-models-spring-festival-deepseek-anniversary.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Technology"
+    },
+    {
+      "title": "Google to Pay $68 Million to Settle Lawsuit Over Alleged Google Assistant Privacy Violations",
+      "link": "./technology/google-68-million-google-assistant-privacy-settlement.html",
+      "image": "images/news/google-68-million-google-0.webp",
+      "date": "Feb. 16, 2026",
+      "category": "Technology"
+    },
+    {
+      "title": "Historic Social Media Addiction Trial Puts Big Tech Under the Microscope",
+      "link": "./technology/historic-social-media-addiction-trial-california.html",
+      "image": "images/news/historic-social-media-addiction-trial-california-0.webp",
+      "date": "Feb. 15, 2026",
+      "category": "Technology"
+    }
+  ],
+  "Christopher Reed": [
+    {
+      "title": "Ryanair Bookings Jump as Michael O\u00e2\u20ac\u2122Leary\u00e2\u20ac\u2122s Feud with Elon Musk Fuels Sales",
+      "link": "./business/ryanair-bookings-rise-oleary-musk-feud.html",
+      "image": "images/news/ryanair-bookings-rise-oleary-musk-feud-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Trump Administration Takes 10% Stake in USA Rare Earth in $1.6 Billion Deal",
+      "link": "./business/trump-administration-usa-rare-earth-investment.html",
+      "image": "images/news/trump-administration-usa-rare-earth-investment-0.webp",
+      "date": "Feb. 18, 2026",
+      "category": "Business"
+    },
+    {
+      "title": "UPS Announces 30,000 Job Cuts as It Reduces Deliveries to Amazon and Implements Automation",
+      "link": "./business/ups-layoffs-30k-2026-cost-cutting-amazon-delivery-reduction.html",
+      "image": "images/news/ups-layoffs-30k-2026-cost-cutting-amazon-delivery-reduction-1.webp",
+      "date": "Feb. 19, 2026",
+      "category": "Business"
+    },
+    {
+      "title": "Netflix Shares Dip Despite Beating Earnings Estimates, Amid Warner Bros. Acquisition",
+      "link": "./business/netflix-shares-fall-earnings-warner-bros-acquisition.html",
+      "image": "images/news/netflix-shares-fall-earnings-warner-bros-acquisition-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "Business"
+    },
+    {
+      "title": "TikTok Secures U.S. Future with New Joint Venture, But ByteDance's Role Raises",
+      "link": "./business/tiktok-us-joint-venture-trump-byteDance.html",
+      "image": "images/news/tiktok-us-joint-venture-trump-byteDance-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "Business"
+    },
+    {
+      "title": "Trump's Executive Order Limits Wall Street's Control Over Housing Market",
+      "link": "./economy/trump-executive-order-wall-street-housing-investors.html",
+      "image": "images/news/trump-executive-order-wall-street-housing-investors-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "CONGRESS"
+    },
+    {
+      "title": "Palantir Beats Wall Street Expectations Amid Controversy Over ICE and Surveillance Tech",
+      "link": "./finance/palantir-earnings-government-contracts-ice-immigration-surveillance.html",
+      "image": "images/news/palantir-earnings-government-contracts-ice-immigration-surveillance-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "CONGRESS"
+    },
+    {
+      "title": "Gold Breaks $5,000 Barrier on Rising Global and Political Risks",
+      "link": "./markets/gold-breaks-5000-barrier-global-political-risks.html",
+      "image": "images/news/gold-breaks-5000-barrier-0.webp",
+      "date": "Feb. 18, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Charli XCX Closes \u00e2\u20ac\u02dcBrat Summer\u00e2\u20ac\u2122 Chapter With New Mockumentary at Berlin Film Festival",
+      "link": "./media/charli-xcx-brat-summer-mockumentary-berlin-film-festival.html",
+      "image": "images/news/charli-xcx-brat-summer-mockumentary-berlin-film-festival-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "Media"
+    }
+  ],
+  "Danielle Brooks": [
+    {
+      "title": "Treasury Cuts $21 Million in Booz Allen Contracts After Trump Tax Leak Fallout",
+      "link": "./business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html",
+      "image": "images/news/treasury-cuts-booz-allen-contracts-trump-tax-leak-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "News"
+    },
+    {
+      "title": "ECB Makes Euro Backstop Global to Bolster Currency\u00e2\u20ac\u2122s Role",
+      "link": "./finance/ecb-makes-euro-backstop-global-boost-currency-role.html",
+      "image": "images/news/ecb-makes-euro-backstop-global-boost-currency-role.webp",
+      "date": "Feb. 19, 2026",
+      "category": "BIOLOGY"
+    },
+    {
+      "title": "US Stock Market | Softer US Inflation Strengthens Case for Fed Rate Cuts",
+      "link": "./finance/softer-us-inflation-fed-rate-cut-expectations-stock-market.html",
+      "image": "images/news/softer-us-inflation-fed-rate-cut-expectations-stock-market.webp",
+      "date": "Feb. 19, 2026",
+      "category": "CONGRESS"
+    },
+    {
+      "title": "US Senator Ruben Gallego on His Journey From Janitor to Congress",
+      "link": "./markets/us-senator-ruben-gallego-journey-from-janitor-to-congress.html",
+      "image": "images/news/us-senator-ruben-gallego-journey-from-janitor-to-congress-0.webp",
+      "date": "Feb. 17, 2026",
+      "category": "U.K NEWS"
+    },
+    {
+      "title": "Why Young People Are Breaking the Ultimate Money Taboo",
+      "link": "./markets/why-young-people-are-breaking-the-ultimate-money-taboo.html",
+      "image": "images/news/why-young-people-are-breaking-the-ultimate-money-taboo.webp",
+      "date": "Feb. 20, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Looking for Disney Magic Elsewhere: Canadians Lead Declines in Travel to the U.S.",
+      "link": "./markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html",
+      "image": "images/news/canadians-lead-decline-in-travel-to-us-disney-alternatives-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Markets"
+    },
+    {
+      "title": "Meet the young couples embracing prenups",
+      "link": "./markets/young-couples-embracing-prenups-marriage-finances.html",
+      "image": "images/news/young-couples-embracing-prenups-marriage-finances.webp",
+      "date": "Feb. 18, 2026",
+      "category": "Markets"
+    },
+    {
+      "title": "America\u00e2\u20ac\u2122s Outsider Peace Duo Faces Biggest Test in Trio of Hotspots",
+      "link": "./us/americas-outsider-peace-duo-global-hotspots-test.html",
+      "image": "images/news/americas-outsider-peace-duo-global-hotspots-test.webp",
+      "date": "Feb. 17, 2026",
+      "category": "U.K NEWS"
+    },
+    {
+      "title": "Tyler Reddick Wins Daytona 500 in Michael Jordan\u00e2\u20ac\u2018Owned Car",
+      "link": "./us/tyler-reddick-daytona-500-michael-jordan-owned-car.html",
+      "image": "images/news/tyler-reddick-daytona-500-michael-jordan-owned-car (1).webp",
+      "date": "Feb. 16, 2026",
+      "category": "News"
+    },
+    {
+      "title": "ICE Officers Placed on Leave as Federal Investigation Probes Whether They Lied About Minneapolis\n              Shooting",
+      "link": "./us/ice-officers-on-leave-federal-perjury-probe-minneapolis.html",
+      "image": "images/news/ice-officers-on-leave-federal-perjury-probe-minneapolis.webp",
+      "date": "Feb. 20, 2026",
+      "category": "U.S."
+    },
+    {
+      "title": "Cancelled Citizenship Ceremonies and Interviews Are Another Part of Trump\u00e2\u20ac\u2122s Immigration Crackdown",
+      "link": "./us/trump-immigration-citizenship-ceremonies-interviews-cancelled.html",
+      "image": "images/news/trump-immigration-citizenship-ceremonies-interviews-cancelled.webp",
+      "date": "Feb. 20, 2026",
+      "category": "U.S."
+    },
+    {
+      "title": "Students Across the U.S. Are Protesting ICE. Texas Wants to Punish Their Schools.",
+      "link": "./us/us-students-protest-ice-texas-crackdown-schools.html",
+      "image": "images/news/us-students-protest-ice-texas-crackdown-schools.webp",
+      "date": "Feb. 21, 2026",
+      "category": "U.S."
+    },
+    {
+      "title": "Trump\u00e2\u20ac\u2122s Damage Is Done. Democrats \u00e2\u20ac\u201d and Europe \u00e2\u20ac\u201d Are Struggling to Define What\u00e2\u20ac\u2122s Next",
+      "link": "./us/trump-damage-done-democrats-europe-struggle-future.html",
+      "image": "images/news/trump-damage-done-democrats-europe-struggle-future.webp",
+      "date": "Feb. 20, 2026",
+      "category": "U.S."
+    },
+    {
+      "title": "By Buying Russia\u00e2\u20ac\u2122s Oil, Hungary Is Fueling the Kremlin\u00e2\u20ac\u2122s War Machine \u00e2\u20ac\u201d and Enriching Foundations Linked to\n              Orb\u00c3\u00a1n",
+      "link": "./us/hungary-russia-oil-cremlin-war-funding-orban-foundations.html",
+      "image": "images/news/hungary-russia-oil-cremlin-war-funding-orban-foundations-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "U.S."
+    },
+    {
+      "title": "Former FBI Criminal Profiler Offers Insight on Nancy Guthrie\u00e2\u20ac\u2122s Disappearance",
+      "link": "./us/former-fbi-profiler-nancy-guthrie-disappearance-analysis.html",
+      "image": "images/news/former-fbi-profiler-nancy-guthrie-disappearance-analysis.webp",
+      "date": "Feb. 18, 2026",
+      "category": "U.S."
+    }
+  ],
+  "Matthew Collins": [
+    {
+      "title": "Amazon Announces 16,000 Layoffs as Part of Major Restructuring Focused on AI and Cloud Services",
+      "link": "./economy/amazon-lays-off-16-000-focus-ai-cloud-efficiency.html",
+      "image": "images/news/amazon-lays-off-16-000-focus-ai-cloud-efficiency-0 (1).webp",
+      "date": "Feb. 17, 2026",
+      "category": "Economy"
+    },
+    {
+      "title": "From Hyatt to Holiday Inn, America\u00e2\u20ac\u2122s Free Hotel Breakfast Faces a K-Shaped Economic Threat",
+      "link": "./economy/americas-free-hotel-breakfast-k-shaped-economic-threat.html",
+      "image": "images/news/americas-free-hotel-breakfast-k-shaped-economic-threat.webp",
+      "date": "Feb. 18, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Trump Threatens 25% Tariffs on South Korean Imports, Escalating Trade Tensions",
+      "link": "./economy/trump-25-percent-tariffs-south-korea-trade-dispute.html",
+      "image": "images/news/trump-25-percent-tariffs-south-korea-trade-dispute-0.webp",
+      "date": "Feb. 17, 2026",
+      "category": "Economy"
+    },
+    {
+      "title": "U.S. Federal Debt Set to Reach Record Highs, Congressional Budget Office Warns",
+      "link": "./economy/us-federal-debt-record-levels-budget-office-warning.html",
+      "image": "images/news/us-federal-debt-record-levels-budget-office-warning-0.webp",
+      "date": "Feb. 21, 2026",
+      "category": "CONGRESS"
+    },
+    {
+      "title": "Takeda Deepens AI Drug Discovery Push With $1.7 Billion Iambic Deal",
+      "link": "./health/takeda-expands-ai-drug-discovery-with-1-7-billion-iambic-deal.html",
+      "image": "images/news/takeda-expands-ai-drug-discovery-with-1-7-billion-iambic-deal-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "Health"
+    },
+    {
+      "title": "Medical Misinformation More Likely to Fool AI if Source Appears Legitimate, Study Shows",
+      "link": "./health/medical-misinformation-more-likely-to-fool-ai-legitimate-sources-study.html",
+      "image": "images/news/medical-misinformation-more-likely-to-fool-ai-legitimate-sources-study-0.webp",
+      "date": "Feb. 18, 2026",
+      "category": "Health"
+    },
+    {
+      "title": "AI Film School Trains Next Generation of Hollywood Moviemakers",
+      "link": "./media/ai-film-school-trains-next-generation-hollywood-moviemakers.html",
+      "image": "images/news/ai-film-school-trains-next-generation-hollywood-moviemakers.webp",
+      "date": "Feb. 18, 2026",
+      "category": "U.K NEWS"
+    },
+    {
+      "title": "Berlin Film Festival Entry \u00e2\u20ac\u02dcYellow Letters\u00e2\u20ac\u2122 Sends Warning About Democracy, Says Director",
+      "link": "./media/berlin-film-festival-yellow-letters-democracy-warning.html",
+      "image": "images/news/berlin-film-festival-yellow-letters-democracy-warning-0.webp",
+      "date": "Feb. 17, 2026",
+      "category": "Media"
+    },
+    {
+      "title": "Los Angeles Museum Unveils Immersive \u00e2\u20ac\u02dcPonyo\u00e2\u20ac\u2122 Exhibit by Hayao Miyazaki",
+      "link": "./media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html",
+      "image": "images/news/los-angeles-museum-immersive-ponyo-exhibit-miyazaki-0.webp",
+      "date": "Feb. 17, 2026",
+      "category": "Media"
+    },
+    {
+      "title": "Bezos\u00e2\u20ac\u2122 Blue Origin to Launch 5,400 Satellites to Compete with Starlink and Amazon\u00e2\u20ac\u2122s Leo",
+      "link": "./technology/blue-origin-terawave-satellite-network-6-terabit-speed.html",
+      "image": "images/news/blue-origin-terawave-satellite-network-6-terabit-speed-0.webp",
+      "date": "Feb. 17, 2026",
+      "category": "Technology"
+    },
+    {
+      "title": "SpaceX\u00e2\u20ac\u2122s Plan to Put AI Data Centers in Orbit Moves Forward with FCC Review",
+      "link": "./technology/spacex-ai-data-centers-orbit-fcc-review.html",
+      "image": "images/news/spacex-ai-data-centers-orbit-fcc-review-0.webp",
+      "date": "Feb. 21, 2026",
+      "category": "Technology"
+    },
+    {
+      "title": "NASA's Wet Dress Rehearsal Marks Key Step Towards Crewed Lunar Mission",
+      "link": "./us/nasa-sls-wet-dress-rehearsal-artemis-ii-lunar-mission.html",
+      "image": "images/news/nasa-sls-wet-dress-rehearsal-artemis-ii-lunar-mission-0.webp",
+      "date": "Feb. 15, 2026",
+      "category": "News"
+    }
+  ],
+  "Nicole Patterson": [
+    {
+      "title": "Gold Hits Record Highs Near $5,600 Amid Geopolitical Tensions and Weak Dollar",
+      "link": "./business/gold-prices-continue-surge-geopolitical-tensions-weak-dollar.html",
+      "image": "images/news/gold-prices-continue-surge-geopolitical-tensions-weak-dollar-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "Business"
+    },
+    {
+      "title": "Federal Reserve Holds Interest Rates Steady Amid Strong Jobs Data",
+      "link": "./economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html",
+      "image": "images/news/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "News"
+    },
+    {
+      "title": "Federal Reserve Holds Interest Rates Steady Amid Political Pressure and Economic Optimism",
+      "link": "./economy/fed-interest-rates-3.5-3-75-powell-defends-independence.html",
+      "image": "images/news/fed-interest-rates-3.5-3-75-powell-defends-independence-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Economy"
+    },
+    {
+      "title": "Fed to Keep Rates Steady Amid Strong U.S. Growth and Political Tensions",
+      "link": "./economy/fed-interest-rates-economic-outlook-trump-influence-2026.html",
+      "image": "images/news/fed-interest-rates-economic-outlook-trump-influence-2026-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Economy"
+    },
+    {
+      "title": "Trump Claims Victory Over Inflation, But Data Paints a Different Picture",
+      "link": "./economy/trump-claims-inflation-defeated-mixed-economic-data.html",
+      "image": "images/news/trump-claims-inflation-defeated-mixed-economic-data-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "CONGRESS"
+    },
+    {
+      "title": "New Kraft Heinz CEO\u00e2\u20ac\u2122s Difficult Choice: Split or Double Down",
+      "link": "./markets/new-kraft-heinz-ceo-faces-difficult-choice-split-or-double-down.html",
+      "image": "images/news/new-kraft-heinz-ceo-faces-difficult-choice-split-or-double-down-0.webp",
+      "date": "Feb. 19, 2026",
+      "category": "Markets"
+    },
+    {
+      "title": "Bessent Says Congress Should Pass Crypto Regulation Bill This Spring",
+      "link": "./markets/bessent-urges-congress-to-pass-crypto-regulation-bill-this-spring.html",
+      "image": "images/news/bessent-urges-congress-to-pass-crypto-regulation-bill-this-spring-0.webp",
+      "date": "Feb. 21, 2026",
+      "category": "Markets"
+    },
+    {
+      "title": "Asian Markets Slide as Yen Surge Hits Japan Stocks, Nikkei Drops Nearly 2%",
+      "link": "./markets/asian-markets-nikkei-falls-yen-surges-fed-watch.html",
+      "image": "images/news/asian-markets-nikkei-falls-yen-surges-fed-watch-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Markets"
+    },
+    {
+      "title": "Rubio Casts U.S., the \u00e2\u20ac\u02dcChild of Europe,\u00e2\u20ac\u2122 as Critical Friend to Allies",
+      "link": "./media/rubio-us-child-of-europe-critical-friend-allies.html",
+      "image": "images/news/rubio-us-child-of-europe-critical-friend-allies.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Media"
+    },
+    {
+      "title": "English Museum Shines Light on Mary Shelley and Her Gothic Classic \u00e2\u20ac\u02dcFrankenstein\u00e2\u20ac\u2122",
+      "link": "./media/english-museum-mary-shelley-frankenstein-exhibition.html",
+      "image": "images/news/english-museum-mary-shelley-frankenstein-exhibition-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Media"
+    },
+    {
+      "title": "Rubio Strikes Constructive Tone but Persists in U.S. Criticism of European Allies",
+      "link": "./media/rubio-constructive-tone-us-criticism-european-allies.html",
+      "image": "images/news/rubio-constructive-tone-us-criticism-european-allies-0.webp",
+      "date": "Feb. 20, 2026",
+      "category": "Media"
+    }
+  ]
+}

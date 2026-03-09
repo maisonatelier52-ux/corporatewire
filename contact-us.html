@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | CorporateWire | Get in Touch with Our Newsroom</title>
+    <meta name="description"
+        content="Contact CorporateWire for inquiries, news tips, advertising, or feedback. We believe journalism should be a conversation and we want to hear from you." />
+    <meta name="keywords"
+        content="Contact CorporateWire, News Tips, Advertising Inquiries, Press Contact, Business News Inquiries, CorporateWire Support" />
+    <link rel="canonical" href="https://corporatewire.org/contact-us.html" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corporatewire.org/contact-us.html" />
+    <meta property="og:title" content="Contact Us | CorporateWire | Get in Touch" />
+    <meta property="og:description"
+        content="Have a news tip or feedback? Reach out to the CorporateWire team. We believe journalism should be a conversation." />
+    <meta property="og:image" content="https://corporatewire.org/images/news/corporatewire-logo.webp" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://corporatewire.org/contact-us.html" />
+    <meta name="twitter:title" content="Contact Us | CorporateWire | Get in Touch" />
+    <meta name="twitter:description"
+        content="Reach out to the CorporateWire team for news tips, feedback, or business inquiries." />
+    <meta name="twitter:image" content="https://corporatewire.org/images/news/corporatewire-logo.webp" />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Legal-style alignment aligned with index.html */
+        .legal-container {
+            max-width: 1250px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            font-family: 'WorkSans', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .legal-header,
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 40px;
+        }
+
+        .legal-header h1 {
+            font-family: 'Bitter', serif;
+            font-size: 42px;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .legal-header p {
+            font-size: 18px;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .legal-content h2 {
+            font-family: 'Bitter', serif;
+            font-size: 26px;
+            color: #111;
+            margin: 40px 0 20px;
+        }
+
+        .legal-content h3 {
+            font-family: 'WorkSans', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #111;
+            margin: 30px 0 10px;
+        }
+
+        .legal-content p {
+            margin-bottom: 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 30px;
+            border-radius: 12px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: #ff003c22;
+        }
+
+        .contact-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background: #dc2626;
+            transition: height 0.4s ease;
+        }
+
+        .contact-card:hover::before {
+            height: 100%;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            background: #fff5f6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: #dc2626;
+        }
+
+        .contact-card h3 {
+            margin-top: 0;
+            color: #111;
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .contact-card p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .contact-email {
+            font-weight: 700;
+            font-size: 16px;
+            color: #ff003c;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.3s;
+        }
+
+        .contact-email:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .office-address {
+            font-style: normal;
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: inline-block;
+            min-width: 300px;
+        }
+
+        .social-connect {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            width: 45px;
+            height: 45px;
+            background: #111;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .social-btn:hover {
+            background: #ff003c;
+            transform: translateY(-3px);
+        }
+
+        .social-btn img {
+            width: 20px;
+            height: 20px;
+            filter: invert(1);
+        }
+    </style>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact CorporateWire",
+    "description": "Get in touch with CorporateWire for news tips, corrections, or general feedback.",
+    "url": "https://corporatewire.org/contact-us.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "CorporateWire",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "contact@corporatewire.org",
+          "contactType": "customer service"
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "tips@corporatewire.org",
+          "contactType": "editorial"
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+    <!-- header section -->
+    <input type="checkbox" id="menu-toggle" />
+    <header class="header">
+        <div class="header-left">
+            <a href="https://substack.com/@corporatewire" target="_blank">
+                <img class="header-icons" src="images/substack.svg" alt="substack" />
+            </a>
+            <a href="https://x.com/Corporatew40377" target="_blank">
+                <img class="header-icons" src="images/twitter-icon.svg" alt="twitter" />
+            </a>
+            <a href="https://medium.com/@corporatewire" target="_blank">
+                <img class="header-icons" src="images/medium.svg" alt="medium" />
+            </a>
+            <a href="https://www.instagram.com/corporatewire/" target="_blank">
+                <img class="header-icons" src="images/instagram-icon.svg" alt="instagram" />
+            </a>
+        </div>
+        <label for="menu-toggle" class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="header-center">
+            <a href="index.html">
+                <img src="images/news/corporatewire-logo.webp" class="corporatewire-logo" alt="corporatewire Logo" />
+            </a>
+        </div>
+
+        <div class="header-right">
+            <span class="header-date">Friday, March 6, 2026</span>
+        </div>
+    </header>
+
+    <!-- categories section -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="us.html">U.S</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="economy.html">Economy</a></li>
+            <li><a href="markets.html">Markets</a></li>
+            <li><a href="finance.html">Finance</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+
+    <main class="legal-container">
+        <section class="legal-header">
+            <h1>Contact Us</h1>
+            <p>We believe that journalism should be a conversation, and we want to hear from you. Whether you have a
+                question, feedback, or a story that needs to be told, our door is always open.</p>
+        </section>
+
+        <div class="legal-content">
+            <p>Here's how to reach the right people on our team.</p>
+
+            <h2>Department Contacts</h2>
+            <p>To make sure your message gets to the right place quickly, please choose from the options below.</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3>News Tips & Press Releases</h3>
+                    <p>Have a confidential tip or a story you think we should be covering? This is the best place to
+                        send it.</p>
+                    <a href="mailto:tips@corporatewire.org" class="contact-email">tips@corporatewire.org</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>To Report a Correction</h3>
+                    <p>If you believe one of our articles contains a factual error, please let our editors know. We take
+                        accuracy seriously.</p>
+                    <a href="mailto:corrections@corporatewire.org"
+                        class="contact-email">corrections@corporatewire.org</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3>General Questions & Feedback</h3>
+                    <p>Have a question about the site or want to share your thoughts on our work? We read everything.
+                    </p>
+                    <a href="mailto:contact@corporatewire.org" class="contact-email">contact@corporatewire.org</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="card-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" width="20" height="14" rx="2" ry="2" y="5"></rect>
+                            <line x1="2" x2="22" y1="10" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3>Advertising & Partnerships</h3>
+                    <p>If you're interested in advertising opportunities or other business partnerships, please contact
+                        our business desk.</p>
+                    <a href="mailto:partners@corporatewire.org" class="contact-email">partners@corporatewire.org</a>
+                </div>
+            </div>
+
+            <h2>CorporateWire Media Office</h2>
+            <address class="office-address">
+                <strong>CorporateWire Media</strong><br>
+                2915 Patterson Street<br>
+                Houston, TX 77026<br>
+                United States
+            </address>
+
+            <h2>Connect with Us</h2>
+            <p>You can also find us on social media for real-time updates and discussions.</p>
+            <div class="social-connect">
+                <a href="https://facebook.com/corporatewire" class="social-btn"><img src="images/facebook.svg"
+                        alt="Facebook"></a>
+                <a href="https://twitter.com/corporatewire" class="social-btn"><img src="images/twitter.svg"
+                        alt="Twitter"></a>
+                <a href="https://youtube.com/corporatewire" class="social-btn"><img src="images/youtube.svg"
+                        alt="YouTube"></a>
+                <a href="https://instagram.com/corporatewire" class="social-btn"><img src="images/instagram.svg"
+                        alt="Instagram"></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <div class="footer">
+      <div class="footer-sec">
+        <div class="footer-header">
+          <div class="footer-categories">
+            <span class="dot"></span>
+            <span class="footer-title">Categories</span>
+          </div>
+          <ul class="footer-categories-list">
+            <li><a href="us.html">U.S News</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="economy.html">Economy</a></li>
+            <li><a href="markets.html">Markets</a></li>
+            <li><a href="finance.html">Finance</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="media.html">Media</a></li>
+          </ul>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-content">
+          <!-- LEFT -->
+          <div class="footer-left">
+            <h4>About US</h4>
+            <p>
+              CorporateWire is the leading global authority on business and technology, providing breaking news and
+              expert insights to over 20 million monthly readers.
+            </p>
+
+            <div class="footer-icons">
+              <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon"
+                  src="images/instagram-icon.svg" alt="instagram" /></a>
+              <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon"
+                  src="images/twitter-icon.svg" alt="x" /></a>
+              <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon"
+                  src="images/substack.svg" alt="substack" /></a>
+              <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon" src="images/medium.svg"
+                  alt="medium" /></a>
+            </div>
+          </div>
+
+          <div class="footer-mid-section">
+            <!-- Information Section -->
+            <div class="footer-mid-right">
+              <ul>
+                <li><a href="about-us.html">About us</a></li>
+                <li><a href="contact-us.html">Contact us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="footer-right">
+            <h4>Subscribe US</h4>
+            <p>
+              Subscribe to our newsletter to get our newest articles instantly!
+            </p>
+
+            <form id="newsletter-form">
+              <div class="subscribe-box">
+                <input type="email" id="newsletter-email" placeholder="Your email address" required />
+                <button type="submit" id="newsletter-btn">Sign Up Now</button>
+              </div>
+
+              <label class="terms">
+                <input type="checkbox" id="newsletter-agree" required />
+                <span>I have read and agree to the terms & conditions</span>
+              </label>
+            </form>
+            <div id="newsletter-message"
+              style="font-size: 12px; margin-top: 10px; display: none; font-family: 'WorkSans', Arial, sans-serif;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; Copyright 2026 CORPORATEWIRE. All Rights Reserved.
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+   .author-page-section {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+        .author-header {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+        }
+
+        .author-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .author-details h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+             font-family: "Bitter", Georgia, serif;
+        }
+
+        .author-role {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+             font-family: "WorkSans", Arial, sans-serif;
+        }
+
+        .author-bio {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 15px;
+             font-family: "WorkSans", Arial, sans-serif;
+        }
+
+        .author-social  {
+           display: flex;
+           align-items: center;
+           gap: 5px;
+        }
+
+        .author-social a:hover {
+            color: #e30613;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            
+        }
+
+
+      .article-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.article-item {
+    width: calc(33.333% - 20px);  
+    margin-bottom: 20px;         
+    overflow: hidden;
+}
+
+.article-item .article-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.article-category {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #d9534f; 
+    background-color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.article-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto;
+    color: #333;
+     font-family: "Bitter", Georgia, serif;
+}
+
+.article-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article-title a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .author-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .author-details h1 {
+                font-size: 26px;
+            }
+
+            .article-title {
+                font-size: 20px;
+            }
+
+            nav a {
+                margin-left: 15px;
+                font-size: 13px;
+            }
+             .article-list {
+                display: flex;
+                flex-direction: column;
+             }
+             .article-item {
+                width: 100%;
+             }
+               .author-page-section {
+          padding: 30px 15px 20px 15px;
+        }
+         .author-header {
+            gap: 10px;
+            margin-bottom: 10px;
+            padding-bottom: 30px;
+        }
+        .author-bio {
+            font-size: 13px;
+        }
+         .author-social  {
+            justify-content: center;
+         }
+        }

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team | CorporateWire | The Faces Behind the News</title>
+    <meta name="description"
+        content="Meet the independent team of journalists and analysts at CorporateWire. We believe you should know who's writing the news you read." />
+    <meta name="keywords"
+        content="CorporateWire Team, Journalists, News Editors, Investigative Reporters, Financial Analysts, CorporateWire Staff" />
+    <link rel="canonical" href="https://corporatewire.org/our-team.html" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://corporatewire.org/our-team.html" />
+    <meta property="og:title" content="Our Team | CorporateWire | The Faces Behind the News" />
+    <meta property="og:description"
+        content="We're a small, independent team. Meet the journalists and editors committed to honest, clear reporting." />
+    <meta property="og:image" content="https://corporatewire.org/images/news/corporatewire-logo.webp" />
+
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://corporatewire.org/our-team.html" />
+    <meta name="twitter:title" content="Our Team | CorporateWire" />
+    <meta name="twitter:description"
+        content="Meet the independent team of journalists and analysts committed to delivering clear, honest news." />
+    <meta name="twitter:image" content="https://corporatewire.org/images/news/corporatewire-logo.webp" />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Team Page Specific Styles */
+        .legal-container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+            font-family: 'WorkSans', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 40px;
+        }
+
+        .legal-header h1 {
+            font-family: 'Bitter', serif;
+            font-size: 42px;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .legal-header p {
+            font-size: 20px;
+            font-weight: 500;
+            color: #555;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 40px;
+            align-items: start;
+            padding-bottom: 50px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .team-member:last-child {
+            border-bottom: none;
+        }
+
+        .member-photo {
+            width: 240px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            background-color: #f8f8f8;
+        }
+
+        .member-info h2 {
+            font-family: 'Bitter', serif;
+            font-size: 30px;
+            color: #111;
+            margin-bottom: 5px;
+        }
+
+        .member-role {
+            color: #dc2626;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .member-bio {
+            font-size: 17px;
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .view-profile {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #111;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .view-profile:hover {
+            color: #dc2626;
+        }
+
+        /* Staff Section */
+        .staff-section {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 60px;
+        }
+
+        .staff-section h2 {
+            font-family: 'Bitter', serif;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .staff-section h3 {
+            font-size: 20px;
+            margin: 25px 0 10px;
+            color: #ff003c;
+        }
+
+        .cta-box {
+            text-align: center;
+            margin-top: 80px;
+            background: #111;
+            color: white;
+            padding: 60px 40px;
+            border-radius: 8px;
+        }
+
+        .cta-box h2 {
+            font-family: 'Bitter', serif;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #dc2626;
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            margin-top: 20px;
+            transition: transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .member-photo {
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Our Team - CorporateWire",
+    "description": "Meet the team of journalists and editors behind CorporateWire.",
+    "url": "https://corporatewire.org/our-team.html"
+  }
+  </script>
+</head>
+
+<body>
+
+    <!-- header section -->
+    <input type="checkbox" id="menu-toggle" />
+    <header class="header">
+        <div class="header-left">
+            <a href="https://substack.com/@corporatewire" target="_blank">
+                <img class="header-icons" src="images/substack.svg" alt="substack" />
+            </a>
+            <a href="https://x.com/Corporatew40377" target="_blank">
+                <img class="header-icons" src="images/twitter-icon.svg" alt="twitter" />
+            </a>
+            <a href="https://medium.com/@corporatewire" target="_blank">
+                <img class="header-icons" src="images/medium.svg" alt="medium" />
+            </a>
+            <a href="https://www.instagram.com/corporatewire/" target="_blank">
+                <img class="header-icons" src="images/instagram-icon.svg" alt="instagram" />
+            </a>
+        </div>
+        <label for="menu-toggle" class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="header-center">
+            <a href="index.html">
+                <img src="images/news/corporatewire-logo.webp" class="corporatewire-logo" alt="corporatewire Logo" />
+            </a>
+        </div>
+
+        <div class="header-right">
+            <span style="font-weight: bold; font-size: 13px;">Thursday, 5 2026</span>
+        </div>
+    </header>
+
+    <!-- categories section -->
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="us.html">U.S</a></li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="economy.html">Economy</a></li>
+            <li><a href="markets.html">Markets</a></li>
+            <li><a href="finance.html">Finance</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
+
+    <main class="legal-container">
+        <section class="legal-header">
+            <h1>Our Team</h1>
+            <p>We're a small, independent team. We believe you should know who's writing the news you read, so we want
+                to introduce ourselves.</p>
+        </section>
+
+        <div class="team-grid">
+            <!-- Member 1: Christopher Reed -->
+            <div class="team-member">
+                <img src="images/authors/christopher-reed.webp" alt="Christopher Reed" class="member-photo">
+                <div class="member-info">
+                    <span class="member-role">Lead Business & Economy Editor</span>
+                    <h2>Christopher Reed</h2>
+                    <p class="member-bio">Christopher covers the pulse of global commerce and economic policy. Known for
+                        his incisive reporting on corporate governance and international trade, he brings a wealth of
+                        knowledge to complex stories involving market dynamics and fiscal strategy.</p>
+                    <a href="author/christopher-reed.html" class="view-profile">View Articles &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 2: Amanda Whitaker -->
+            <div class="team-member">
+                <img src="images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" class="member-photo">
+                <div class="member-info">
+                    <span class="member-role">Senior Financial & Healthcare Correspondent</span>
+                    <h2>Amanda Whitaker</h2>
+                    <p class="member-bio">Amanda is a veteran investigative journalist specializing in global financial
+                        markets and healthcare policy. With over a decade of experience, she provides in-depth analysis
+                        on economic shifts, regulatory changes, and the intersection of technology and medicine.</p>
+                    <a href="author/amanda-whitaker.html" class="view-profile">View Articles &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 3: Danielle Brooks -->
+            <div class="team-member">
+                <img src="images/authors/danielle-brooks.webp" alt="Danielle Brooks" class="member-photo">
+                <div class="member-info">
+                    <span class="member-role">Political & Social Affairs Correspondent</span>
+                    <h2>Danielle Brooks</h2>
+                    <p class="member-bio">Danielle focuses on the human side of policy and governance. Her reporting
+                        bridges the gap between legislative decisions and their real-world impact on communities, with a
+                        particular focus on civil rights and social justice.</p>
+                    <a href="author/danielle-brooks.html" class="view-profile">View Articles &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 4: Matthew Collins -->
+            <div class="team-member">
+                <img src="images/authors/matthew-collins.webp" alt="Matthew Collins" class="member-photo">
+                <div class="member-info">
+                    <span class="member-role">Lead Investigative Journalist</span>
+                    <h2>Matthew Collins</h2>
+                    <p class="member-bio">Matthew tells the stories that others often miss. As our lead investigative
+                        analyst, he spends his time digging deep into issues of corporate accountability and global
+                        justice, holding power to account through data-driven reporting.</p>
+                    <a href="author/matthew-collins.html" class="view-profile">View Articles &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Member 5: Nicole Patterson -->
+            <div class="team-member">
+                <img src="images/authors/nicole-patterson.webp" alt="Nicole Patterson" class="member-photo">
+                <div class="member-info">
+                    <span class="member-role">Technology & Policy Analyst</span>
+                    <h2>Nicole Patterson</h2>
+                    <p class="member-bio">Nicole is our tech reality check. She looks past the industry buzzwords to ask
+                        how new technology—from AI to privacy shifts—actually affects our lives, our jobs, and our
+                        collective future.</p>
+                    <a href="author/nicole-patterson.html" class="view-profile">View Articles &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Staff Section -->
+        <section class="staff-section">
+            <h2>Our Editorial Desk</h2>
+            <p>Sometimes, a story is a team effort. You’ll see the "CorporateWire Staff" byline on two types of
+                articles:</p>
+
+            <h3>Group Editorials</h3>
+            <p>Written by several of our editors together, such as site announcements, special investigative series, or
+                major explanatory guides.</p>
+
+            <h3>News Briefs</h3>
+            <p>Short, factual updates based on trusted secondary sources. These are verified and curated by our desk but
+                not authored by a single journalist.</p>
+        </section>
+
+        <!-- CTA -->
+        <div class="cta-box">
+            <h2>Have a Story Tip?</h2>
+            <p>Our team is always looking for the next important story. If you have confidential information or a story
+                that needs to be told, we'd love to hear from you.</p>
+            <a href="contact-us.html" class="cta-btn">Get in Touch</a>
+        </div>
+    </main>
+
+    <footer>
+        <!-- TOP HEADER -->
+        <div class="footer">
+            <div class="footer-sec">
+                <div class="footer-header">
+                    <div class="footer-categories">
+                        <span class="dot"></span>
+                        <span class="footer-title">Categories</span>
+                    </div>
+
+                    <ul class="footer-categories-list">
+                        <li><a href="us.html">U.S News</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="economy.html">Economy</a></li>
+                        <li><a href="markets.html">Markets</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-divider"></div>
+
+                <!-- CONTENT -->
+                <div class="footer-content">
+                    <!-- LEFT -->
+                    <div class="footer-left">
+                        <h4>About US</h4>
+                        <p>
+                            CorporateWire is the leading global authority on business and technology, providing breaking
+                            news and
+                            expert insights to over 20 million monthly readers.
+                        </p>
+
+                        <div class="footer-icons">
+                            <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon"
+                                    src="images/instagram-icon.svg" alt="instagram" /></a>
+                            <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon"
+                                    src="images/twitter-icon.svg" alt="x" /></a>
+                            <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon"
+                                    src="images/substack.svg" alt="substack" /></a>
+                            <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon"
+                                    src="images/medium.svg" alt="medium" /></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-mid-section">
+                        <!-- Information Section -->
+                        <div class="footer-mid-right">
+                            <ul>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="contact-us.html">Contact us</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                                <li><a href="our-team.html">Our Team</a></li>
+                                <li><a href="correction-policy.html">Correction Policy</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="footer-right">
+                        <h4>Subscribe US</h4>
+                        <p>
+                            Subscribe to our newsletter to get our newest articles instantly!
+                        </p>
+
+                        <form id="newsletter-form">
+                            <div class="subscribe-box">
+                                <input type="email" id="newsletter-email" placeholder="Your email address" required />
+                                <button type="submit" id="newsletter-btn">Sign Up Now</button>
+                            </div>
+
+                            <label class="terms">
+                                <input type="checkbox" id="newsletter-agree" required />
+                                <span>I have read and agree to the terms & conditions</span>
+                            </label>
+                        </form>
+                        <div id="newsletter-message"
+                            style="font-size: 12px; margin-top: 10px; display: none; font-family: 'WorkSans', Arial, sans-serif;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTTOM -->
+            <div class="footer-bottom">
+                &copy; Copyright 2026 CORPORATEWIRE. All Rights Reserved.
+            </div>
+            <script>
+                document.getElementById('newsletter-form').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    const message = document.getElementById('newsletter-message');
+
+                    message.textContent = 'Success! You have been subscribed successfully.';
+                    message.style.color = 'green';
+                    message.style.display = 'block';
+
+                    this.reset();
+                });
+            </script>
+    </footer>
+</body>
+
+</html>
