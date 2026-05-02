@@ -10,6 +10,7 @@
   <meta name="keywords" content="Federal Reserve, interest rates, jobs data, inflation, Jerome Powell, US economy" />
   <link rel="canonical"
     href="https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html" />
+  <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
@@ -51,6 +52,7 @@
     </script>
   <link rel="stylesheet" href="../detail.css" />
   <link rel="stylesheet" href="../style.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -89,7 +91,7 @@
 
     <!-- Right Section (Date)-->
     <div class="header-right">
-      <span class="header-date">Friday, March 6, 2026</span>
+      <span class="header-date" id="currentDate"></span>
     </div>
   </header>
 
@@ -142,8 +144,8 @@
       <section class="hero">
         <img src="/images/news/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.webp"
           alt="NASA Wet Dress Rehearsal" class="hero-img" />
-        <p class="breadcrump">
-          Home > Economy >
+        <p class="breadcrumb">
+          Home / Economy /
           Federal Reserve Holds Interest Rates Steady Amid Strong Jobs Data
         <div class="overlay"></div>
 
@@ -166,21 +168,21 @@
                   style="color: inherit; text-decoration: none;">Nicole Patterson</a></span>
               <span class="separator">|</span>
               <span class="main-author-date">
-                <span>Senior Editor</span>
+                <span>Chief Economic & Markets Correspondent</span>
                 <span>•</span>
                 <span> Feb. 19, 2026</span>
               </span>
             </div>
 
             <!-- Right: Share icons -->
-            <div class="share-actions">
+            <!-- <div class="share-actions">
 
               <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
               <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
               <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
               <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-            </div>
+            </div> -->
           </div>
 
         </article>
@@ -196,11 +198,23 @@
               <img src="../images/file-share.svg" alt="share" class="social-btn" />
               <span class="share-label">SHARE</span>
               <div class="share-list-icons">
-                <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
-                <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                <img src="../images/print.svg" alt="print" class="social-btn" />
-                <a class="social-btn">⋯</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html&quote=Fed%20Holds%20Rates%20Steady%20Amid%20Strong%20Jobs%20Data"
+                  target="_blank" class="social-btn">
+                  <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html&text=Fed%20Holds%20Rates%20Steady%20Amid%20Strong%20Jobs%20Data"
+                  target="_blank" class="social-btn">
+                  <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Fed%20Holds%20Rates%20Steady%20Amid%20Strong%20Jobs%20Data.%20https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                </a>
+
               </div>
             </aside>
 
@@ -369,14 +383,22 @@
               </div>
 
               <div class="share-right">
-                <a class="share-btn fb">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html&quote=Fed%20Holds%20Rates%20Steady%20Amid%20Strong%20Jobs%20Data"
+                  target="_blank" class="share-btn fb">
                   <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
                   <span>Facebook</span></a>
-                <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter" class="social-btn" />
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html&text=Fed%20Holds%20Rates%20Steady%20Amid%20Strong%20Jobs%20Data"
+                  target="_blank" class="share-btn x">
+                  <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
                 </a>
-                <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail" class="social-btn" /></a>
-                <a class="share-btn print"><img src="../images/print-white.svg" alt="printer" class="social-btn" /></a>
-                <a class="share-btn more">⋯</a>
+                <a href="https://api.whatsapp.com/send?text=Fed%20Holds%20Rates%20Steady%20Amid%20Strong%20Jobs%20Data.%20https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html"
+                  target="_blank" class="share-btn whatsapp">
+                  <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/economy/fed-interest-rate-pause-supported-by-jobs-data-concerns-remain.html"
+                  target="_blank" class="share-btn linkedin">
+                  <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                </a>
               </div>
             </div>
 
@@ -461,22 +483,7 @@
 
             </div>
 
-            <div class="popular-row">
-              <p class="popular-item">
-                <span class="popular-plus">+</span><span class="popular-list-item"><a
-                    href="./fed-interest-rates-economic-outlook-trump-influence-2026.html"
-                    style="color: inherit; text-decoration: none;">Fed to Keep Rates Steady Amid Strong U.S. Growth and
-                    Political Tensions</a></span>
-              </p>
-
-              <p class="popular-item">
-                <span class="popular-plus">+</span><span class="popular-list-item"><a
-                    href="./amazon-lays-off-16-000-focus-ai-cloud-efficiency.html"
-                    style="color: inherit; text-decoration: none;">Amazon Announces 16,000 Layoffs as
-                    Part of Major Restructuring Focused on AI and Cloud Services</a></span>
-              </p>
-
-            </div>
+           
 
 
           </section>
@@ -498,7 +505,7 @@
             <img src="../images/news/trump-25-percent-tariffs-south-korea-trade-dispute-0.webp" alt="" />
             <span class="badge red">Economy</span>
           </div>
-          <a href="../business/trump-25-percent-tariffs-south-korea-trade-dispute.html">
+          <a href="../economy/trump-25-percent-tariffs-south-korea-trade-dispute.html">
             <h4>
               Trump Threatens 25% Tariffs on South Korean Imports, Escalating Trade Tensions </h4>
           </a>
@@ -517,7 +524,7 @@
             <img src="../images/news/trump-executive-order-wall-street-housing-investors-0.webp" alt="" />
             <span class="badge red">Economy</span>
           </div>
-          <a href="../business/trump-executive-order-wall-street-housing-investors.html">
+          <a href="../economy/trump-executive-order-wall-street-housing-investors.html">
             <h4>Trump's Executive Order Limits Wall Street's Control Over Housing Market</h4>
           </a>
           <div class="author">
@@ -535,7 +542,7 @@
             <img src="../images/news/us-federal-debt-record-levels-budget-office-warning-0.webp" alt="" />
             <span class="badge red">Economy</span>
           </div>
-          <a href="../business/us-federal-debt-record-levels-budget-office-warning.html">
+          <a href="../economy/us-federal-debt-record-levels-budget-office-warning.html">
             <h4>U.S. Federal Debt Set to Reach Record Highs, Congressional Budget Office Warns</h4>
           </a>
           <div class="author">
@@ -553,7 +560,7 @@
             <img src="../images/news/trump-claims-inflation-defeated-mixed-economic-data-0.webp" alt="" />
             <span class="badge red">Economy</span>
           </div>
-          <a href="../business/trump-claims-inflation-defeated-mixed-economic-data.html">
+          <a href="../economy/trump-claims-inflation-defeated-mixed-economic-data.html">
             <h4>
               Trump Claims Victory Over Inflation, But Data Paints a Different Picture
             </h4>
@@ -583,14 +590,14 @@
           </div>
 
           <ul class="footer-categories-list">
-            <li>U.S News</li>
-            <li>Business</li>
-            <li>Economy</li>
-            <li>Markets</li>
-            <li>Finance</li>
-            <li>Technology</li>
-            <li>Health</li>
-            <li>Media</li>
+            <li><a href="../us.html" style="color: inherit; text-decoration: none;">U.S News</a></li>
+            <li><a href="../business.html" style="color: inherit; text-decoration: none;">Business</a></li>
+            <li><a href="../economy.html" style="color: inherit; text-decoration: none;">Economy</a></li>
+            <li><a href="../markets.html" style="color: inherit; text-decoration: none;">Markets</a></li>
+            <li><a href="../finance.html" style="color: inherit; text-decoration: none;">Finance</a></li>
+            <li><a href="../technology.html" style="color: inherit; text-decoration: none;">Technology</a></li>
+            <li><a href="../health.html" style="color: inherit; text-decoration: none;">Health</a></li>
+            <li><a href="../media.html" style="color: inherit; text-decoration: none;">Media</a></li>
           </ul>
         </div>
 
@@ -623,10 +630,13 @@
             <!-- Information Section -->
             <div class="footer-mid-right">
               <ul>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Privacy Policy</li>
-                <li>Terms and conditions</li>
+                <li><a href="../about-us.html">About us</a></li>
+                <li><a href="../contact-us.html">Contact us</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../our-team.html">Our Team</a></li>
+                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
               </ul>
             </div>
           </div>

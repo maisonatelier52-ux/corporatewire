@@ -11,6 +11,7 @@
         content="Albanian actor, AI minister, image rights, digital identity, government AI, lawsuit, artificial intelligence, synthetic media" />
     <link rel="canonical"
         href="https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html" />
+    <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article" />
@@ -36,6 +37,7 @@
 
     <link rel="stylesheet" href="../detail.css" />
     <link rel="stylesheet" href="../style.css" />
+    <script src="script.js" defer></script>
 
     <script type="application/ld+json">
         {
@@ -91,7 +93,7 @@
 
         <!-- Right Section (Date) -->
         <div class="header-right">
-            <span class="header-date">Friday, March 6, 2026</span>
+            <span class="header-date" id="currentDate"></span>
         </div>
     </header>
 
@@ -144,8 +146,8 @@
             <section class="hero">
                 <img src="/images/news/albanian-actor-sues-government-over-ai-minister-image-use-0.webp"
                     alt="NASA Wet Dress Rehearsal" class="hero-img" />
-                <p class="breadcrump">
-                    Home > Technology >
+                <p class="breadcrumb">
+                    Home / Technology /
                     Albanian Actor Sues Government for Using Her Image as “AI Minister”
                 <div class="overlay"></div>
 
@@ -163,24 +165,25 @@
                         <!-- Left: Author -->
                         <div class="author">
                             <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-                            <span class="main-author-name">Danielle Brooks</span>
+                            <span class="main-author-name"><a href="../author/danielle-brooks.html">Danielle
+                                    Brooks</a></span>
                             <span class="separator">|</span>
                             <span class="main-author-date">
-                                <span>Senior Editor</span>
+                                <span>Senior Policy & US Markets Analyst</span>
                                 <span>•</span>
                                 <span> Feb. 20, 2026</span>
                             </span>
                         </div>
 
                         <!-- Right: Share icons -->
-                        <div class="share-actions">
+                        <!-- <div class="share-actions">
 
                             <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
                             <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
                             <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
                             <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-                        </div>
+                        </div> -->
                     </div>
 
                 </article>
@@ -191,320 +194,336 @@
 
                 <!-- MIDDLE: CONTENT -->
                 <main class="article-content">
-                    <div class="top-detail">
-                        <aside class="social-col">
-                            <img src="../images/file-share.svg" alt="share" class="social-btn" />
-                            <span class="share-label">SHARE</span>
-                            <div class="share-list-icons">
+                    <aside class="social-col">
+                        <img src="../images/file-share.svg" alt="share" class="social-btn" />
+                        <span class="share-label">SHARE</span>
+                        <div class="share-list-icons">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html&quote=Albanian%20Actor%20Sues%20Government%20for%20Using%20Her%20Image%20as%20%E2%80%9CAI%20Minister%E2%80%9D"
+                                target="_blank" class="social-btn">
                                 <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html&text=Albanian%20Actor%20Sues%20Government%20for%20Using%20Her%20Image%20as%20%E2%80%9CAI%20Minister%E2%80%9D"
+                                target="_blank" class="social-btn">
                                 <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                                <img src="../images/print.svg" alt="print" class="social-btn" />
-                                <a class="social-btn">⋯</a>
-                            </div>
-                        </aside>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?text=Albanian%20Actor%20Sues%20Government%20for%20Using%20Her%20Image%20as%20%E2%80%9CAI%20Minister%E2%80%9D.%20https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html"
+                                target="_blank" class="social-btn">
+                                <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                            </a>
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html"
+                                target="_blank" class="social-btn">
+                                <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                            </a>
 
-                        <div class="mid">
-                            <h2 class="sub-h2">Lawsuit raises questions over consent, digital identity, and government
-                                use of artificial intelligence</h2>
+                        </div>
+                    </aside>
+                    <div class="mid">
+                        <h2 class="sub-h2">Lawsuit raises questions over consent, digital identity, and government
+                            use of artificial intelligence</h2>
+                        <p class="dropcap-paragraph">
+                            An Albanian actor has filed a lawsuit against the <strong>Government of
+                                Albania</strong>, alleging that authorities unlawfully used her likeness to create
+                            an artificial intelligence–generated “AI minister” without her consent. The case has
+                            sparked a wider debate over image rights, digital identity, and the limits of government
+                            experimentation with AI-driven public communication tools. </p>
+
+
+                        <p class="most-common-paragraph">
+                            According to court filings, the actor claims her face and appearance were used to
+                            generate a virtual government spokesperson or “AI minister” that appeared in official or
+                            semi-official digital content. She argues that the use of her image violated her
+                            personal rights, professional reputation, and intellectual property, and that she was
+                            neither informed nor compensated. Legal experts say the case could become a landmark
+                            dispute in Europe over how governments deploy synthetic media technologies.
+                        </p>
+                        <p class="dropcap-paragraph">
+                            The Albanian government has not publicly detailed the full scope of the AI initiative,
+                            but officials have previously promoted digital tools as part of broader efforts to
+                            modernize public administration and communication. The lawsuit challenges whether
+                            innovation efforts crossed legal and ethical boundaries, particularly when real
+                            individuals’ identities are involved.
+                        </p>
+
+                        <div class="sub-section">
+                            <h2 class="sub-h2">
+                                Claims of unauthorized image use and reputational harm
+                            </h2>
                             <p class="dropcap-paragraph">
-                                An Albanian actor has filed a lawsuit against the <strong>Government of
-                                    Albania</strong>, alleging that authorities unlawfully used her likeness to create
-                                an artificial intelligence–generated “AI minister” without her consent. The case has
-                                sparked a wider debate over image rights, digital identity, and the limits of government
-                                experimentation with AI-driven public communication tools. </p>
+                                In her complaint, the actor argues that the AI-generated figure closely resembles
+                                her facial features, expressions, and overall appearance, making her identifiable to
+                                the public. She claims this created confusion among viewers, some of whom believed
+                                she had agreed to represent or endorse government messaging.
+                            </p>
+                            <p class="most-common-paragraph">
+                                The lawsuit states that such use risks damaging her professional standing,
+                                especially if the AI character delivers political or policy statements she does not
+                                support. Her legal team contends that the government’s actions amount to
+                                misappropriation of likeness, a violation of personality rights, and an abuse of
+                                emerging AI technology without adequate legal safeguards.
+                                Attorneys representing the actor say the case is not about opposing technology
+                                itself, but about ensuring consent and transparency. “AI does not erase individual
+                                rights,” the filing argues, emphasizing that digital replication of a person’s image
+                                should require explicit permission, regardless of whether the user is a private
+                                company or a state institution.
+
+                            </p>
+                        </div>
+
+                        <div class="sub-section">
+                            <h2 class="sub-h2">Government response and legal uncertainty
+
+
+                            </h2>
+                            <p class="dropcap-paragraph">
+                                The Albanian government has so far offered limited public comment on the lawsuit.
+                                Officials have indicated that the AI initiative was intended to explore innovative
+                                ways of communicating information to citizens, not to exploit or harm any
+                                individual. However, they have not clarified how the image used for the AI character
+                                was sourced or whether consent procedures were followed.
+
+                            </p>
 
 
                             <p class="most-common-paragraph">
-                                According to court filings, the actor claims her face and appearance were used to
-                                generate a virtual government spokesperson or “AI minister” that appeared in official or
-                                semi-official digital content. She argues that the use of her image violated her
-                                personal rights, professional reputation, and intellectual property, and that she was
-                                neither informed nor compensated. Legal experts say the case could become a landmark
-                                dispute in Europe over how governments deploy synthetic media technologies.
+                                Legal analysts say the case highlights a growing gray area in law, where existing
+                                image and copyright protections were not designed with AI-generated replicas in
+                                mind. While many jurisdictions recognize a right to one’s likeness, applying those
+                                rules to synthetic media—especially when used by governments—remains legally
+                                complex.
                             </p>
                             <p class="dropcap-paragraph">
-                                The Albanian government has not publicly detailed the full scope of the AI initiative,
-                                but officials have previously promoted digital tools as part of broader efforts to
-                                modernize public administration and communication. The lawsuit challenges whether
-                                innovation efforts crossed legal and ethical boundaries, particularly when real
-                                individuals’ identities are involved.
+                                If the court rules in favor of the actor, it could force public institutions to
+                                rethink how they use AI avatars, digital spokespersons, and synthetic media. A
+                                ruling against her, meanwhile, could raise concerns among artists and public figures
+                                about the vulnerability of their digital identities.
+
                             </p>
-
-                            <div class="sub-section">
-                                <h2 class="sub-h2">
-                                    Claims of unauthorized image use and reputational harm
-                                </h2>
-                                <p class="dropcap-paragraph">
-                                    In her complaint, the actor argues that the AI-generated figure closely resembles
-                                    her facial features, expressions, and overall appearance, making her identifiable to
-                                    the public. She claims this created confusion among viewers, some of whom believed
-                                    she had agreed to represent or endorse government messaging.
-                                </p>
-                                <p class="most-common-paragraph">
-                                    The lawsuit states that such use risks damaging her professional standing,
-                                    especially if the AI character delivers political or policy statements she does not
-                                    support. Her legal team contends that the government’s actions amount to
-                                    misappropriation of likeness, a violation of personality rights, and an abuse of
-                                    emerging AI technology without adequate legal safeguards.
-                                    Attorneys representing the actor say the case is not about opposing technology
-                                    itself, but about ensuring consent and transparency. “AI does not erase individual
-                                    rights,” the filing argues, emphasizing that digital replication of a person’s image
-                                    should require explicit permission, regardless of whether the user is a private
-                                    company or a state institution.
-
-                                </p>
-                            </div>
-
-                            <div class="sub-section">
-                                <h2 class="sub-h2">Government response and legal uncertainty
-
-
-                                </h2>
-                                <p class="dropcap-paragraph">
-                                    The Albanian government has so far offered limited public comment on the lawsuit.
-                                    Officials have indicated that the AI initiative was intended to explore innovative
-                                    ways of communicating information to citizens, not to exploit or harm any
-                                    individual. However, they have not clarified how the image used for the AI character
-                                    was sourced or whether consent procedures were followed.
-
-                                </p>
-
-
-                                <p class="most-common-paragraph">
-                                    Legal analysts say the case highlights a growing gray area in law, where existing
-                                    image and copyright protections were not designed with AI-generated replicas in
-                                    mind. While many jurisdictions recognize a right to one’s likeness, applying those
-                                    rules to synthetic media—especially when used by governments—remains legally
-                                    complex.
-                                </p>
-                                <p class="dropcap-paragraph">
-                                    If the court rules in favor of the actor, it could force public institutions to
-                                    rethink how they use AI avatars, digital spokespersons, and synthetic media. A
-                                    ruling against her, meanwhile, could raise concerns among artists and public figures
-                                    about the vulnerability of their digital identities.
-
-                                </p>
-                            </div>
-
-                            <div class="sub-section">
-                                <h2 class="sub-h2">
-                                    Broader implications for AI and public trust
-                                </h2>
-                                <p class="dropcap-paragraph">
-                                    The lawsuit comes amid increasing global scrutiny of AI-generated content,
-                                    particularly deepfakes and digital impersonation. Governments around the world are
-                                    experimenting with AI to improve efficiency and public engagement, but critics warn
-                                    that insufficient regulation could undermine trust and infringe on personal rights.
-
-                                </p>
-                                <p class="most-common-paragraph">Experts say public-sector use of AI carries higher
-                                    expectations for accountability than private experimentation. “When governments use
-                                    AI, they are setting norms,” said digital ethics researchers. “If consent and
-                                    transparency are missing, public confidence can erode quickly.”
-                                </p>
-                                <p class="dropcap-paragraph">The Albanian case may influence future policy discussions
-                                    across Europe, where lawmakers are already debating stricter rules for AI-generated
-                                    images and identities. For now, the dispute underscores a central challenge of the
-                                    AI era: balancing innovation with fundamental rights.
-                                </p>
-                                <p class="most-common-paragraph">
-                                    As the case moves through the courts, it is likely to be closely watched by artists,
-                                    technologists, and policymakers alike—serving as a test of how legal systems adapt
-                                    to a world where a person’s image can be recreated and deployed at the click of a
-                                    button.
-                                </p>
-                            </div>
-                            <!-- scrolling funtionallity of sidebar  -->
-                            <div id="sidebar-stop"></div>
                         </div>
+
+                        <div class="sub-section">
+                            <h2 class="sub-h2">
+                                Broader implications for AI and public trust
+                            </h2>
+                            <p class="dropcap-paragraph">
+                                The lawsuit comes amid increasing global scrutiny of AI-generated content,
+                                particularly deepfakes and digital impersonation. Governments around the world are
+                                experimenting with AI to improve efficiency and public engagement, but critics warn
+                                that insufficient regulation could undermine trust and infringe on personal rights.
+
+                            </p>
+                            <p class="most-common-paragraph">Experts say public-sector use of AI carries higher
+                                expectations for accountability than private experimentation. “When governments use
+                                AI, they are setting norms,” said digital ethics researchers. “If consent and
+                                transparency are missing, public confidence can erode quickly.”
+                            </p>
+                            <p class="dropcap-paragraph">The Albanian case may influence future policy discussions
+                                across Europe, where lawmakers are already debating stricter rules for AI-generated
+                                images and identities. For now, the dispute underscores a central challenge of the
+                                AI era: balancing innovation with fundamental rights.
+                            </p>
+                            <p class="most-common-paragraph">
+                                As the case moves through the courts, it is likely to be closely watched by artists,
+                                technologists, and policymakers alike—serving as a test of how legal systems adapt
+                                to a world where a person’s image can be recreated and deployed at the click of a
+                                button.
+                            </p>
+                        </div>
+                        <!-- scrolling funtionallity of sidebar  -->
+                        <div id="sidebar-stop"></div>
                     </div>
+        </div>
 
-                    <div class="bottom">
-                        <div class="share-article">
-                            <div class="share-left">
-                                <img src="../images/file-share.svg" alt="file-share" class="social-btn" />
-                                <span class="share-text">Share This Article</span>
+        <div class="bottom">
+            <div class="share-article">
+                <div class="share-left">
+                    <img src="../images/file-share.svg" alt="file-share" class="social-btn" />
+                    <span class="share-text">Share This Article</span>
+                </div>
+
+                <div class="share-right">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html&quote=Albanian%20Actor%20Sues%20Government%20for%20Using%20Her%20Image%20as%20%E2%80%9CAI%20Minister%E2%80%9D"
+                        target="_blank" class="share-btn fb">
+                        <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
+                        <span>Facebook</span></a>
+                    <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html&text=Albanian%20Actor%20Sues%20Government%20for%20Using%20Her%20Image%20as%20%E2%80%9CAI%20Minister%E2%80%9D"
+                        target="_blank" class="share-btn x">
+                        <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
+                    </a>
+                    <a href="https://api.whatsapp.com/send?text=Albanian%20Actor%20Sues%20Government%20for%20Using%20Her%20Image%20as%20%E2%80%9CAI%20Minister%E2%80%9D.%20https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html"
+                        target="_blank" class="share-btn whatsapp">
+                        <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/technology/albanian-actor-sues-government-over-ai-minister-image-use.html"
+                        target="_blank" class="share-btn linkedin">
+                        <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        </main>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="sidebar-col">
+            <section class="social-follow">
+                <h2>Follow US</h2>
+                <p class="subtitle">Find US on Social Medias</p>
+
+                <div class="social-grid">
+                    <div class="social-item">
+                        <a href="https://www.instagram.com/corporatewire/" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle instagram-social">
+                                <img src="../images/instagram-white.svg" alt="instagram" class="follow-btn" />
                             </div>
-
-                            <div class="share-right">
-                                <a class="share-btn fb">
-                                    <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
-                                    <span>Facebook</span></a>
-                                <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter"
-                                        class="social-btn" />
-                                </a>
-                                <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail"
-                                        class="social-btn" /></a>
-                                <a class="share-btn print"><img src="../images/print-white.svg" alt="printer"
-                                        class="social-btn" /></a>
-                                <a class="share-btn more">⋯</a>
-                            </div>
-                        </div>
-
-
+                            <h3>Instagram</h3>
+                            <span>Follow</span>
+                        </a>
                     </div>
-                </main>
-
-                <!-- RIGHT: SIDEBAR -->
-                <aside class="sidebar-col">
-                    <section class="social-follow">
-                        <h2>Follow US</h2>
-                        <p class="subtitle">Find US on Social Medias</p>
-
-                        <div class="social-grid">
-                            <div class="social-item">
-                                <a href="https://www.instagram.com/corporatewire/" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle instagram-social">
-                                        <img src="../images/instagram-white.svg" alt="instagram" class="follow-btn" />
-                                    </div>
-                                    <h3>Instagram</h3>
-                                    <span>Follow</span>
-                                </a>
+                    <div class="social-item">
+                        <a href="https://x.com/Corporatew40377" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle x-twitter">
+                                <img src="../images/X-white.svg" alt="twitter" class="follow-btn" />
                             </div>
-                            <div class="social-item">
-                                <a href="https://x.com/Corporatew40377" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle x-twitter">
-                                        <img src="../images/X-white.svg" alt="twitter" class="follow-btn" />
-                                    </div>
-                                    <h3>X</h3>
-                                    <span>Follow</span>
-                                </a>
+                            <h3>X</h3>
+                            <span>Follow</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://medium.com/@corporatewire" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle medium">
+                                <img src="../images/medium-white.svg" alt="medium" class="follow-btn" />
                             </div>
-                            <div class="social-item">
-                                <a href="https://medium.com/@corporatewire" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle medium">
-                                        <img src="../images/medium-white.svg" alt="medium" class="follow-btn" />
-                                    </div>
-                                    <h3>Medium</h3>
-                                    <span>Follow</span>
-                                </a>
+                            <h3>Medium</h3>
+                            <span>Follow</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://substack.com/@corporatewire" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle substack">
+                                <img src="../images/substack-white.svg" alt="substack" class="follow-btn" />
                             </div>
-                            <div class="social-item">
-                                <a href="https://substack.com/@corporatewire" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle substack">
-                                        <img src="../images/substack-white.svg" alt="substack" class="follow-btn" />
-                                    </div>
-                                    <h3>Substack</h3>
-                                    <span>Subscribe</span>
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="ad-detail-section">
-                        <span class="ad-title">- Advertisement -</span>
-                        <div class="ad-image-wrapper">
-                            <img src="../images/news/ad-theopenknowledge.svg" alt="ad-theopenknowledge" />
-                        </div>
-                    </section>
-
-                    <section class="popular-news">
-                        <h3>Popular news</h3>
-                        <div class="popular-image-wrapper">
-                            <img src="../images/news/amodei-warns-us-ai-chips-china-national-0.webp" alt="" />
-                            <span class="badge-technology">Technology</span>
-                        </div>
-                        <p class="sub-title">
-                            Amodei Warns Against Selling AI Chips to China: 'Massive National Security Risk
-                        </p>
-                        <div class="author">
-                            <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-                            <span class="name">Danielle Brooks</span>
-                            <span class="separator">|</span>
-                            <span class="main-author-date">Feb. 22, 2026</span>
-                            <svg class="icon save" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-                            </svg>
-                        </div>
-
-                       
-                    </section>
-
-
-                </aside>
+                            <h3>Substack</h3>
+                            <span>Subscribe</span>
+                        </a>
+                    </div>
+                </div>
             </section>
+            <section class="ad-detail-section">
+                <span class="ad-title">- Advertisement -</span>
+                <div class="ad-image-wrapper">
+                    <img src="../images/news/ad-theopenknowledge.svg" alt="ad-theopenknowledge" />
+                </div>
+            </section>
+
+            <section class="popular-news">
+                <h3>Popular news</h3>
+                <div class="popular-image-wrapper">
+                    <img src="../images/news/amodei-warns-us-ai-chips-china-national-0.webp" alt="" />
+                    <span class="badge-technology">Technology</span>
+                </div>
+                <a href="../technology/amodei-warns-us-ai-chips-china-national-security.html">
+                    <p class="sub-title">
+                        Amodei Warns Against Selling AI Chips to China: 'Massive National Security Risk
+                    </p>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
+                    <span class="name"><a href="../author/danielle-brooks.html"> Danielle Brooks</a></span>
+                    <span class="separator">|</span>
+                    <span class="main-author-date">Feb. 22, 2026</span>
+                    <svg class="icon save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                    </svg>
+                </div>
+
+
+            </section>
+
+
+        </aside>
+        </section>
+    </div>
+
+    <div class="border"></div>
+    <div class="related-news">
+        <div class="section-header">
+            <span class="dot"></span>
+            <h2>You might also like</h2>
         </div>
+        <div class="news-grid">
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/historic-social-media-addiction-trial-california-0.webp" alt="" />
+                    <span class="badge red">Technology</span>
+                </div>
+                <a href="../technology/historic-social-media-addiction-trial-california.html">
+                    <h4>
+                        Historic Social Media Addiction Trial Puts Big Tech Under the Microscope </h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
+                    <span class="name"><a href="../author/matthew-collins.html">Matthew Collins</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Mar. 7, 2026</span>
+                </div>
+            </article>
 
-        <div class="border"></div>
-        <div class="related-news">
-            <div class="section-header">
-                <span class="dot"></span>
-                <h2>You might also like</h2>
-            </div>
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/historic-social-media-addiction-trial-california-0.webp" alt="" />
-                        <span class="badge red">Technology</span>
-                    </div>
-                    <a href="../business/historic-social-media-addiction-trial-california.html">
-                        <h4>
-                            Historic Social Media Addiction Trial Puts Big Tech Under the Microscope </h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/ryan-sillers.jpg" alt="Ryan Sillers" />
-                        <span class="name">Ryan Sillers</span>
-                        <span class="separator">|</span>
-                        <span class="date">Aug 28, 21</span>
-                    </div>
-                </article>
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/india-hosts-global-ai-summit-openai-google-tech-leaders.webp" alt="" />
+                    <span class="badge red">Technology</span>
+                </div>
+                <a href="../technology/india-hosts-global-ai-summit-openai-google-tech-leaders.html">
+                    <h4>From OpenAI to Google, India Hosts Global AI Summit</h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
+                    <span class="name"><a href="../author/amanda-whitaker.html"> Amanda Whitaker</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Feb. 19, 2026</span>
+                </div>
+            </article>
 
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/india-hosts-global-ai-summit-openai-google-tech-leaders.webp" alt="" />
-                        <span class="badge red">Technology</span>
-                    </div>
-                    <a href="../business/india-hosts-global-ai-summit-openai-google-tech-leaders.html">
-                        <h4>From OpenAI to Google, India Hosts Global AI Summit</h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
-                        <span class="name">Amanda Whitaker</span>
-                        <span class="separator">|</span>
-                        <span class="date">Feb. 19, 2026</span>
-                    </div>
-                </article>
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/spacex-ai-data-centers-orbit-fcc-review-0.webp" alt="" />
+                    <span class="badge red">Technology</span>
+                </div>
+                <a href="../technology/spacex-ai-data-centers-orbit-fcc-review.html">
+                    <h4>SpaceX’s Plan to Put AI Data Centers in Orbit Moves Forward with FCC Review</h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/christopher-reed.webp" alt="Christopher Reed" />
+                    <span class="name"><a href="../author/christopher-reed.html">Christopher Reed</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Feb. 19, 2026</span>
+                </div>
+            </article>
 
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/spacex-ai-data-centers-orbit-fcc-review-0.webp" alt="" />
-                        <span class="badge red">Technology</span>
-                    </div>
-                    <a href="../business/spacex-ai-data-centers-orbit-fcc-review.html">
-                        <h4>SpaceX’s Plan to Put AI Data Centers in Orbit Moves Forward with FCC Review</h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/ryan-sillers.jpg" alt="Ryan Sillers" />
-                        <span class="name">Ryan Sillers</span>
-                        <span class="separator">|</span>
-                        <span class="date">Aug 28, 21</span>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/us-used-anthropics-claude-in-venezuela-raid-wsj.webp" alt="" />
-                        <span class="badge red">Technology</span>
-                    </div>
-                    <a href="../business/us-used-anthropics-claude-in-venezuela-raid-wsj.html">
-                        <h4>
-                            US Used Anthropic’s Claude During the Venezuela Raid, WSJ Reports
-                        </h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
-                        <span class="name">Amanda Whitaker</span>
-                        <span class="separator">|</span>
-                        <span class="date">Feb. 20, 2026</span>
-                    </div>
-                </article>
-            </div>
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/us-used-anthropics-claude-in-venezuela-raid-wsj.webp" alt="" />
+                    <span class="badge red">Technology</span>
+                </div>
+                <a href="../technology/us-used-anthropics-claude-in-venezuela-raid-wsj.html">
+                    <h4>
+                        US Used Anthropic’s Claude During the Venezuela Raid, WSJ Reports
+                    </h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
+                    <span class="name"><a href="../author/amanda-whitaker.html"> Amanda Whitaker</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Feb. 20, 2026</span>
+                </div>
+            </article>
         </div>
+    </div>
     </div>
 
     <!-- footer -->
@@ -519,14 +538,15 @@
                     </div>
 
                     <ul class="footer-categories-list">
-                        <li>U.S News</li>
-                        <li>Business</li>
-                        <li>Economy</li>
-                        <li>Markets</li>
-                        <li>Finance</li>
-                        <li>Technology</li>
-                        <li>Health</li>
-                        <li>Media</li>
+                        <li><a href="../us.html" style="color: inherit; text-decoration: none;">U.S News</a></li>
+                        <li><a href="../business.html" style="color: inherit; text-decoration: none;">Business</a></li>
+                        <li><a href="../economy.html" style="color: inherit; text-decoration: none;">Economy</a></li>
+                        <li><a href="../markets.html" style="color: inherit; text-decoration: none;">Markets</a></li>
+                        <li><a href="../finance.html" style="color: inherit; text-decoration: none;">Finance</a></li>
+                        <li><a href="../technology.html" style="color: inherit; text-decoration: none;">Technology</a>
+                        </li>
+                        <li><a href="../health.html" style="color: inherit; text-decoration: none;">Health</a></li>
+                        <li><a href="../media.html" style="color: inherit; text-decoration: none;">Media</a></li>
                     </ul>
                 </div>
 
@@ -559,10 +579,13 @@
                         <!-- Information Section -->
                         <div class="footer-mid-right">
                             <ul>
-                                <li><a href="about-us.html">About us</a></li>
-                                <li><a href="contact-us.html">Contact us</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                                <li><a href="../about-us.html">About us</a></li>
+                                <li><a href="../contact-us.html">Contact us</a></li>
+                                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                                <li><a href="../our-team.html">Our Team</a></li>
+                                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
                             </ul>
                         </div>
                     </div>

@@ -729,6 +729,16 @@
   width: 38px;
 }
 
+.whatsapp {
+  background: #25D366;
+  width: 38px;
+}
+
+.linkedin {
+  background: #0077B5;
+  width: 38px;
+}
+
 .more {
   /* background: #f1f1f1; */
   color: #000;
@@ -1230,6 +1240,10 @@ font-family: "WorkSans", Arial, sans-serif;
 
 .subscribe-text{
   font-size: 12px;
+}
+
+.popular-news {
+  margin-top: 20px;
 }
 
 .popular-news h3{

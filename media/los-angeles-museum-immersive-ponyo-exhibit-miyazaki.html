@@ -11,6 +11,7 @@
     content="Los Angeles museum, Ponyo exhibit, Hayao Miyazaki, Studio Ghibli, immersive exhibition, animation art, Miyazaki films" />
   <link rel="canonical"
     href="https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html" />
+  <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
@@ -36,6 +37,7 @@
 
   <link rel="stylesheet" href="../detail.css" />
   <link rel="stylesheet" href="../style.css" />
+  <script src="script.js" defer></script>
 
   <script type="application/ld+json">
     {
@@ -61,7 +63,7 @@
   <!-- header section -->
   <input type="checkbox" id="menu-toggle" />
 
- <header class="header">
+  <header class="header">
     <!-- Left Icons -->
     <div class="header-left">
       <a href="https://substack.com/@corporatewire" target="_blank">
@@ -92,7 +94,7 @@
 
     <!-- Right Section (Date) -->
     <div class="header-right">
-      <span class="header-date">Friday, March 6, 2026</span>
+      <span class="header-date" id="currentDate"></span>
     </div>
   </header>
 
@@ -145,8 +147,8 @@
       <section class="hero">
         <img src="/images/news/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.webp" alt="NASA Wet Dress Rehearsal"
           class="hero-img" />
-        <p class="breadcrump">
-          Home > Media >
+        <p class="breadcrumb">
+          Home / Media /
           Los Angeles Museum Unveils Immersive ‘Ponyo’ Exhibit by Hayao Miyazaki </p>
 
         <div class="overlay"></div>
@@ -157,31 +159,32 @@
           <h1>Los Angeles Museum Unveils Immersive ‘Ponyo’ Exhibit by Hayao Miyazaki</h1>
 
           <p class="excerpt">
-       A Los Angeles museum has unveiled an immersive exhibit dedicated to Hayao Miyazaki's 'Ponyo'. The installation invites visitors to step into the magical underwater world of the beloved animated film.
+            A Los Angeles museum has unveiled an immersive exhibit dedicated to Hayao Miyazaki's 'Ponyo'. The
+            installation invites visitors to step into the magical underwater world of the beloved animated film.
           </p>
 
           <div class="article-header">
             <!-- Left: Author -->
             <div class="author">
-              <img src="../images/ryan-sillers.jpg" alt="Ryan Sillers" />
-              <span class="main-author-name">Ryan Sillers</span>
+              <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
+              <span class="main-author-name"><a href="../author/matthew-collins.html">Matthew Collins</a> </span>
               <span class="separator">|</span>
               <span class="main-author-date">
-                <span>Senior Editor</span>
+                <span>Senior Technology & Global Economy Editor</span>
                 <span>•</span>
-                <span> Aug 29, 21</span>
+                <span> Feb. 17, 2026</span>
               </span>
             </div>
 
             <!-- Right: Share icons -->
-            <div class="share-actions">
+            <!-- <div class="share-actions">
 
               <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
               <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
               <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
               <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-            </div>
+            </div> -->
           </div>
 
         </article>
@@ -197,14 +200,25 @@
               <img src="../images/file-share.svg" alt="share" class="social-btn" />
               <span class="share-label">SHARE</span>
               <div class="share-list-icons">
-                <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
-                <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                <img src="../images/print.svg" alt="print" class="social-btn" />
-                <a class="social-btn">⋯</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html&quote=Los%20Angeles%20Museum%20Unveils%20Immersive%20%E2%80%98Ponyo%E2%80%99%20Exhibit%20by%20Hayao%20Miyazaki"
+                  target="_blank" class="social-btn">
+                  <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html&text=Los%20Angeles%20Museum%20Unveils%20Immersive%20%E2%80%98Ponyo%E2%80%99%20Exhibit%20by%20Hayao%20Miyazaki"
+                  target="_blank" class="social-btn">
+                  <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Los%20Angeles%20Museum%20Unveils%20Immersive%20%E2%80%98Ponyo%E2%80%99%20Exhibit%20by%20Hayao%20Miyazaki.%20https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                </a>
+
               </div>
             </aside>
-
             <div class="mid">
               <p class="dropcap-paragraph">
                 <span class="dropcap">A </span>museum in Los Angeles has unveiled an immersive exhibition dedicated to
@@ -352,14 +366,22 @@
               </div>
 
               <div class="share-right">
-                <a class="share-btn fb">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html&quote=Los%20Angeles%20Museum%20Unveils%20Immersive%20%E2%80%98Ponyo%E2%80%99%20Exhibit%20by%20Hayao%20Miyazaki"
+                  target="_blank" class="share-btn fb">
                   <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
                   <span>Facebook</span></a>
-                <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter" class="social-btn" />
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html&text=Los%20Angeles%20Museum%20Unveils%20Immersive%20%E2%80%98Ponyo%E2%80%99%20Exhibit%20by%20Hayao%20Miyazaki"
+                  target="_blank" class="share-btn x">
+                  <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
                 </a>
-                <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail" class="social-btn" /></a>
-                <a class="share-btn print"><img src="../images/print-white.svg" alt="printer" class="social-btn" /></a>
-                <a class="share-btn more">⋯</a>
+                <a href="https://api.whatsapp.com/send?text=Los%20Angeles%20Museum%20Unveils%20Immersive%20%E2%80%98Ponyo%E2%80%99%20Exhibit%20by%20Hayao%20Miyazaki.%20https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html"
+                  target="_blank" class="share-btn whatsapp">
+                  <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html"
+                  target="_blank" class="share-btn linkedin">
+                  <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                </a>
               </div>
             </div>
 
@@ -416,7 +438,7 @@
           </section>
 
 
-         <section class="ad-detail-section">
+          <section class="ad-detail-section">
             <span class="ad-title">- Advertisement -</span>
             <div class="ad-image-wrapper">
               <img src="../images/news/ad-theopenknowledge.svg" alt="ad-theopenknowledge" />
@@ -427,20 +449,22 @@
             <h3>Popular news</h3>
             <div class="popular-image-wrapper">
               <img src="../images/news/berlin-film-festival-yellow-letters-democracy-warning-0.webp" alt="" />
-              <span class="badge-technology">Technology</span>
+              <span class="badge-technology">Media</span>
             </div>
-            <p class="sub-title">
-              Berlin Film Festival Entry ‘Yellow Letters’ Sends Warning About Democracy, Says Director
-            </p>
+            <a href="../media/berlin-film-festival-yellow-letters-democracy-warning.html">
+              <p class="sub-title">
+                Berlin Film Festival Entry ‘Yellow Letters’ Sends Warning About Democracy, Says Director
+              </p>
+            </a>
             <div class="author">
               <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
-              <span class="name">Matthew Collins</span>
+              <span class="name"><a href="../author/matthew-collins.html">Matthew Collins</a></span>
               <span class="separator">|</span>
               <span class="main-author-date">Feb. 17, 2026</span>
 
             </div>
 
-         
+
           </section>
 
 
@@ -461,13 +485,13 @@
             <img src="../images/news/ai-film-school-trains-next-generation-hollywood-moviemakers.webp" alt="" />
             <span class="badge red">Media</span>
           </div>
-          <a href="../business/ai-film-school-trains-next-generation-hollywood-moviemakers.html">
+          <a href="../media/ai-film-school-trains-next-generation-hollywood-moviemakers.html">
             <h4>AI Film School Trains Next Generation of Hollywood Moviemakers
             </h4>
           </a>
           <div class="author">
             <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
-            <span class="name">Matthew Collins</span>
+            <span class="name"><a href="../author/matthew-collins.html">Matthew Collins</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 27, 2026</span>
           </div>
@@ -478,12 +502,12 @@
             <img src="../images/news/rubio-constructive-tone-us-criticism-european-allies-0.webp" alt="" />
             <span class="badge red">Media</span>
           </div>
-          <a href="../business/rubio-constructive-tone-us-criticism-european-allies.html">
+          <a href="../media/rubio-constructive-tone-us-criticism-european-allies.html">
             <h4>Rubio Strikes Constructive Tone but Persists in U.S. Criticism of European Allies</h4>
           </a>
           <div class="author">
             <img src="../images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
-            <span class="name">Nicole Patterson</span>
+            <span class="name"><a href="../author/nicole-patterson.html">Nicole Patterson</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 20, 2026</span>
           </div>
@@ -494,12 +518,12 @@
             <img src="../images/news/uk-starmer-seeks-greater-powers-regulate-online-access.webp" alt="" />
             <span class="badge red">Media</span>
           </div>
-          <a href="../business/uk-starmer-seeks-greater-powers-regulate-online-access.html">
+          <a href="../media/uk-starmer-seeks-greater-powers-regulate-online-access.html">
             <h4>UK’s Starmer Seeks Greater Powers to Regulate Online Access</h4>
           </a>
           <div class="author">
             <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
-            <span class="name">Amanda Whitaker</span>
+            <span class="name"><a href="../author/amanda-whitaker.html">Amanda Whitaker</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 20, 2026</span>
           </div>
@@ -510,14 +534,14 @@
             <img src="../images/news/rubio-us-child-of-europe-critical-friend-allies.webp" alt="" />
             <span class="badge red">Media</span>
           </div>
-          <a href="../business/rubio-us-child-of-europe-critical-friend-allies.html">
+          <a href="../media/rubio-us-child-of-europe-critical-friend-allies.html">
             <h4>
               Rubio Casts U.S., the ‘Child of Europe,’ as Critical Friend to Allies
             </h4>
           </a>
           <div class="author">
             <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
-            <span class="name">Amanda Whitaker</span>
+            <span class="name"><a href="/author/amanda-whitaker.html"> Amanda Whitaker</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 20, 2026</span>
           </div>
@@ -538,14 +562,14 @@
           </div>
 
           <ul class="footer-categories-list">
-            <li>U.S News</li>
-            <li>Business</li>
-            <li>Economy</li>
-            <li>Markets</li>
-            <li>Finance</li>
-            <li>Technology</li>
-            <li>Health</li>
-            <li>Media</li>
+            <li><a href="../us.html" style="color: inherit; text-decoration: none;">U.S News</a></li>
+            <li><a href="../business.html" style="color: inherit; text-decoration: none;">Business</a></li>
+            <li><a href="../economy.html" style="color: inherit; text-decoration: none;">Economy</a></li>
+            <li><a href="../markets.html" style="color: inherit; text-decoration: none;">Markets</a></li>
+            <li><a href="../finance.html" style="color: inherit; text-decoration: none;">Finance</a></li>
+            <li><a href="../technology.html" style="color: inherit; text-decoration: none;">Technology</a></li>
+            <li><a href="../health.html" style="color: inherit; text-decoration: none;">Health</a></li>
+            <li><a href="../media.html" style="color: inherit; text-decoration: none;">Media</a></li>
           </ul>
         </div>
 
@@ -562,11 +586,11 @@
             </p>
 
 
-          <div class="footer-icons">
+            <div class="footer-icons">
               <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon"
                   src="../images/instagram-icon.svg" alt="instagram" /></a>
-              <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon" src="../images/twitter-icon.svg"
-                  alt="x" /></a>
+              <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon"
+                  src="../images/twitter-icon.svg" alt="x" /></a>
               <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon"
                   src="../images/substack.svg" alt="substack" /></a>
               <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon"
@@ -579,10 +603,13 @@
             <!-- Information Section -->
             <div class="footer-mid-right">
               <ul>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Privacy Policy</li>
-                <li>Terms and conditions</li>
+                <li><a href="../about-us.html">About us</a></li>
+                <li><a href="../contact-us.html">Contact us</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../our-team.html">Our Team</a></li>
+                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
               </ul>
             </div>
           </div>

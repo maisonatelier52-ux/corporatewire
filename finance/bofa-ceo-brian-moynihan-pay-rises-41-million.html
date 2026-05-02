@@ -10,6 +10,7 @@
   <meta name="keywords"
     content="Brian Moynihan, Bank of America, CEO pay, executive compensation, BofA earnings, finance news" />
   <link rel="canonical" href="https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html" />
+  <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
@@ -51,6 +52,7 @@
     </script>
   <link rel="stylesheet" href="../detail.css" />
   <link rel="stylesheet" href="../style.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -88,22 +90,23 @@
 
     <!-- Right Section (Date) -->
     <div class="header-right">
-      <span class="header-date">Friday, March 6, 2026</span>
+      <span class="header-date" id="currentDate"></span>
     </div>
   </header>
 
   <!-- categories section -->
-  <nav class="nav">
+ <nav class="nav">
     <ul class="nav-list">
       <li><a href="../index.html">Home</a></li>
       <li><a href="../us.html">U.S</a></li>
-      <li>Business<i class="fa-solid fa-chevron-down"></i></li>
-      <li>Economy<i class="fa-solid fa-chevron-down"></i></li>
-      <li>Press Releases<i class="fa-solid fa-chevron-down"></i></li>
-      <li>Finance<i class="fa-solid fa-chevron-down"></i></li>
-      <li>Technology<i class="fa-solid fa-chevron-down"></i></li>
-      <li class="join">Leadership</li>
-      <li>Industry Insights</li>
+      <li><a href="../business.html">Business</a></li>
+      <li><a href="../economy.html">Economy</a></li>
+      <li><a href="../markets.html">Markets</a></li>
+
+      <li><a href="../finance.html">Finance</a></li>
+      <li><a href="../technology.html">Technology</a></li>
+      <li><a href="../health.html">Health</a></li>
+      <li><a href="../media.html">Media</a></li>
     </ul>
   </nav>
   <!-- Mobile / Mega Menu -->
@@ -140,8 +143,8 @@
       <section class="hero">
         <img src="/images/news/bofa-ceo-brian-moynihan-pay-rises-41-million.webp" alt="NASA Wet Dress Rehearsal"
           class="hero-img" />
-        <p class="breadcrump">
-          Home > Finance >
+        <p class="breadcrumb">
+          Home / Finance /
           BofA CEO Brian Moynihan’s Pay Rises to $41 Million</p>
 
         <div class="overlay"></div>
@@ -160,24 +163,24 @@
             <!-- Left: Author -->
             <div class="author">
               <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
-              <span class="main-author-name">Matthew Collins</span>
+              <span class="main-author-name"><a href="../author/matthew-collins.html">Matthew Collins</a></span>
               <span class="separator">|</span>
               <span class="main-author-date">
-                <span>Senior Editor</span>
+                <span>Senior Technology & Global Economy Editor</span>
                 <span>•</span>
                 <span> Feb. 27, 2026</span>
               </span>
             </div>
 
             <!-- Right: Share icons -->
-            <div class="share-actions">
+            <!-- <div class="share-actions">
 
               <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
               <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
               <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
               <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-            </div>
+            </div> -->
           </div>
 
         </article>
@@ -193,11 +196,23 @@
               <img src="../images/file-share.svg" alt="share" class="social-btn" />
               <span class="share-label">SHARE</span>
               <div class="share-list-icons">
-                <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
-                <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                <img src="../images/print.svg" alt="print" class="social-btn" />
-                <a class="social-btn">⋯</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html&quote=BofA%20CEO%20Brian%20Moynihan's%20Pay%20Rises%20to%20$41%20Million"
+                  target="_blank" class="social-btn">
+                  <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html&text=BofA%20CEO%20Brian%20Moynihan's%20Pay%20Rises%20to%20$41%20Million"
+                  target="_blank" class="social-btn">
+                  <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
+                </a>
+                <a href="https://api.whatsapp.com/send?text=BofA%20CEO%20Brian%20Moynihan's%20Pay%20Rises%20to%20$41%20Million.%20https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                </a>
+
               </div>
             </aside>
 
@@ -284,14 +299,22 @@
               </div>
 
               <div class="share-right">
-                <a class="share-btn fb">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html&quote=BofA%20CEO%20Brian%20Moynihan's%20Pay%20Rises%20to%20$41%20Million"
+                  target="_blank" class="share-btn fb">
                   <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
                   <span>Facebook</span></a>
-                <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter" class="social-btn" />
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html&text=BofA%20CEO%20Brian%20Moynihan's%20Pay%20Rises%20to%20$41%20Million"
+                  target="_blank" class="share-btn x">
+                  <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
                 </a>
-                <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail" class="social-btn" /></a>
-                <a class="share-btn print"><img src="../images/print-white.svg" alt="printer" class="social-btn" /></a>
-                <a class="share-btn more">⋯</a>
+                <a href="https://api.whatsapp.com/send?text=BofA%20CEO%20Brian%20Moynihan's%20Pay%20Rises%20to%20$41%20Million.%20https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html"
+                  target="_blank" class="share-btn whatsapp">
+                  <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/finance/bofa-ceo-brian-moynihan-pay-rises-41-million.html"
+                  target="_blank" class="share-btn linkedin">
+                  <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                </a>
               </div>
             </div>
 
@@ -358,20 +381,20 @@
             <h3>Popular news</h3>
             <div class="popular-image-wrapper">
               <img src="../images/news/bbva-chairman-ceo-remuneration-falls-3-percent-2025-0.webp" alt="" />
-              <span class="badge-technology">Technology</span>
+              <span class="badge-technology">Finance</span>
             </div>
-            <p class="sub-title">
-              Remuneration of BBVA’s Chairman and Its CEO Falls 3% in 2025
-            </p>
+            <p class="sub-title"><a href="./bbva-chairman-ceo-remuneration-falls-3-percent-2025.html">
+                Remuneration of BBVA’s Chairman and Its CEO Falls 3% in 2025
+              </a></p>
             <div class="author">
               <img src="../images/authors/christopher-reed.webp" alt="Christopher Reed" />
-              <span class="name">Christopher Reed</span>
+              <span class="name"><a href="../author/christopher-reed.html">Christopher Reed</a></span>
               <span class="separator">|</span>
               <span class="main-author-date">Feb. 27, 2026</span>
 
             </div>
 
-           
+
           </section>
 
 
@@ -391,13 +414,13 @@
             <img src="../images/news/ecb-makes-euro-backstop-global-boost-currency-role.webp" alt="" />
             <span class="badge red">Finance</span>
           </div>
-          <a href="../business/ecb-makes-euro-backstop-global-boost-currency-role.html">
+          <a href="./ecb-makes-euro-backstop-global-boost-currency-role.html">
             <h4>
               ECB Makes Euro Backstop Global to Bolster Currency’s Role </h4>
           </a>
           <div class="author">
             <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-            <span class="name">Danielle Brooks</span>
+            <span class="name"><a href="../author/danielle-brooks.html">Danielle Brooks</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 19, 2026</span>
           </div>
@@ -408,12 +431,12 @@
             <img src="../images/news/europe-earnings-gain-pace-valuations-limit-upside-0.webp" alt="" />
             <span class="badge red">Finance</span>
           </div>
-          <a href="../business/europe-earnings-gain-pace-valuations-limit-upside.html">
+          <a href="./europe-earnings-gain-pace-valuations-limit-upside.html">
             <h4>Europe’s Earnings Gain Pace While Lofty Valuations Cap Rewards</h4>
           </a>
           <div class="author">
             <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
-            <span class="name">Amanda Whitaker</span>
+            <span class="name"><a href="../author/amanda-whitaker.html">Amanda Whitaker</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 19, 2026</span>
           </div>
@@ -425,12 +448,12 @@
               alt="" />
             <span class="badge red">Finance</span>
           </div>
-          <a href="../business/palantir-earnings-government-contracts-ice-immigration-surveillance.html">
+          <a href="./palantir-earnings-government-contracts-ice-immigration-surveillance.html">
             <h4>Palantir Beats Wall Street Expectations Amid Controversy Over ICE and Surveillance Tech</h4>
           </a>
           <div class="author">
             <img src="../images/authors/christopher-reed.webp" alt="Christopher Reed" />
-            <span class="name">Christopher Reed</span>
+            <span class="name"><a href="../author/christopher-reed.html">Christopher Reed</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 19, 2026</span>
           </div>
@@ -441,14 +464,14 @@
             <img src="../images/news/softer-us-inflation-fed-rate-cut-expectations-stock-market.webp" alt="" />
             <span class="badge red">Finance</span>
           </div>
-          <a href="../business/softer-us-inflation-fed-rate-cut-expectations-stock-market.html">
+          <a href="./softer-us-inflation-fed-rate-cut-expectations-stock-market.html">
             <h4>
               US Stock Market | Softer US Inflation Strengthens Case for Fed Rate Cuts
             </h4>
           </a>
           <div class="author">
             <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-            <span class="name">Danielle Brooks</span>
+            <span class="name"><a href="../author/danielle-brooks.html">Danielle Brooks</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 19, 2026</span>
           </div>
@@ -469,14 +492,14 @@
           </div>
 
           <ul class="footer-categories-list">
-            <li>U.S News</li>
-            <li>Business</li>
-            <li>Economy</li>
-            <li>Markets</li>
-            <li>Finance</li>
-            <li>Technology</li>
-            <li>Health</li>
-            <li>Media</li>
+            <li><a href="../us.html" style="color: inherit; text-decoration: none;">U.S News</a></li>
+            <li><a href="../business.html" style="color: inherit; text-decoration: none;">Business</a></li>
+            <li><a href="../economy.html" style="color: inherit; text-decoration: none;">Economy</a></li>
+            <li><a href="../markets.html" style="color: inherit; text-decoration: none;">Markets</a></li>
+            <li><a href="../finance.html" style="color: inherit; text-decoration: none;">Finance</a></li>
+            <li><a href="../technology.html" style="color: inherit; text-decoration: none;">Technology</a></li>
+            <li><a href="../health.html" style="color: inherit; text-decoration: none;">Health</a></li>
+            <li><a href="../media.html" style="color: inherit; text-decoration: none;">Media</a></li>
           </ul>
         </div>
 
@@ -509,10 +532,13 @@
             <!-- Information Section -->
             <div class="footer-mid-right">
               <ul>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Privacy Policy</li>
-                <li>Terms and conditions</li>
+                <li><a href="../about-us.html">About us</a></li>
+                <li><a href="../contact-us.html">Contact us</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../our-team.html">Our Team</a></li>
+                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
               </ul>
             </div>
           </div>

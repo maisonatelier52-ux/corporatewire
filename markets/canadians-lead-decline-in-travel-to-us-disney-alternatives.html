@@ -11,6 +11,7 @@
     content="Canada travel, U.S. tourism, Disney alternatives, travel costs, exchange rate, cross-border travel, tourism trends, 2026 travel data" />
   <link rel="canonical"
     href="https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html" />
+  <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
@@ -35,6 +36,7 @@
 
   <link rel="stylesheet" href="../detail.css" />
   <link rel="stylesheet" href="../style.css" />
+  <script src="script.js" defer></script>
 
   <!-- Structured Data: NewsArticle -->
   <script type="application/ld+json">
@@ -105,7 +107,7 @@
 
     <!-- Right Section (Date) -->
     <div class="header-right">
-      <span class="header-date">Friday, March 6, 2026</span>
+      <span class="header-date" id="currentDate"></span>
     </div>
   </header>
 
@@ -158,8 +160,8 @@
       <section class="hero">
         <img src="/images/news/canadians-lead-decline-in-travel-to-us-disney-alternatives.webp"
           alt="NASA Wet Dress Rehearsal" class="hero-img" />
-        <p class="breadcrump">
-          Home > Markets >
+        <p class="breadcrumb">
+          Home / Markets /
           Looking for Disney Magic Elsewhere: Canadians Lead Declines in Travel to the U.S. </p>
 
         <div class="overlay"></div>
@@ -177,24 +179,24 @@
             <!-- Left: Author -->
             <div class="author">
               <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-              <span class="main-author-name">Danielle Brooks</span>
+              <span class="main-author-name"><a href="../author/danielle-brooks.html">Danielle Brooks</a></span>
               <span class="separator">|</span>
               <span class="main-author-date">
-                <span>Senior Editor</span>
+                <span>Senior Policy & US Markets Analyst</span>
                 <span>•</span>
                 <span> Feb. 20, 2026</span>
               </span>
             </div>
 
             <!-- Right: Share icons -->
-            <div class="share-actions">
+            <!-- <div class="share-actions">
 
               <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
               <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
               <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
               <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-            </div>
+            </div> -->
           </div>
 
         </article>
@@ -210,11 +212,23 @@
               <img src="../images/file-share.svg" alt="share" class="social-btn" />
               <span class="share-label">SHARE</span>
               <div class="share-list-icons">
-                <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
-                <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                <img src="../images/print.svg" alt="print" class="social-btn" />
-                <a class="social-btn">⋯</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html&quote=Canadians%20Decline%20Travel%20to%20U.S.%3A%20Disney%20Alternatives%20in%20Focus"
+                  target="_blank" class="social-btn">
+                  <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html&text=Canadians%20Decline%20Travel%20to%20U.S.%3A%20Disney%20Alternatives%20in%20Focus"
+                  target="_blank" class="social-btn">
+                  <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Canadians%20Decline%20Travel%20to%20U.S.%3A%20Disney%20Alternatives%20in%20Focus.%20https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                </a>
+
               </div>
             </aside>
 
@@ -351,14 +365,22 @@
               </div>
 
               <div class="share-right">
-                <a class="share-btn fb">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html&quote=Canadians%20Decline%20Travel%20to%20U.S.%3A%20Disney%20Alternatives%20in%20Focus"
+                  target="_blank" class="share-btn fb">
                   <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
                   <span>Facebook</span></a>
-                <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter" class="social-btn" />
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html&text=Canadians%20Decline%20Travel%20to%20U.S.%3A%20Disney%20Alternatives%20in%20Focus"
+                  target="_blank" class="share-btn x">
+                  <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
                 </a>
-                <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail" class="social-btn" /></a>
-                <a class="share-btn print"><img src="../images/print-white.svg" alt="printer" class="social-btn" /></a>
-                <a class="share-btn more">⋯</a>
+                <a href="https://api.whatsapp.com/send?text=Canadians%20Decline%20Travel%20to%20U.S.%3A%20Disney%20Alternatives%20in%20Focus.%20https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html"
+                  target="_blank" class="share-btn whatsapp">
+                  <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/markets/canadians-lead-decline-in-travel-to-us-disney-alternatives.html"
+                  target="_blank" class="share-btn linkedin">
+                  <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                </a>
               </div>
             </div>
 
@@ -426,20 +448,22 @@
             <h3>Popular news</h3>
             <div class="popular-image-wrapper">
               <img src="../images/news/alphabet-q4-earnings-google-cloud-ai-spending-0.webp" alt="" />
-              <span class="badge-technology">Health</span>
+              <span class="badge-technology">Markets</span>
             </div>
-            <p class="sub-title">
-              Alphabet Q4 Earnings Beat Expectations as Google Cloud Surges 48% on AI Demand
-            </p>
+            <a href="../markets/alphabet-q4-earnings-google-cloud-ai-spending.html">
+              <p class="sub-title">
+                Alphabet Q4 Earnings Beat Expectations as Google Cloud Surges 48% on AI Demand
+              </p>
+            </a>
             <div class="author">
               <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
-              <span class="name">Amanda Whitaker</span>
+              <span class="name"><a href="../author/amanda-whitaker.html">Amanda Whitaker</a></span>
               <span class="separator">|</span>
               <span class="main-author-date">Feb. 22, 2026</span>
 
             </div>
 
-          
+
           </section>
 
 
@@ -459,14 +483,14 @@
             <img src="../images/news/new-kraft-heinz-ceo-faces-difficult-choice-split-or-double-down-0.webp" alt="" />
             <span class="badge red">Markets</span>
           </div>
-          <a href="../business/new-kraft-heinz-ceo-faces-difficult-choice-split-or-double-down.html">
+          <a href="../markets/new-kraft-heinz-ceo-faces-difficult-choice-split-or-double-down.html">
             <h4>
               New Kraft Heinz CEO’s Difficult Choice: Split or Double Down
             </h4>
           </a>
           <div class="author">
             <img src="../images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
-            <span class="name">Nicole Patterson</span>
+            <span class="name"><a href="../author/nicole-patterson.html">Nicole Patterson</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 19, 2026</span>
           </div>
@@ -477,12 +501,12 @@
             <img src="../images/news/us-senator-ruben-gallego-journey-from-janitor-to-congress-0.webp" alt="" />
             <span class="badge red">Markets</span>
           </div>
-          <a href="../business/us-senator-ruben-gallego-journey-from-janitor-to-congress.html">
+          <a href="../markets/us-senator-ruben-gallego-journey-from-janitor-to-congress.html">
             <h4>US Senator Ruben Gallego on His Journey From Janitor to Congress</h4>
           </a>
           <div class="author">
             <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-            <span class="name">Danielle Brooks</span>
+            <span class="name"><a href="../author/danielle-brooks.html">Danielle Brooks</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 17, 2026</span>
           </div>
@@ -494,14 +518,14 @@
               alt="" />
             <span class="badge red">Markets</span>
           </div>
-          <a href="../business/wall-street-week-ahead-walmart-earnings-economic-data-ai-volatility.html">
+          <a href="../markets/wall-street-week-ahead-walmart-earnings-economic-data-ai-volatility.html">
             <h4>Wall Street Week Ahead: Walmart, Economic Data Await Investors Confronting AI ‘Whack-a-Mole’</h4>
           </a>
           <div class="author">
-            <img src="../images/ryan-sillers.jpg" alt="Ryan Sillers" />
-            <span class="name">Ryan Sillers</span>
+            <img src="../images/authors/christopher-reed.webp" alt="Christopher Reed" />
+            <span class="name"><a href="../author/christopher-reed.html">Christopher Reed</a></span>
             <span class="separator">|</span>
-            <span class="date">Aug 28, 21</span>
+            <span class="date">Mar. 6, 2026</span>
           </div>
         </article>
 
@@ -510,14 +534,14 @@
             <img src="../images/news/young-couples-embracing-prenups-marriage-finances.webp" alt="" />
             <span class="badge red">Markets</span>
           </div>
-          <a href="../business/young-couples-embracing-prenups-marriage-finances.html">
+          <a href="../markets/young-couples-embracing-prenups-marriage-finances.html">
             <h4>
               Why Young People Are Breaking the Ultimate Money Taboo
             </h4>
           </a>
           <div class="author">
             <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-            <span class="name">Danielle Brooks</span>
+            <span class="name"><a href="../author/danielle-brooks.html">Danielle Brooks</a></span>
             <span class="separator">|</span>
             <span class="date">Feb. 20, 2026</span>
           </div>
@@ -579,12 +603,13 @@
             <!-- Information Section -->
             <div class="footer-mid-right">
               <ul>
-                <li><a href="../about-us.html" style="color: inherit; text-decoration: none;">About us</a></li>
-                <li><a href="../contact-us.html" style="color: inherit; text-decoration: none;">Contact us</a></li>
-                <li><a href="../privacy-policy.html" style="color: inherit; text-decoration: none;">Privacy Policy</a>
-                </li>
-                <li><a href="../terms-and-conditions.html" style="color: inherit; text-decoration: none;">Terms and
-                    conditions</a></li>
+                <li><a href="../about-us.html">About us</a></li>
+                <li><a href="../contact-us.html">Contact us</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../our-team.html">Our Team</a></li>
+                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
               </ul>
             </div>
           </div>

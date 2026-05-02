@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="Terms and Conditions, Terms of Use, CorporateWire Legal, Content Sharing, Journalistic Integrity, User Agreement" />
     <link rel="canonical" href="https://corporatewire.org/terms-and-conditions.html" />
-
+    <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
     <!-- Open Graph Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://corporatewire.org/terms-and-conditions.html" />
@@ -28,6 +28,7 @@
     <meta name="twitter:image" content="https://corporatewire.org/images/news/corporatewire-logo.webp" />
 
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <style>
         /* Legal-style alignment aligned with index.html */
         .legal-container {
@@ -177,7 +178,7 @@
         </div>
 
         <div class="header-right">
-            <span class="header-date">Friday, March 6, 2026</span>
+            <span class="header-date" id="currentDate"></span>
         </div>
     </header>
 
@@ -257,88 +258,92 @@
         </div>
     </main>
 
-     <footer>
-    <div class="footer">
-      <div class="footer-sec">
-        <div class="footer-header">
-          <div class="footer-categories">
-            <span class="dot"></span>
-            <span class="footer-title">Categories</span>
-          </div>
-          <ul class="footer-categories-list">
-            <li><a href="us.html">U.S News</a></li>
-            <li><a href="business.html">Business</a></li>
-            <li><a href="economy.html">Economy</a></li>
-            <li><a href="markets.html">Markets</a></li>
-            <li><a href="finance.html">Finance</a></li>
-            <li><a href="technology.html">Technology</a></li>
-            <li><a href="health.html">Health</a></li>
-            <li><a href="media.html">Media</a></li>
-          </ul>
+    <footer>
+        <div class="footer">
+            <div class="footer-sec">
+                <div class="footer-header">
+                    <div class="footer-categories">
+                        <span class="dot"></span>
+                        <span class="footer-title">Categories</span>
+                    </div>
+                    <ul class="footer-categories-list">
+                        <li><a href="us.html">U.S News</a></li>
+                        <li><a href="business.html">Business</a></li>
+                        <li><a href="economy.html">Economy</a></li>
+                        <li><a href="markets.html">Markets</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="health.html">Health</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-content">
+                    <!-- LEFT -->
+                    <div class="footer-left">
+                        <h4>About US</h4>
+                        <p>
+                            CorporateWire is the leading global authority on business and technology, providing breaking
+                            news and
+                            expert insights to over 20 million monthly readers.
+                        </p>
+
+                        <div class="footer-icons">
+                            <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon"
+                                    src="images/instagram-icon.svg" alt="instagram" /></a>
+                            <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon"
+                                    src="images/twitter-icon.svg" alt="x" /></a>
+                            <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon"
+                                    src="images/substack.svg" alt="substack" /></a>
+                            <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon"
+                                    src="images/medium.svg" alt="medium" /></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-mid-section">
+                        <!-- Information Section -->
+                        <div class="footer-mid-right">
+                            <ul>
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="contact-us.html">Contact us</a></li>
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
+                                <li><a href="our-team.html">Our Team</a></li>
+                                <li><a href="correction-policy.html">Correction Policy</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="footer-right">
+                        <h4>Subscribe US</h4>
+                        <p>
+                            Subscribe to our newsletter to get our newest articles instantly!
+                        </p>
+
+                        <form id="newsletter-form">
+                            <div class="subscribe-box">
+                                <input type="email" id="newsletter-email" placeholder="Your email address" required />
+                                <button type="submit" id="newsletter-btn">Sign Up Now</button>
+                            </div>
+
+                            <label class="terms">
+                                <input type="checkbox" id="newsletter-agree" required />
+                                <span>I have read and agree to the terms & conditions</span>
+                            </label>
+                        </form>
+                        <div id="newsletter-message"
+                            style="font-size: 12px; margin-top: 10px; display: none; font-family: 'WorkSans', Arial, sans-serif;">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-divider"></div>
-        <div class="footer-content">
-          <!-- LEFT -->
-          <div class="footer-left">
-            <h4>About US</h4>
-            <p>
-              CorporateWire is the leading global authority on business and technology, providing breaking news and
-              expert insights to over 20 million monthly readers.
-            </p>
-
-            <div class="footer-icons">
-              <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon"
-                  src="images/instagram-icon.svg" alt="instagram" /></a>
-              <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon"
-                  src="images/twitter-icon.svg" alt="x" /></a>
-              <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon"
-                  src="images/substack.svg" alt="substack" /></a>
-              <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon" src="images/medium.svg"
-                  alt="medium" /></a>
-            </div>
-          </div>
-
-          <div class="footer-mid-section">
-            <!-- Information Section -->
-            <div class="footer-mid-right">
-              <ul>
-                <li><a href="about-us.html">About us</a></li>
-                <li><a href="contact-us.html">Contact us</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="terms-and-conditions.html">Terms and conditions</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- RIGHT -->
-          <div class="footer-right">
-            <h4>Subscribe US</h4>
-            <p>
-              Subscribe to our newsletter to get our newest articles instantly!
-            </p>
-
-            <form id="newsletter-form">
-              <div class="subscribe-box">
-                <input type="email" id="newsletter-email" placeholder="Your email address" required />
-                <button type="submit" id="newsletter-btn">Sign Up Now</button>
-              </div>
-
-              <label class="terms">
-                <input type="checkbox" id="newsletter-agree" required />
-                <span>I have read and agree to the terms & conditions</span>
-              </label>
-            </form>
-            <div id="newsletter-message"
-              style="font-size: 12px; margin-top: 10px; display: none; font-family: 'WorkSans', Arial, sans-serif;">
-            </div>
-          </div>
+        <div class="footer-bottom">
+            &copy; Copyright 2026 CORPORATEWIRE. All Rights Reserved.
         </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      &copy; Copyright 2026 CORPORATEWIRE. All Rights Reserved.
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

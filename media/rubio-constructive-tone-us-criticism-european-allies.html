@@ -12,6 +12,8 @@
   <link rel="canonical"
     href="https://corporatewire.org/media/rubio-constructive-tone-us-criticism-european-allies.html" />
 
+  <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article" />
   <meta property="og:url"
@@ -36,6 +38,7 @@
 
   <link rel="stylesheet" href="../detail.css" />
   <link rel="stylesheet" href="../style.css" />
+  <script src="script.js" defer></script>
 
   <script type="application/ld+json">
     {
@@ -60,7 +63,7 @@
 
   <!-- header section -->
   <input type="checkbox" id="menu-toggle" />
- <header class="header">
+  <header class="header">
     <!-- Left Icons -->
     <div class="header-left">
       <a href="https://substack.com/@corporatewire" target="_blank">
@@ -91,7 +94,7 @@
 
     <!-- Right Section (Date) -->
     <div class="header-right">
-      <span class="header-date">Friday, March 6, 2026</span>
+      <span class="header-date" id="currentDate"></span>
     </div>
   </header>
 
@@ -144,10 +147,11 @@
       <section class="hero">
         <img src="/images/news/rubio-constructive-tone-us-criticism-european-allies.webp" alt="NASA Wet Dress Rehearsal"
           class="hero-img" />
-        <p class="breadcrump">
-          Home > Media >
+        <p class="breadcrumb">
+          Home / Media /
           Rubio Strikes Constructive Tone but Persists in U.S. Criticism of European Allies
         </p>
+
         <div class="overlay"></div>
 
         <article class="content">
@@ -156,30 +160,31 @@
           <h1>Rubio Strikes Constructive Tone but Persists in U.S. Criticism of European Allies</h1>
 
           <p class="excerpt">
-   Senator Rubio has struck a more constructive tone while maintaining his criticism of European allies' security spending. The shift in rhetoric comes as the U.S. reevaluates its strategic partnerships.  </p>
+            Senator Rubio has struck a more constructive tone while maintaining his criticism of European allies'
+            security spending. The shift in rhetoric comes as the U.S. reevaluates its strategic partnerships. </p>
 
           <div class="article-header">
             <!-- Left: Author -->
             <div class="author">
               <img src="../images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
-              <span class="main-author-name">Nicole Patterson</span>
+              <span class="main-author-name"><a href="../author/nicole-patterson.html">Nicole Patterson</a></span>
               <span class="separator">|</span>
               <span class="main-author-date">
-                <span>Senior Editor</span>
+                <span>Chief Economic & Markets Correspondent</span>
                 <span>•</span>
                 <span>Feb. 20, 2026</span>
               </span>
             </div>
 
             <!-- Right: Share icons -->
-            <div class="share-actions">
+            <!-- <div class="share-actions">
 
               <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
               <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
               <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
               <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-            </div>
+            </div> -->
           </div>
 
         </article>
@@ -195,11 +200,23 @@
               <img src="../images/file-share.svg" alt="share" class="social-btn" />
               <span class="share-label">SHARE</span>
               <div class="share-list-icons">
-                <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
-                <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                <img src="../images/print.svg" alt="print" class="social-btn" />
-                <a class="social-btn">⋯</a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/media/rubio-constructive-tone-us-criticism-european-allies.html&quote=Rubio%20Strikes%20Constructive%20Tone%20on%20U.S.%20Criticism%20of%20European%20Allies"
+                  target="_blank" class="social-btn">
+                  <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/media/rubio-constructive-tone-us-criticism-european-allies.html&text=Rubio%20Strikes%20Constructive%20Tone%20on%20U.S.%20Criticism%20of%20European%20Allies"
+                  target="_blank" class="social-btn">
+                  <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Rubio%20Strikes%20Constructive%20Tone%20on%20U.S.%20Criticism%20of%20European%20Allies.%20https://corporatewire.org/media/rubio-constructive-tone-us-criticism-european-allies.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/media/rubio-constructive-tone-us-criticism-european-allies.html"
+                  target="_blank" class="social-btn">
+                  <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                </a>
+
               </div>
             </aside>
 
@@ -300,222 +317,195 @@
 
               </div>
             </div>
+          </div>
 
-            <!-- scrolling funtionallity of sidebar  -->
-            <div id="sidebar-stop"></div>
+          <div class="bottom">
+            <div class="share-article">
+              <div class="share-left">
+                <img src="../images/file-share.svg" alt="file-share" class="social-btn" />
+                <span class="share-text">Share This Article</span>
+              </div>
 
-            <div class="sub-section">
-              <p class="heading-text">
-                Broader implications for U.S. foreign policy
-              </p>
-
-              <p class="most-common-paragraph">
-                Rubio’s comments highlight a broader trend in U.S. foreign policy, where bipartisan support for
-                alliances increasingly comes with clearer expectations and fewer assumptions of automatic alignment.
-                Analysts say this reflects both shifting global power dynamics and changing voter attitudes toward
-                international commitments.
-              </p>
-
-              <p class="dropcap-paragraph">
-                As debates over defense spending, economic coordination, and strategic autonomy continue, Rubio’s
-                framing of criticism as constructive partnership may become a defining feature of future transatlantic
-                relations.
-              </p>
-
-              <p class="dropcap-paragraph">
-                For now, the message from Washington is clear: the United States remains committed to Europe — but
-                expects its allies to meet the challenges of a changing world alongside it, not behind it.</p>
+              <div class="share-right">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/media/ethiopia-revokes-accreditation-reuters-journalists.html&quote=Ethiopia%20Revokes%20Accreditation%20of%20Reuters%20Journalists"
+                  target="_blank" class="share-btn fb">
+                  <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
+                  <span>Facebook</span></a>
+                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/media/ethiopia-revokes-accreditation-reuters-journalists.html&text=Ethiopia%20Revokes%20Accreditation%20of%20Reuters%20Journalists"
+                  target="_blank" class="share-btn x">
+                  <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
+                </a>
+                <a href="https://api.whatsapp.com/send?text=Ethiopia%20Revokes%20Accreditation%20of%20Reuters%20Journalists.%20https://corporatewire.org/media/ethiopia-revokes-accreditation-reuters-journalists.html"
+                  target="_blank" class="share-btn whatsapp">
+                  <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                </a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/media/ethiopia-revokes-accreditation-reuters-journalists.html"
+                  target="_blank" class="share-btn linkedin">
+                  <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                </a>
+              </div>
             </div>
 
-
           </div>
-    </div>
+        </main>
 
-    <div class="bottom">
-      <div class="share-article">
-        <div class="share-left">
-          <img src="../images/file-share.svg" alt="file-share" class="social-btn" />
-          <span class="share-text">Share This Article</span>
-        </div>
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="sidebar-col">
+          <section class="social-follow">
+            <h2>Follow US</h2>
+            <p class="subtitle">Find US on Social Medias</p>
 
-        <div class="share-right">
-          <a class="share-btn fb">
-            <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
-            <span>Facebook</span></a>
-          <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter" class="social-btn" />
-          </a>
-          <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail" class="social-btn" /></a>
-          <a class="share-btn print"><img src="../images/print-white.svg" alt="printer" class="social-btn" /></a>
-          <a class="share-btn more">⋯</a>
-        </div>
-      </div>
-
-
-    </div>
-    </main>
-
-    <!-- RIGHT: SIDEBAR -->
-    <aside class="sidebar-col">
-      <section class="social-follow">
-        <h2>Follow US</h2>
-        <p class="subtitle">Find US on Social Medias</p>
-
-        <div class="social-grid">
-          <div class="social-item">
-            <a href="https://www.instagram.com/corporatewire/" target="_blank"
-              style="text-decoration: none; color: inherit;">
-              <div class="icon-circle instagram-social">
-                <img src="../images/instagram-white.svg" alt="instagram" class="follow-btn" />
+            <div class="social-grid">
+              <div class="social-item">
+                <a href="https://www.instagram.com/corporatewire/" target="_blank"
+                  style="text-decoration: none; color: inherit;">
+                  <div class="icon-circle instagram-social">
+                    <img src="../images/instagram-white.svg" alt="instagram" class="follow-btn" />
+                  </div>
+                  <h3>Instagram</h3>
+                  <span>Follow</span>
+                </a>
               </div>
-              <h3>Instagram</h3>
-              <span>Follow</span>
-            </a>
-          </div>
-          <div class="social-item">
-            <a href="https://x.com/Corporatew40377" target="_blank" style="text-decoration: none; color: inherit;">
-              <div class="icon-circle x-twitter">
-                <img src="../images/X-white.svg" alt="twitter" class="follow-btn" />
+              <div class="social-item">
+                <a href="https://x.com/Corporatew40377" target="_blank" style="text-decoration: none; color: inherit;">
+                  <div class="icon-circle x-twitter">
+                    <img src="../images/X-white.svg" alt="twitter" class="follow-btn" />
+                  </div>
+                  <h3>X</h3>
+                  <span>Follow</span>
+                </a>
               </div>
-              <h3>X</h3>
-              <span>Follow</span>
-            </a>
-          </div>
-          <div class="social-item">
-            <a href="https://medium.com/@corporatewire" target="_blank" style="text-decoration: none; color: inherit;">
-              <div class="icon-circle medium">
-                <img src="../images/medium-white.svg" alt="medium" class="follow-btn" />
+              <div class="social-item">
+                <a href="https://medium.com/@corporatewire" target="_blank"
+                  style="text-decoration: none; color: inherit;">
+                  <div class="icon-circle medium">
+                    <img src="../images/medium-white.svg" alt="medium" class="follow-btn" />
+                  </div>
+                  <h3>Medium</h3>
+                  <span>Follow</span>
+                </a>
               </div>
-              <h3>Medium</h3>
-              <span>Follow</span>
-            </a>
-          </div>
-          <div class="social-item">
-            <a href="https://substack.com/@corporatewire" target="_blank"
-              style="text-decoration: none; color: inherit;">
-              <div class="icon-circle substack">
-                <img src="../images/substack-white.svg" alt="substack" class="follow-btn" />
+              <div class="social-item">
+                <a href="https://substack.com/@corporatewire" target="_blank"
+                  style="text-decoration: none; color: inherit;">
+                  <div class="icon-circle substack">
+                    <img src="../images/substack-white.svg" alt="substack" class="follow-btn" />
+                  </div>
+                  <h3>Substack</h3>
+                  <span>Subscribe</span>
+                </a>
               </div>
-              <h3>Substack</h3>
-              <span>Subscribe</span>
-            </a>
-          </div>
-        </div>
-      </section>
+            </div>
+          </section>
 
-   <section class="ad-detail-section">
+          <section class="ad-detail-section">
             <span class="ad-title">- Advertisement -</span>
             <div class="ad-image-wrapper">
               <img src="../images/news/ad-theopenknowledge.svg" alt="ad-theopenknowledge" />
             </div>
           </section>
 
-      <section class="popular-news">
-        <h3>Popular news</h3>
-        <div class="popular-image-wrapper">
-          <img src="../images/news/berlin-film-festival-yellow-letters-democracy-warning-0.webp" alt="" />
-          <span class="badge-technology">Technology</span>
-        </div>
-        <p class="sub-title">
-          Berlin Film Festival Entry ‘Yellow Letters’ Sends Warning About Democracy, Says Director
-        </p>
-        <div class="author">
-          <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
-          <span class="name">Matthew Collins</span>
-          <span class="separator">|</span>
-          <span class="main-author-date">Feb. 17, 2026</span>
-          <svg class="icon save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-          </svg>
-        </div>
+          <section class="popular-news">
+            <h3>Popular news</h3>
+            <div class="popular-image-wrapper">
+              <img src="../images/news/berlin-film-festival-yellow-letters-democracy-warning-0.webp" alt="" />
+              <span class="badge-technology">Media</span>
+            </div>
+            <a href="../media/berlin-film-festival-yellow-letters-democracy-warning.html">
+              <p class="sub-title">
+                Berlin Film Festival Entry ‘Yellow Letters’ Sends Warning About Democracy, Says Director
+              </p>
+            </a>
+            <div class="author">
+              <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
+              <span class="name"><a href="../author/matthew-collins.html"> Matthew Collins</a></span>
+              <span class="separator">|</span>
+              <span class="main-author-date">Feb. 17, 2026</span>
+              <svg class="icon save" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+              </svg>
+            </div>
 
+          </section>
+        </aside>
       </section>
-
-
-      <section class="ad-detail-section">
-        <span class="ad-title">- Advertisement -</span>
-        <div class="ad-image-wrapper">
-          <img src="../images/mirrorstandard-ad.webp" alt="newsflashpro-ad" />
-        </div>
-      </section>
-    </aside>
-    </section>
-  </div>
-
-  <div class="border"></div>
-  <div class="related-news">
-    <div class="section-header">
-      <span class="dot"></span>
-      <h2>You might also like</h2>
     </div>
-    <div class="news-grid">
-      <article class="news-card">
-        <div class="image-wrapper">
-          <img src="../images/news/los-angeles-museum-immersive-ponyo-exhibit-miyazaki-0.webp" alt="" />
-          <span class="badge red">Media</span>
-        </div>
-        <a href="../business/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html">
-          <h4>Los Angeles Museum Unveils Immersive ‘Ponyo’ Exhibit by Hayao Miyazaki
-          </h4>
-        </a>
-        <div class="author">
-          <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
-          <span class="name">Matthew Collins</span>
-          <span class="separator">|</span>
-          <span class="date">Feb. 17, 2026</span>
-        </div>
-      </article>
 
-      <article class="news-card">
-        <div class="image-wrapper">
-          <img src="../images/news/ai-film-school-trains-next-generation-hollywood-moviemakers.webp" alt="" />
-          <span class="badge red">Media</span>
-        </div>
-        <a href="../business/ai-film-school-trains-next-generation-hollywood-moviemakers.html">
-          <h4>AI Film School Trains Next Generation of Hollywood Moviemakers</h4>
-        </a>
-        <div class="author">
-          <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
-          <span class="name">Matthew Collins</span>
-          <span class="separator">|</span>
-          <span class="date">Feb. 27, 2026</span>
-        </div>
-      </article>
+    <div class="border"></div>
+    <div class="related-news">
+      <div class="section-header">
+        <span class="dot"></span>
+        <h2>You might also like</h2>
+      </div>
+      <div class="news-grid">
+        <article class="news-card">
+          <div class="image-wrapper">
+            <img src="../images/news/los-angeles-museum-immersive-ponyo-exhibit-miyazaki-0.webp" alt="" />
+            <span class="badge red">Media</span>
+          </div>
+          <a href="../media/los-angeles-museum-immersive-ponyo-exhibit-miyazaki.html">
+            <h4>Los Angeles Museum Unveils Immersive ‘Ponyo’ Exhibit by Hayao Miyazaki
+            </h4>
+          </a>
+          <div class="author">
+            <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
+            <span class="name"><a href="../author/matthew-collins.html"> Matthew Collins</a></span>
+            <span class="separator">|</span>
+            <span class="date">Feb. 17, 2026</span>
+          </div>
+        </article>
 
-      <article class="news-card">
-        <div class="image-wrapper">
-          <img src="../images/news/uk-starmer-seeks-greater-powers-regulate-online-access.webp" alt="" />
-          <span class="badge red">Media</span>
-        </div>
-        <a href="../business/uk-starmer-seeks-greater-powers-regulate-online-access.html">
-          <h4>UK’s Starmer Seeks Greater Powers to Regulate Online Access</h4>
-        </a>
-        <div class="author">
-          <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker">
-          <span class="name">Amanda Whitaker</span>
-          <span class="separator">|</span>
-          <span class="date">Feb. 20, 2026</span>
-        </div>
-      </article>
+        <article class="news-card">
+          <div class="image-wrapper">
+            <img src="../images/news/ai-film-school-trains-next-generation-hollywood-moviemakers.webp" alt="" />
+            <span class="badge red">Media</span>
+          </div>
+          <a href="../media/ai-film-school-trains-next-generation-hollywood-moviemakers.html">
+            <h4>AI Film School Trains Next Generation of Hollywood Moviemakers</h4>
+          </a>
+          <div class="author">
+            <img src="../images/authors/matthew-collins.webp" alt="Matthew Collins" />
+            <span class="name"><a href="../author/matthew-collins.html"> Matthew Collins</a></span>
+            <span class="separator">|</span>
+            <span class="date">Feb. 27, 2026</span>
+          </div>
+        </article>
 
-      <article class="news-card">
-        <div class="image-wrapper">
-          <img src="../images/news/rubio-us-child-of-europe-critical-friend-allies.webp" alt="" />
-          <span class="badge red">Media</span>
-        </div>
-        <a href="../business/rubio-us-child-of-europe-critical-friend-allies.html">
-          <h4>
-            Rubio Casts U.S., the ‘Child of Europe,’ as Critical Friend to Allies
-          </h4>
-        </a>
-        <div class="author">
-          <img src="../images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
-          <span class="name">Nicole Patterson</span>
-          <span class="separator">|</span>
-          <span class="date">Feb. 23, 2026</span>
-        </div>
-      </article>
+        <article class="news-card">
+          <div class="image-wrapper">
+            <img src="../images/news/uk-starmer-seeks-greater-powers-regulate-online-access.webp" alt="" />
+            <span class="badge red">Media</span>
+          </div>
+          <a href="../media/uk-starmer-seeks-greater-powers-regulate-online-access.html">
+            <h4>UK’s Starmer Seeks Greater Powers to Regulate Online Access</h4>
+          </a>
+          <div class="author">
+            <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker">
+            <span class="name"><a href="../author/amanda-whitaker.html">Amanda Whitaker</a></span>
+            <span class="separator">|</span>
+            <span class="date">Feb. 20, 2026</span>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="image-wrapper">
+            <img src="../images/news/rubio-us-child-of-europe-critical-friend-allies.webp" alt="" />
+            <span class="badge red">Media</span>
+          </div>
+          <a href="../media/rubio-us-child-of-europe-critical-friend-allies.html">
+            <h4>
+              Rubio Casts U.S., the ‘Child of Europe,’ as Critical Friend to Allies
+            </h4>
+          </a>
+          <div class="author">
+            <img src="../images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
+            <span class="name"><a href="../author/nicole-patterson.html">Nicole Patterson</a></span>
+            <span class="separator">|</span>
+            <span class="date">Feb. 23, 2026</span>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
   </div>
 
   <!-- footer -->
@@ -530,14 +520,14 @@
           </div>
 
           <ul class="footer-categories-list">
-            <li>U.S News</li>
-            <li>Business</li>
-            <li>Economy</li>
-            <li>Markets</li>
-            <li>Finance</li>
-            <li>Technology</li>
-            <li>Health</li>
-            <li>Media</li>
+            <li><a href="../us.html" style="color: inherit; text-decoration: none;">U.S News</a></li>
+            <li><a href="../business.html" style="color: inherit; text-decoration: none;">Business</a></li>
+            <li><a href="../economy.html" style="color: inherit; text-decoration: none;">Economy</a></li>
+            <li><a href="../markets.html" style="color: inherit; text-decoration: none;">Markets</a></li>
+            <li><a href="../finance.html" style="color: inherit; text-decoration: none;">Finance</a></li>
+            <li><a href="../technology.html" style="color: inherit; text-decoration: none;">Technology</a></li>
+            <li><a href="../health.html" style="color: inherit; text-decoration: none;">Health</a></li>
+            <li><a href="../media.html" style="color: inherit; text-decoration: none;">Media</a></li>
           </ul>
         </div>
 
@@ -554,11 +544,11 @@
             </p>
 
 
-           <div class="footer-icons">
+            <div class="footer-icons">
               <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon"
                   src="../images/instagram-icon.svg" alt="instagram" /></a>
-              <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon" src="../images/twitter-icon.svg"
-                  alt="x" /></a>
+              <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon"
+                  src="../images/twitter-icon.svg" alt="x" /></a>
               <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon"
                   src="../images/substack.svg" alt="substack" /></a>
               <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon"
@@ -571,10 +561,13 @@
             <!-- Information Section -->
             <div class="footer-mid-right">
               <ul>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Privacy Policy</li>
-                <li>Terms and conditions</li>
+                <li><a href="../about-us.html">About us</a></li>
+                <li><a href="../contact-us.html">Contact us</a></li>
+                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                <li><a href="../our-team.html">Our Team</a></li>
+                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
               </ul>
             </div>
           </div>

@@ -11,6 +11,7 @@
         content="treasury booz allen, trump tax leak, charles littlejohn, scott bessent, data privacy, corporatewire, danielle brooks, business news 2026" />
     <link rel="canonical"
         href="https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html" />
+    <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article" />
@@ -32,6 +33,7 @@
 
     <link rel="stylesheet" href="../detail.css" />
     <link rel="stylesheet" href="../style.css" />
+    <script src="script.js" defer></script>
 
     <!-- Structured Data: NewsArticle -->
     <script type="application/ld+json">
@@ -101,7 +103,7 @@
 
         <!-- Right Section (Date)-->
         <div class="header-right">
-            <span class="header-date">Friday, March 6, 2026</span>
+            <span class="header-date" id="currentDate"></span>
         </div>
     </header>
 
@@ -154,8 +156,8 @@
             <section class="hero">
                 <img src="/images/news/treasury-cuts-booz-allen-contracts-trump-tax-leak-0.webp"
                     alt="NASA Wet Dress Rehearsal" class="hero-img" />
-                <p class="breadcrump">
-                    Home > Business >
+                <p class="breadcrumb">
+                    Home / Business /
                     Treasury Cuts $21 Million in Booz Allen Contracts After Trump Tax Leak Fallout
                 </p>
 
@@ -178,21 +180,21 @@
                                     style="color: inherit; text-decoration: none;">Danielle Brooks</a></span>
                             <span class="separator">|</span>
                             <span class="main-author-date">
-                                <span>Senior Editor</span>
-                                <span>•</span>
+                                <span>Senior Policy & US Markets Analyst</span>
+                                <span>|</span>
                                 <span> Feb. 28, 2026</span>
                             </span>
                         </div>
 
                         <!-- Right: Share icons -->
-                        <div class="share-actions">
+                        <!--<div class="share-actions">
 
                             <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
                             <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
                             <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
                             <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-                        </div>
+                        </div>  -->
                     </div>
 
                 </article>
@@ -208,11 +210,23 @@
                             <img src="../images/file-share.svg" alt="share" class="social-btn" />
                             <span class="share-label">SHARE</span>
                             <div class="share-list-icons">
-                                <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
-                                <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                                <img src="../images/print.svg" alt="print" class="social-btn" />
-                                <a class="social-btn">⋯</a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html&quote=Treasury%20Cuts%20Booz%20Allen%20Contracts%20Over%20Trump%20Tax%20Leak.%20The%20US%20Treasury%20cancels%20%2421M%20in%20Booz%20Allen%20contracts%20after%20a%20former%20employee%20leaked%20Donald%20Trump%E2%80%99s%20tax%20returns.%20Read%20more%20on%20CorporateWire."
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html&text=Treasury%20Cuts%20Booz%20Allen%20Contracts%20Over%20Trump%20Tax%20Leak.%20The%20US%20Treasury%20cancels%20%2421M%20in%20Booz%20Allen%20contracts%20after%20a%20former%20employee%20leaked%20Donald%20Trump%E2%80%99s%20tax%20returns.%20Read%20more%20on%20CorporateWire."
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
+                                </a>
+                                <a href="https://api.whatsapp.com/send?text=Treasury%20Cuts%20Booz%20Allen%20Contracts%20Over%20Trump%20Tax%20Leak.%20The%20US%20Treasury%20cancels%20%2421M%20in%20Booz%20Allen%20contracts%20after%20a%20former%20employee%20leaked%20Donald%20Trump%E2%80%99s%20tax%20returns.%20Read%20more%20on%20CorporateWire.%20https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html"
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                                </a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html"
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                                </a>
+
                             </div>
                         </aside>
 
@@ -339,17 +353,22 @@
                             </div>
 
                             <div class="share-right">
-                                <a class="share-btn fb">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html&quote=Treasury%20Cuts%20Booz%20Allen%20Contracts%20Over%20Trump%20Tax%20Leak.%20The%20US%20Treasury%20cancels%20%2421M%20in%20Booz%20Allen%20contracts%20after%20a%20former%20employee%20leaked%20Donald%20Trump%E2%80%99s%20tax%20returns.%20Read%20more%20on%20CorporateWire."
+                                    target="_blank" class="share-btn fb">
                                     <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
                                     <span>Facebook</span></a>
-                                <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter"
-                                        class="social-btn" />
+                                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html&text=Treasury%20Cuts%20Booz%20Allen%20Contracts%20Over%20Trump%20Tax%20Leak.%20The%20US%20Treasury%20cancels%20%2421M%20in%20Booz%20Allen%20contracts%20after%20a%20former%20employee%20leaked%20Donald%20Trump%E2%80%99s%20tax%20returns.%20Read%20more%20on%20CorporateWire."
+                                    target="_blank" class="share-btn x">
+                                    <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
                                 </a>
-                                <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail"
-                                        class="social-btn" /></a>
-                                <a class="share-btn print"><img src="../images/print-white.svg" alt="printer"
-                                        class="social-btn" /></a>
-                                <a class="share-btn more">⋯</a>
+                                <a href="https://api.whatsapp.com/send?text=Treasury%20Cuts%20Booz%20Allen%20Contracts%20Over%20Trump%20Tax%20Leak.%20The%20US%20Treasury%20cancels%20%2421M%20in%20Booz%20Allen%20contracts%20after%20a%20former%20employee%20leaked%20Donald%20Trump%E2%80%99s%20tax%20returns.%20Read%20more%20on%20CorporateWire.%20https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html"
+                                    target="_blank" class="share-btn whatsapp">
+                                    <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                                </a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html"
+                                    target="_blank" class="share-btn linkedin">
+                                    <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                                </a>
                             </div>
                         </div>
 
@@ -422,7 +441,8 @@
                             <span class="badge-technology">Business</span>
                         </div>
                         <a href="../business/trump-administration-usa-rare-earth-investment.html">
-                            <p class="sub-title">Trump Administration Takes 10% Stake in USA Rare Earth in $1.6 Billion Deal
+                            <p class="sub-title">Trump Administration Takes 10% Stake in USA Rare Earth in $1.6 Billion
+                                Deal
                             </p>
                         </a>
                         <div class="author">
@@ -540,14 +560,15 @@
                     </div>
 
                     <ul class="footer-categories-list">
-                        <li>U.S News</li>
-                        <li>Business</li>
-                        <li>Economy</li>
-                        <li>Markets</li>
-                        <li>Finance</li>
-                        <li>Technology</li>
-                        <li>Health</li>
-                        <li>Media</li>
+                        <li><a href="../us.html" style="color: inherit; text-decoration: none;">U.S News</a></li>
+                        <li><a href="../business.html" style="color: inherit; text-decoration: none;">Business</a></li>
+                        <li><a href="../economy.html" style="color: inherit; text-decoration: none;">Economy</a></li>
+                        <li><a href="../markets.html" style="color: inherit; text-decoration: none;">Markets</a></li>
+                        <li><a href="../finance.html" style="color: inherit; text-decoration: none;">Finance</a></li>
+                        <li><a href="../technology.html" style="color: inherit; text-decoration: none;">Technology</a>
+                        </li>
+                        <li><a href="../health.html" style="color: inherit; text-decoration: none;">Health</a></li>
+                        <li><a href="../media.html" style="color: inherit; text-decoration: none;">Media</a></li>
                     </ul>
                 </div>
 
@@ -580,10 +601,13 @@
                         <!-- Information Section -->
                         <div class="footer-mid-right">
                             <ul>
-                                <li>About us</li>
-                                <li>Contact us</li>
-                                <li>Privacy Policy</li>
-                                <li>Terms and conditions</li>
+                                <li><a href="../about-us.html">About us</a></li>
+                                <li><a href="../contact-us.html">Contact us</a></li>
+                                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                                <li><a href="../our-team.html">Our Team</a></li>
+                                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
                             </ul>
                         </div>
                     </div>

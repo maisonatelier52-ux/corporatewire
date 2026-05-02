@@ -11,6 +11,7 @@
         content="BBVA remuneration, executive pay, Carlos Torres Vila, Onur Genc, European banking, Spanish lender, compensation" />
     <link rel="canonical"
         href="https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html" />
+    <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article" />
@@ -52,6 +53,7 @@
     </script>
     <link rel="stylesheet" href="../detail.css" />
     <link rel="stylesheet" href="../style.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -89,24 +91,25 @@
 
         <!-- Right Section (Date)-->
         <div class="header-right">
-            <span class="header-date">Friday, March 6, 2026</span>
+            <span class="header-date" id="currentDate"></span>
         </div>
     </header>
 
     <!-- categories section -->
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../us.html">U.S</a></li>
-            <li>Business<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Economy<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Press Releases<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Finance<i class="fa-solid fa-chevron-down"></i></li>
-            <li>Technology<i class="fa-solid fa-chevron-down"></i></li>
-            <li class="join">Leadership</li>
-            <li>Industry Insights</li>
-        </ul>
-    </nav>
+   <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../us.html">U.S</a></li>
+      <li><a href="../business.html">Business</a></li>
+      <li><a href="../economy.html">Economy</a></li>
+      <li><a href="../markets.html">Markets</a></li>
+
+      <li><a href="../finance.html">Finance</a></li>
+      <li><a href="../technology.html">Technology</a></li>
+      <li><a href="../health.html">Health</a></li>
+      <li><a href="../media.html">Media</a></li>
+    </ul>
+  </nav>
     <!-- Mobile / Mega Menu -->
     <div class="mega-menu" id="megaMenu">
         <div class="menu-section" style="margin-top: 25px;">
@@ -141,14 +144,14 @@
             <section class="hero">
                 <img src="/images/news/bbva-chairman-ceo-remuneration-falls-3-percent-2025.webp"
                     alt="NASA Wet Dress Rehearsal" class="hero-img" />
-                <p class="breadcrump">
-                    Home > Technology >
+                <p class="breadcrumb">
+                    Home / Finance /
                     Remuneration of BBVA’s Chairman and Its CEO Falls 3% in 2025</p>
 
                 <div class="overlay"></div>
 
                 <article class="content">
-                    <span class="tag">Technology</span>
+                    <span class="tag">Finance</span>
 
                     <h1>Remuneration of BBVA’s Chairman and Its CEO Falls 3% in 2025</h1>
 
@@ -164,24 +167,25 @@
                         <!-- Left: Author -->
                         <div class="author">
                             <img src="../images/authors/christopher-reed.webp" alt="Christopher Reed" />
-                            <span class="main-author-name">Christopher Reed</span>
+                            <span class="main-author-name"><a href="../author/christopher-reed.html">Christopher
+                                    Reed</a></span>
                             <span class="separator">|</span>
                             <span class="main-author-date">
-                                <span>Senior Editor</span>
+                                <span>Lead Business & Economy Investigative Reporter</span>
                                 <span>•</span>
                                 <span>Feb. 27, 2026</span>
                             </span>
                         </div>
 
                         <!-- Right: Share icons -->
-                        <div class="share-actions">
+                        <!-- <div class="share-actions">
 
                             <img src="../images/share.svg" alt="share" class="share-sec-icon" />
 
                             <img src="../images/fb-white.svg" alt="facebook" class="share-sec-icon" />
                             <img src="../images/X-white.svg" alt="twitter" class="share-sec-icon">
                             <img src="../images/medium-white.svg" alt="medium" class="share-sec-icon" />
-                        </div>
+                        </div> -->
                     </div>
 
                 </article>
@@ -197,11 +201,23 @@
                             <img src="../images/file-share.svg" alt="share" class="social-btn" />
                             <span class="share-label">SHARE</span>
                             <div class="share-list-icons">
-                                <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
-                                <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
-                                <img src="../images/mail.svg" alt="mail" class="social-btn" />
-                                <img src="../images/print.svg" alt="print" class="social-btn" />
-                                <a class="social-btn">⋯</a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html&quote=BBVA%20Chairman%20%26%20CEO%20Pay%20Falls%203%25%20in%202025"
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/facebook.svg" alt="facebook" class="social-btn" />
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html&text=BBVA%20Chairman%20%26%20CEO%20Pay%20Falls%203%25%20in%202025"
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/twitter.svg" alt="twitter" class="social-btn" />
+                                </a>
+                                <a href="https://api.whatsapp.com/send?text=BBVA%20Chairman%20%26%20CEO%20Pay%20Falls%203%25%20in%202025.%20https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html"
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/whatsapp-black.svg" alt="whatsapp" class="social-btn" />
+                                </a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html"
+                                    target="_blank" class="social-btn">
+                                    <img src="../images/linkedin.svg" alt="linkedin" class="social-btn" />
+                                </a>
+
                             </div>
                         </aside>
 
@@ -302,187 +318,173 @@
                             </div>
 
                             <div class="share-right">
-                                <a class="share-btn fb">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html&quote=BBVA%20Chairman%20%26%20CEO%20Pay%20Falls%203%25%20in%202025"
+                                    target="_blank" class="share-btn fb">
                                     <img src="../images/fb-white.svg" alt="fb" class="social-btn" />
                                     <span>Facebook</span></a>
-                                <a class="share-btn x"><img src="../images/X-white.svg" alt="twitter"
-                                        class="social-btn" />
+                                <a href="https://twitter.com/intent/tweet?url=https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html&text=BBVA%20Chairman%20%26%20CEO%20Pay%20Falls%203%25%20in%202025"
+                                    target="_blank" class="share-btn x">
+                                    <img src="../images/X-white.svg" alt="twitter" class="social-btn" />
                                 </a>
-                                <a class="share-btn mail"><img src="../images/gmail-white.svg" alt="mail"
-                                        class="social-btn" /></a>
-                                <a class="share-btn print"><img src="../images/print-white.svg" alt="printer"
-                                        class="social-btn" /></a>
-                                <a class="share-btn more">⋯</a>
+                                <a href="https://api.whatsapp.com/send?text=BBVA%20Chairman%20%26%20CEO%20Pay%20Falls%203%25%20in%202025.%20https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html"
+                                    target="_blank" class="share-btn whatsapp">
+                                    <img src="../images/whatsapp-white.svg" alt="whatsapp" class="social-btn" />
+                                </a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://corporatewire.org/finance/bbva-chairman-ceo-remuneration-falls-3-percent-2025.html"
+                                    target="_blank" class="share-btn linkedin">
+                                    <img src="../images/linkedin-white.svg" alt="linkedin" class="social-btn" />
+                                </a>
                             </div>
                         </div>
-
-
                     </div>
-                </main>
 
-                <!-- RIGHT: SIDEBAR -->
-                <aside class="sidebar-col">
-                    <section class="social-follow">
-                        <h2>Follow US</h2>
-                        <p class="subtitle">Find US on Social Medias</p>
 
-                        <div class="social-grid">
-                            <div class="social-item">
-                                <a href="https://www.instagram.com/corporatewire/" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle instagram-social">
-                                        <img src="../images/instagram-white.svg" alt="instagram" class="follow-btn" />
-                                    </div>
-                                    <h3>Instagram</h3>
-                                    <span>Follow</span>
-                                </a>
+        </div>
+        </main>
+
+        <!-- RIGHT: SIDEBAR -->
+        <aside class="sidebar-col">
+            <section class="social-follow">
+                <h2>Follow US</h2>
+                <p class="subtitle">Find US on Social Medias</p>
+
+                <div class="social-grid">
+                    <div class="social-item">
+                        <a href="https://www.instagram.com/corporatewire/" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle instagram-social">
+                                <img src="../images/instagram-white.svg" alt="instagram" class="follow-btn" />
                             </div>
-                            <div class="social-item">
-                                <a href="https://x.com/Corporatew40377" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle x-twitter">
-                                        <img src="../images/X-white.svg" alt="twitter" class="follow-btn" />
-                                    </div>
-                                    <h3>X</h3>
-                                    <span>Follow</span>
-                                </a>
+                            <h3>Instagram</h3>
+                            <span>Follow</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://x.com/Corporatew40377" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle x-twitter">
+                                <img src="../images/X-white.svg" alt="twitter" class="follow-btn" />
                             </div>
-                            <div class="social-item">
-                                <a href="https://medium.com/@corporatewire" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle medium">
-                                        <img src="../images/medium-white.svg" alt="medium" class="follow-btn" />
-                                    </div>
-                                    <h3>Medium</h3>
-                                    <span>Follow</span>
-                                </a>
+                            <h3>X</h3>
+                            <span>Follow</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://medium.com/@corporatewire" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle medium">
+                                <img src="../images/medium-white.svg" alt="medium" class="follow-btn" />
                             </div>
-                            <div class="social-item">
-                                <a href="https://substack.com/@corporatewire" target="_blank"
-                                    style="text-decoration: none; color: inherit;">
-                                    <div class="icon-circle substack">
-                                        <img src="../images/substack-white.svg" alt="substack" class="follow-btn" />
-                                    </div>
-                                    <h3>Substack</h3>
-                                    <span>Subscribe</span>
-                                </a>
+                            <h3>Medium</h3>
+                            <span>Follow</span>
+                        </a>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://substack.com/@corporatewire" target="_blank"
+                            style="text-decoration: none; color: inherit;">
+                            <div class="icon-circle substack">
+                                <img src="../images/substack-white.svg" alt="substack" class="follow-btn" />
                             </div>
-                        </div>
-                    </section>
-
-                    <section class="ad-detail-section">
-                        <span class="ad-title">- Advertisement -</span>
-                        <div class="ad-image-wrapper">
-                            <img src="../images/news/ad-theopenknowledge.svg" alt="ad-theopenknowledge" />
-                        </div>
-                    </section>
-
-                    <section class="popular-news">
-                        <h3>Popular news</h3>
-                        <div class="popular-image-wrapper">
-                            <img src="../images/news/bbva-chairman-ceo-remuneration-falls-3-percent-2025-0.webp"
-                                alt="" />
-                            <span class="badge-technology">Technology</span>
-                        </div>
-                        <p class="sub-title">
-                            Remuneration of BBVA’s Chairman and Its CEO Falls 3% in 2025
-                        </p>
-                        <div class="author">
-                            <img src="../images/ryan-sillers.jpg" alt="Ryan Sillers" />
-                            <span class="name">Ryan Sillers</span>
-                            <span class="separator">|</span>
-                            <span class="main-author-date">Aug 28, 21</span>
-                            <svg class="icon save" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
-                            </svg>
-                        </div>
-
-                     
-                    </section>
-
-
-                </aside>
+                            <h3>Substack</h3>
+                            <span>Subscribe</span>
+                        </a>
+                    </div>
+                </div>
             </section>
+
+            <section class="ad-detail-section">
+                <span class="ad-title">- Advertisement -</span>
+                <div class="ad-image-wrapper">
+                    <img src="../images/news/ad-theopenknowledge.svg" alt="ad-theopenknowledge" />
+                </div>
+            </section>
+
+
+
+
+            </section>
+
+
+        </aside>
+        </section>
+    </div>
+
+    <div class="border"></div>
+    <div class="related-news">
+        <div class="section-header">
+            <span class="dot"></span>
+            <h2>You might also like</h2>
         </div>
+        <div class="news-grid">
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/ecb-makes-euro-backstop-global-boost-currency-role.webp" alt="" />
+                    <span class="badge red">Finance</span>
+                </div>
+                <a href="./ecb-makes-euro-backstop-global-boost-currency-role.html">
+                    <h4>
+                        ECB Makes Euro Backstop Global to Bolster Currency’s Role </h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
+                    <span class="name"><a href="../author/danielle-brooks.html">Danielle Brooks</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Feb. 19, 2026</span>
+                </div>
+            </article>
 
-        <div class="border"></div>
-        <div class="related-news">
-            <div class="section-header">
-                <span class="dot"></span>
-                <h2>You might also like</h2>
-            </div>
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/ecb-makes-euro-backstop-global-boost-currency-role.webp" alt="" />
-                        <span class="badge red">Finance</span>
-                    </div>
-                    <a href="../business/ecb-makes-euro-backstop-global-boost-currency-role.html">
-                        <h4>
-                            ECB Makes Euro Backstop Global to Bolster Currency’s Role </h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-                        <span class="name">Danielle Brooks</span>
-                        <span class="separator">|</span>
-                        <span class="date">Feb. 19, 2026</span>
-                    </div>
-                </article>
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/europe-earnings-gain-pace-valuations-limit-upside-0.webp" alt="" />
+                    <span class="badge red">Finance</span>
+                </div>
+                <a href="./europe-earnings-gain-pace-valuations-limit-upside.html">
+                    <h4>Europe’s Earnings Gain Pace While Lofty Valuations Cap Rewards</h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
+                    <span class="name"><a href="../author/amanda-whitaker.html">Amanda Whitaker</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Feb. 19, 2026</span>
+                </div>
+            </article>
 
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/europe-earnings-gain-pace-valuations-limit-upside-0.webp" alt="" />
-                        <span class="badge red">Finance</span>
-                    </div>
-                    <a href="../business/europe-earnings-gain-pace-valuations-limit-upside.html">
-                        <h4>Europe’s Earnings Gain Pace While Lofty Valuations Cap Rewards</h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
-                        <span class="name">Amanda Whitaker</span>
-                        <span class="separator">|</span>
-                        <span class="date">Feb. 19, 2026</span>
-                    </div>
-                </article>
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/palantir-earnings-government-contracts-ice-immigration-surveillance-0.webp"
+                        alt="" />
+                    <span class="badge red">Finance</span>
+                </div>
+                <a href="./palantir-earnings-government-contracts-ice-immigration-surveillance.html">
+                    <h4>Palantir Beats Wall Street Expectations Amid Controversy Over ICE and Surveillance Tech</h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/christopher-reed.webp" alt="Christopher Reed" />
+                    <span class="name"><a href="../author/christopher-reed.html">Christopher Reed</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Feb. 19, 2026</span>
+                </div>
+            </article>
 
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/palantir-earnings-government-contracts-ice-immigration-surveillance-0.webp"
-                            alt="" />
-                        <span class="badge red">Finance</span>
-                    </div>
-                    <a href="../business/palantir-earnings-government-contracts-ice-immigration-surveillance.html">
-                        <h4>Palantir Beats Wall Street Expectations Amid Controversy Over ICE and Surveillance Tech</h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/authors/christopher-reed.webp" alt="Christopher Reed" />
-                        <span class="name">Christopher Reed</span>
-                        <span class="separator">|</span>
-                        <span class="date">Feb. 19, 2026</span>
-                    </div>
-                </article>
-
-                <article class="news-card">
-                    <div class="image-wrapper">
-                        <img src="../images/news/softer-us-inflation-fed-rate-cut-expectations-stock-market.webp"
-                            alt="" />
-                        <span class="badge red">Finance</span>
-                    </div>
-                    <a href="../business/softer-us-inflation-fed-rate-cut-expectations-stock-market.html">
-                        <h4>
-                            US Stock Market | Softer US Inflation Strengthens Case for Fed Rate Cuts
-                        </h4>
-                    </a>
-                    <div class="author">
-                        <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
-                        <span class="name">Danielle Brooks</span>
-                        <span class="separator">|</span>
-                        <span class="date">Feb. 19, 2026</span>
-                    </div>
-                </article>
-            </div>
+            <article class="news-card">
+                <div class="image-wrapper">
+                    <img src="../images/news/softer-us-inflation-fed-rate-cut-expectations-stock-market.webp" alt="" />
+                    <span class="badge red">Finance</span>
+                </div>
+                <a href="./softer-us-inflation-fed-rate-cut-expectations-stock-market.html">
+                    <h4>
+                        US Stock Market | Softer US Inflation Strengthens Case for Fed Rate Cuts
+                    </h4>
+                </a>
+                <div class="author">
+                    <img src="../images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
+                    <span class="name"><a href="../author/danielle-brooks.html">Danielle Brooks</a></span>
+                    <span class="separator">|</span>
+                    <span class="date">Feb. 19, 2026</span>
+                </div>
+            </article>
         </div>
+    </div>
     </div>
 
     <!-- footer -->
@@ -497,14 +499,15 @@
                     </div>
 
                     <ul class="footer-categories-list">
-                        <li>U.S News</li>
-                        <li>Business</li>
-                        <li>Economy</li>
-                        <li>Markets</li>
-                        <li>Finance</li>
-                        <li>Technology</li>
-                        <li>Health</li>
-                        <li>Media</li>
+                        <li><a href="../us.html" style="color: inherit; text-decoration: none;">U.S News</a></li>
+                        <li><a href="../business.html" style="color: inherit; text-decoration: none;">Business</a></li>
+                        <li><a href="../economy.html" style="color: inherit; text-decoration: none;">Economy</a></li>
+                        <li><a href="../markets.html" style="color: inherit; text-decoration: none;">Markets</a></li>
+                        <li><a href="../finance.html" style="color: inherit; text-decoration: none;">Finance</a></li>
+                        <li><a href="../technology.html" style="color: inherit; text-decoration: none;">Technology</a>
+                        </li>
+                        <li><a href="../health.html" style="color: inherit; text-decoration: none;">Health</a></li>
+                        <li><a href="../media.html" style="color: inherit; text-decoration: none;">Media</a></li>
                     </ul>
                 </div>
 
@@ -537,10 +540,13 @@
                         <!-- Information Section -->
                         <div class="footer-mid-right">
                             <ul>
-                                <li>About us</li>
-                                <li>Contact us</li>
-                                <li>Privacy Policy</li>
-                                <li>Terms and conditions</li>
+                                <li><a href="../about-us.html">About us</a></li>
+                                <li><a href="../contact-us.html">Contact us</a></li>
+                                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="../terms-and-conditions.html">Terms and conditions</a></li>
+                                <li><a href="../our-team.html">Our Team</a></li>
+                                <li><a href="../correction-policy.html">Correction Policy</a></li>
+
                             </ul>
                         </div>
                     </div>

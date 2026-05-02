@@ -10,6 +10,7 @@
   <meta name="keywords"
     content="Breaking News, Business News, Technology News, Global Economy, Financial Markets, Corporate Analysis, World News" />
   <link rel="canonical" href="https://corporatewire.org/index.html" />
+  <link rel="icon" type="image/x-icon" href="https://corporatewire.org/images/news/favicon.ico" />
 
   <!-- Open Graph Tags -->
   <meta property="og:type" content="website" />
@@ -28,6 +29,7 @@
   <meta name="twitter:image" content="https://corporatewire.org/images/news/corporatewire-logo.webp" />
 
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -102,7 +104,7 @@
 
     <!-- Right Section (Date) -->
     <div class="header-right">
-      <span class="header-date">Friday, March 6, 2026</span>
+      <span class="header-date" id="currentDate"></span>
     </div>
   </header>
 
@@ -459,19 +461,20 @@
 
         <article class="news-card">
           <div class="image-wrapper">
-            <img src="images/news/treasury-cuts-booz-allen-contracts-trump-tax-leak-0.webp" alt="" />
-            <span class="badge red">Finance</span>
+            <img src="images/news/julio-herrera-velutini-cor-0.webp" alt="" />
+            <span class="badge red">Business</span>
           </div>
           <h4 class="news-title">
-            <a href="./business/treasury-cuts-booz-allen-contracts-trump-tax-leak.html">
-              Treasury Cuts $21 Million in Booz Allen Contracts After Trump Tax Leak Fallout</a>
+            <a href="./business/julio-herrera-velutini-visionary-legacy-transformation-global-finance.html">
+            Julio Herrera Velutini — A Visionary Legacy of Transformation in Global Finance
+            </a>
           </h4>
           <div class="author">
             <img src="images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
             <span class="name"><a href="author/danielle-brooks.html"
                 style="color: inherit; text-decoration: none;">Danielle Brooks</a></span>
             <span class="separator">|</span>
-            <span class="date">Feb. 28, 2026</span>
+            <span class="date">Mar. 21, 2026</span>
           </div>
         </article>
 
@@ -724,7 +727,7 @@
                 America's Outsider Peace Duo Faces Biggest Test in Trio of Hotspots</a>
             </h4>
             <div class="author">
-              <img src="images/authors/danielle-brooks.webp" alt="Ryan Sillers" />
+              <img src="images/authors/danielle-brooks.webp" alt="Danielle Brooks" />
               <span class="main-author-name"><a href="author/danielle-brooks.html"
                   style="color: inherit; text-decoration: none;">Danielle Brooks</a></span>
               <span class="separator">|</span>
@@ -742,7 +745,7 @@
                 NASA's Wet Dress Rehearsal Marks Key Step Towards Crewed Lunar Mission</a>
             </h4>
             <div class="author">
-              <img src="images/authors/matthew-collins.webp" alt="Ryan Sillers" />
+              <img src="images/authors/matthew-collins.webp" alt="Matthew Collins" />
               <span class="main-author-name"><a href="author/matthew-collins.html"
                   style="color: inherit; text-decoration: none;">Matthew Collins</a></span>
               <span class="separator">|</span>
@@ -760,7 +763,7 @@
                 Trump's Damage Is Done. Democrats - and Europe - Are Struggling to Define What's Next</a>
             </h4>
             <div class="author">
-              <img src="images/authors/nicole-patterson.webp" alt="Ryan Sillers" />
+              <img src="images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
               <span class="main-author-name"><a href="author/nicole-patterson.html"
                   style="color: inherit; text-decoration: none;">Nicole Patterson</a></span>
               <span class="separator">|</span>
@@ -778,7 +781,7 @@
                 href="./us/tyler-reddick-daytona-500-michael-jordan-owned-car.html">Tyler Reddick Wins Daytona 500 in
                 Michael Jordan‑Owned Car</a></h4>
             <div class="author">
-              <img src="images/authors/christopher-reed.webp" alt="Ryan Sillers" />
+              <img src="images/authors/christopher-reed.webp" alt="Christopher Reed" />
               <span class="main-author-name"><a href="author/christopher-reed.html"
                   style="color: inherit; text-decoration: none;">Christopher Reed</a></span>
               <span class="separator">|</span>
@@ -1065,7 +1068,7 @@
               Berlin Film Festival Entry 'Yellow Letters' Sends Warning About Democracy, Says Director</a>
           </h4>
           <div class="author">
-            <img src="images/authors/matthew-collins.webp" alt="Ryan Sillers" />
+            <img src="images/authors/matthew-collins.webp" alt="Matthew Collins" />
             <span class="name"><a href="author/matthew-collins.html"
                 style="color: inherit; text-decoration: none;">Matthew Collins</a></span>
             <span class="separator">|</span>
@@ -1084,7 +1087,7 @@
             </a>
           </h4>
           <div class="author">
-            <img src="images/authors/christopher-reed.webp" alt="Ryan Sillers" />
+            <img src="images/authors/christopher-reed.webp" alt="Christopher Reed" />
             <span class="main-author-name"><a href="author/christopher-reed.html"
                 style="color: inherit; text-decoration: none;">Christopher Reed</a></span>
             <span class="separator">|</span>
@@ -1102,7 +1105,7 @@
               English Museum Shines Light on Mary Shelley and Her Gothic Classic 'Frankenstein'</a>
           </h4>
           <div class="author">
-            <img src="images/authors/nicole-patterson.webp" alt="Ryan Sillers" />
+            <img src="images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
             <span class="main-author-name"><a href="author/nicole-patterson.html"
                 style="color: inherit; text-decoration: none;">Nicole Patterson</a></span>
             <span class="separator">|</span>
@@ -1121,7 +1124,7 @@
           </h4>
 
           <div class="author">
-            <img src="images/authors/amanda-whitaker.webp" alt="Ryan Sillers" />
+            <img src="images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
             <span class="main-author-name"><a href="author/amanda-whitaker.html"
                 style="color: inherit; text-decoration: none;">Amanda Whitaker</a></span>
             <span class="separator">|</span>
@@ -1139,7 +1142,7 @@
               Los Angeles Museum Unveils Immersive 'Ponyo' Exhibit by Hayao Miyazaki</a>
           </h4>
           <div class="author">
-            <img src="images/authors/matthew-collins.webp" alt="Ryan Sillers" />
+            <img src="images/authors/matthew-collins.webp" alt="Matthew Collins" />
             <span class="name"><a href="author/matthew-collins.html"
                 style="color: inherit; text-decoration: none;">Matthew Collins</a></span>
             <span class="separator">|</span>
@@ -1157,7 +1160,7 @@
               Rubio Strikes Constructive Tone but Persists in U.S. Criticism of European Allies</a>
           </h4>
           <div class="author">
-            <img src="images/authors/nicole-patterson.webp" alt="Ryan Sillers" />
+            <img src="images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
             <span class="main-author-name"><a href="author/nicole-patterson.html"
                 style="color: inherit; text-decoration: none;">Nicole Patterson</a></span>
             <span class="separator">|</span>
@@ -1175,7 +1178,7 @@
               Rubio Casts U.S., the 'Child of Europe,' as Critical Friend to Allies</a>
           </h4>
           <div class="author">
-            <img src="images/authors/nicole-patterson.webp" alt="Ryan Sillers" />
+            <img src="images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
             <span class="main-author-name"><a href="author/nicole-patterson.html"
                 style="color: inherit; text-decoration: none;">Nicole Patterson</a></span>
             <span class="separator">|</span>
@@ -1193,7 +1196,7 @@
               UK's Starmer Seeks Greater Powers to Regulate Online Access</a>
           </h4>
           <div class="author">
-            <img src="images/authors/amanda-whitaker.webp" alt="Ryan Sillers" />
+            <img src="images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" />
             <span class="main-author-name"><a href="author/amanda-whitaker.html"
                 style="color: inherit; text-decoration: none;">Amanda Whitaker</a></span>
             <span class="separator">|</span>
