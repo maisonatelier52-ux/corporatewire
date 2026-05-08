@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded', function () {
     dateElement.textContent = today.toLocaleDateString('en-US', options);
   }
 });
+  
