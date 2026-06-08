@@ -1922,11 +1922,11 @@ flex-direction: column;
 }
 
 .footer-left {
-  flex-basis: 40%;
+  flex-basis: 28%;
 }
 
 .footer-center {
-  flex-basis: 20%;
+  flex-basis: 42%;
 }
 
 .footer-right {
@@ -2030,6 +2030,10 @@ flex-direction: column;
 }
 
 @media (max-width: 768px) {
+  .footer-mid-section {
+    flex-direction: column;
+    gap: 32px;
+  }
   
 
   /* HEADER */
