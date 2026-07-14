@@ -39,9 +39,192 @@
   <script src="../script.js" defer></script>
 
   <style>
+    /* Scoped layout modifications to clean up article layout and side share list */
+    #soto-redesign .article-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      max-width: 1250px;
+      margin: 30px auto 0;
+      padding: 0 20px;
+    }
+
+    #soto-redesign .article-content {
+      max-width: 800px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    #soto-redesign .top-detail {
+      display: flex;
+      gap: 30px;
+      width: 100%;
+    }
+
+    #soto-redesign .social-col {
+      position: sticky;
+      top: 170px;
+      width: 60px;
+      flex-shrink: 0;
+    }
+
+    #soto-redesign .mid {
+      flex-grow: 1;
+    }
+
     /* Page-specific override — taller image height for the Soto inline image */
     .detail-image-wrapper--soto {
       height: 680px;
+    }
+
+    /* Keep date and metadata visible in related cards against light background */
+    #soto-redesign .related-news .author {
+      color: #64748B !important;
+    }
+    #soto-redesign .related-news .author span {
+      color: #64748B !important;
+    }
+    #soto-redesign .related-news .author .name a {
+      color: #1E293B !important;
+    }
+
+    /* Scoped Hero Section Redesign */
+    #soto-redesign .hero {
+      height: auto !important;
+      min-height: auto !important;
+      position: relative;
+      display: block;
+      padding: 20px 0 30px;
+      background: transparent;
+      overflow: visible;
+    }
+
+    #soto-redesign .hero .overlay {
+      display: none;
+    }
+
+    #soto-redesign .hero .content {
+      position: relative !important;
+      bottom: auto;
+      left: auto;
+      z-index: 10;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      background: transparent;
+      color: #1E293B;
+      padding: 0;
+      text-align: center;
+    }
+
+    #soto-redesign .hero .content .tag {
+      position: static !important;
+      transform: none !important;
+      display: inline-block;
+      background: rgba(229, 169, 59, 0.08);
+      color: #E5A93B;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(229, 169, 59, 0.15);
+    }
+
+    #soto-redesign .hero .content h1 {
+      font-family: "Bitter", Georgia, serif;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #1E293B !important;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    #soto-redesign .hero .content .excerpt {
+      font-family: Georgia, serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #64748B;
+      margin: 0 auto 16px;
+      max-width: 720px;
+      font-style: italic;
+    }
+
+    #soto-redesign .hero .content .article-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    #soto-redesign .hero .content .author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: #64748B !important;
+    }
+
+    #soto-redesign .hero .content .author img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #E2E8F0;
+    }
+
+    #soto-redesign .hero .content .main-author-name a {
+      color: #1E293B !important;
+      text-decoration: none;
+    }
+
+    #soto-redesign .hero .content .main-author-name a:hover {
+      color: #E5A93B !important;
+    }
+
+    #soto-redesign .hero .content .main-author-date span {
+      color: #64748B !important;
+    }
+
+    #soto-redesign .hero-image-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    #soto-redesign .hero-img {
+      position: static !important;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      #soto-redesign .top-detail {
+        flex-direction: column;
+        gap: 20px;
+      }
+      #soto-redesign .social-col {
+        position: static;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+        height: auto;
+      }
+      #soto-redesign .share-list-icons {
+        flex-direction: row;
+        padding: 8px 16px;
+        gap: 20px;
+      }
     }
   </style>
 
@@ -64,7 +247,7 @@
   </script>
 </head>
 
-<body>
+<body id="soto-redesign">
 
   <!-- header section -->
   <input type="checkbox" id="menu-toggle" />
@@ -164,14 +347,6 @@
   <div class="main-detail">
     <div class="detail-section">
       <section class="hero">
-        <img src="/images/news/step-inside-soto-serpentine-penetrable-bbl-jaune-0.webp"
-          alt="Pénétrable BBL Jaune by Jesús Rafael Soto at Serpentine South, Kensington Gardens" class="hero-img" />
-        <p class="breadcrumb">
-          Home / Media /
-          Step Inside Soto: The Yellow Artwork Transforming Kensington Gardens Into a Living Sculpture
-        </p>
-
-        <div class="overlay"></div>
 
         <article class="content">
           <span class="tag">Media</span>
@@ -196,8 +371,12 @@
               </span>
             </div>
           </div>
-
         </article>
+
+        <div class="hero-image-container">
+          <img src="../images/news/step-inside-soto-serpentine-penetrable-bbl-jaune-0.webp"
+            alt="Pénétrable BBL Jaune by Jesús Rafael Soto at Serpentine South, Kensington Gardens" class="hero-img" />
+        </div>
       </section>
       <!-- second article section -->
       <section class="article-layout">
@@ -425,81 +604,7 @@
           </div>
         </main>
 
-        <!-- RIGHT: SIDEBAR -->
-        <aside class="sidebar-col">
-          <section class="social-follow">
-            <h2>Follow US</h2>
-            <p class="subtitle">Find US on Social Medias</p>
 
-            <div class="social-grid">
-              <div class="social-item">
-                <a href="https://www.instagram.com/corporatewire/" target="_blank"
-                  style="text-decoration: none; color: inherit;">
-                  <div class="icon-circle instagram-social">
-                    <img src="../images/instagram-white.svg" alt="instagram" class="follow-btn" />
-                  </div>
-                  <h3>Instagram</h3>
-                  <span>Follow</span>
-                </a>
-              </div>
-              <div class="social-item">
-                <a href="https://x.com/Corporatew40377" target="_blank" style="text-decoration: none; color: inherit;">
-                  <div class="icon-circle x-twitter">
-                    <img src="../images/X-white.svg" alt="twitter" class="follow-btn" />
-                  </div>
-                  <h3>X</h3>
-                  <span>Follow</span>
-                </a>
-              </div>
-              <div class="social-item">
-                <a href="https://medium.com/@corporatewire" target="_blank"
-                  style="text-decoration: none; color: inherit;">
-                  <div class="icon-circle medium">
-                    <img src="../images/medium-white.svg" alt="medium" class="follow-btn" />
-                  </div>
-                  <h3>Medium</h3>
-                  <span>Follow</span>
-                </a>
-              </div>
-              <div class="social-item">
-                <a href="https://substack.com/@corporatewire" target="_blank"
-                  style="text-decoration: none; color: inherit;">
-                  <div class="icon-circle substack">
-                    <img src="../images/substack-white.svg" alt="substack" class="follow-btn" />
-                  </div>
-                  <h3>Substack</h3>
-                  <span>Subscribe</span>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section class="ad-detail-section">
-            <span class="ad-title">- Advertisement -</span>
-            <div class="ad-image-wrapper">
-              <img src="../images/news/ad-theopenknowledge.svg" alt="ad-theopenknowledge" />
-            </div>
-          </section>
-
-          <section class="popular-news">
-            <h3>Popular news</h3>
-            <div class="popular-image-wrapper">
-              <img src="../images/news/english-museum-mary-shelley-frankenstein-exhibition.webp" alt="" />
-              <span class="badge-technology">Media</span>
-            </div>
-            <a href="../media/english-museum-mary-shelley-frankenstein-exhibition.html">
-              <p class="sub-title">
-                English Museum Shines Light on Mary Shelley and Her Gothic Classic 'Frankenstein'
-              </p>
-            </a>
-            <div class="author">
-              <img src="../images/authors/nicole-patterson.webp" alt="Nicole Patterson" />
-              <span class="name"><a href="../author/nicole-patterson.html">Nicole Patterson</a></span>
-              <span class="separator">|</span>
-              <span class="main-author-date">Feb. 20, 2026</span>
-            </div>
-          </section>
-        </aside>
       </section>
     </div>
 
