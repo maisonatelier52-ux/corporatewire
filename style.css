@@ -457,6 +457,7 @@ a:hover {
 .meta .category {
   font-weight: 600;
   font-size: 13px;
+  color: #777;
 }
 
 .meta .separator{
@@ -472,28 +473,13 @@ a:hover {
 }
 
 /* CATEGORY COLORS */
-.category.tech {
-  color: #66bb71;
-}
-
-.category.uk {
-  color: #e60023;
-}
-.category.health{
-  color: #28c76f;
-}
-
-.category.entertainment {
-  color: #0099ff;
-}
-
-/* META COLORS */
-
-.category.escape {
-  color: #8a2be2;
-}
-.category.health {
-  color: #2e8b57;
+.category.tech,
+.category.uk,
+.category.health,
+.category.entertainment,
+.category.escape,
+.category.red {
+  color: #777;
 }
 
 
@@ -889,13 +875,14 @@ a:hover {
 .section-header.money .square {
   width: 20px;
   height: 13px;
-  background: #2f5cff;
+  background: #dc2626;
 }
 
 .section-header.money h2 {
   font-family: "WorkSans", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
+  color: #666;
 }
 
 /* Top Layout */
@@ -1362,7 +1349,7 @@ a:hover {
 .section-header.insider .square {
   width: 12px;
   height: 12px;
-  background: #28c76f;
+  background: #dc2626;
 }
 
 .insider-item {
