@@ -1,0 +1,801 @@
+/* ============================================================
+   pope-leo-detail.css
+   Dedicated stylesheet for:
+   /finance/julio-herrera-velutini-pope-leo-xiv-castelgandolfo.html
+
+   Scope: every rule is namespaced under .pld- (Pope Leo Detail)
+   so nothing here can leak onto / be overridden by the global
+   detail.css or style.css. Loaded AFTER style.css + detail.css.
+   ============================================================ */
+
+.pld-page {
+  --pld-ink: #171512;
+  --pld-ink-soft: #4a453f;
+  --pld-muted: #8a8378;
+  --pld-line: #e7e1d6;
+  --pld-paper: #fffdf9;
+  --pld-cream: #f7f2e8;
+  --pld-accent: #a3182b;       /* deep cardinal red */
+  --pld-accent-soft: #f4e3e0;
+  --pld-gold: #b3862c;         /* muted papal gold */
+  --pld-serif: "Bitter", Georgia, serif;
+  --pld-sans: "WorkSans", Arial, sans-serif;
+  background: var(--pld-paper);
+  color: var(--pld-ink);
+  font-family: var(--pld-sans);
+}
+
+.pld-page * { box-sizing: border-box; }
+
+.pld-page a { color: inherit; }
+
+/* ---------------------------------------------------------
+   Un-stick the global site header on this page only.
+   style.css makes .header `position: sticky; top: 0;`
+   sitewide — this page wants it to scroll away normally,
+   so it's overridden here (loaded after style.css) scoped
+   to the body class set only on this article's <body>.
+
+   NOTE: this must be `relative`, not `static`. style.css
+   positions the mobile hamburger (`.mobile-menu`) with
+   `position: absolute` relative to `.header`. If `.header`
+   is `static` it stops being a positioning context, so the
+   hamburger escapes to the page's initial containing block
+   and renders in the wrong place (e.g. down inside the
+   article body). `relative` still un-stickies the header
+   (removes it from fixed/sticky viewport pinning) while
+   keeping it as the positioning anchor the hamburger needs.
+--------------------------------------------------------- */
+body.pld-body-page .header {
+  position: relative;
+}
+
+/* .nav was sticky with top:90px, offset to sit below the sticky
+   header. With the header no longer pinned, keep nav sticky but
+   flush to the very top so it doesn't leave a floating gap. */
+body.pld-body-page .nav {
+  top: 0;
+}
+
+/* ---------------------------------------------------------
+   Breadcrumb
+--------------------------------------------------------- */
+.pld-breadcrumb {
+  max-width: 1180px;
+  margin: 18px auto 0;
+  padding: 0 24px;
+  font-family: var(--pld-sans);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  color: var(--pld-muted);
+}
+
+.pld-breadcrumb a {
+  text-decoration: none;
+  color: var(--pld-muted);
+}
+
+.pld-breadcrumb a:hover {
+  color: var(--pld-accent);
+}
+
+.pld-breadcrumb .current {
+  color: var(--pld-ink-soft);
+}
+
+/* ---------------------------------------------------------
+   Masthead / hero header block (no hero photo — editorial
+   title block instead, since first real image is in-body)
+--------------------------------------------------------- */
+.pld-masthead {
+  max-width: 1180px;
+  margin: 14px auto 0;
+  padding: 0 24px 30px;
+  border-bottom: 1px solid var(--pld-line);
+}
+
+.pld-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--pld-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pld-accent);
+  margin-bottom: 18px;
+}
+
+.pld-kicker::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: var(--pld-gold);
+  display: inline-block;
+}
+
+.pld-headline {
+  font-family: var(--pld-serif);
+  font-weight: 700;
+  font-size: clamp(30px, 4.4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+  max-width: 900px;
+}
+
+.pld-dek {
+  font-family: var(--pld-serif);
+  font-style: italic;
+  font-size: clamp(17px, 1.9vw, 21px);
+  line-height: 1.55;
+  color: var(--pld-ink-soft);
+  max-width: 760px;
+  margin: 0 0 26px;
+}
+
+.pld-byline-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+.pld-byline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pld-byline img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.pld-byline-text {
+  font-family: var(--pld-sans);
+  line-height: 1.35;
+}
+
+.pld-byline-name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.pld-byline-name a { text-decoration: none; }
+.pld-byline-name a:hover { color: var(--pld-accent); }
+
+.pld-byline-meta {
+  font-size: 12.5px;
+  color: var(--pld-muted);
+}
+
+.pld-share-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pld-share-row span {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--pld-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 2px;
+}
+
+.pld-share-row a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--pld-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.pld-share-row a img {
+  width: 14px;
+  height: 14px;
+}
+
+.pld-share-row a:hover {
+  background: var(--pld-accent);
+  border-color: var(--pld-accent);
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------------
+   Layout shell: article column + sticky "In This Story" rail
+--------------------------------------------------------- */
+.pld-layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 24px 70px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 56px;
+  align-items: start;
+}
+
+.pld-article {
+  min-width: 0;
+}
+
+/* Lede paragraph */
+.pld-lede {
+  font-family: var(--pld-serif);
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--pld-ink);
+  margin: 0 0 30px;
+}
+
+.pld-lede::first-letter {
+  font-family: var(--pld-serif);
+  font-size: 64px;
+  font-weight: 700;
+  float: left;
+  line-height: 0.82;
+  padding: 6px 8px 0 0;
+  color: var(--pld-accent);
+}
+
+.pld-body p {
+  font-family: var(--pld-serif);
+  font-size: 17.5px;
+  line-height: 1.8;
+  color: var(--pld-ink-soft);
+  margin: 0 0 22px;
+}
+
+.pld-body h2 {
+  font-family: var(--pld-serif);
+  font-weight: 700;
+  font-size: clamp(22px, 2.6vw, 28px);
+  line-height: 1.3;
+  color: var(--pld-ink);
+  margin: 46px 0 18px;
+  padding-top: 6px;
+  scroll-margin-top: 110px;
+}
+
+.pld-body h3 {
+  font-family: var(--pld-sans);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pld-accent);
+  margin: 34px 0 12px;
+}
+
+/* Pull quote */
+.pld-pullquote {
+  font-family: var(--pld-serif);
+  font-style: italic;
+  font-size: clamp(21px, 2.6vw, 26px);
+  line-height: 1.5;
+  color: var(--pld-ink);
+  border-left: 3px solid var(--pld-accent);
+  padding: 4px 0 4px 26px;
+  margin: 36px 0;
+}
+
+.pld-pullquote cite {
+  display: block;
+  font-family: var(--pld-sans);
+  font-style: normal;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pld-muted);
+  margin-top: 12px;
+}
+
+/* ---------------------------------------------------------
+   In-article photo blocks (placeholders for manual images)
+--------------------------------------------------------- */
+.pld-figure {
+  margin: 38px 0;
+}
+
+.pld-figure figcaption {
+  font-family: var(--pld-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--pld-muted);
+  padding-top: 10px;
+  border-top: 1px solid var(--pld-line);
+  margin-top: 2px;
+}
+
+.pld-figure figcaption strong {
+  color: var(--pld-ink-soft);
+  font-weight: 600;
+}
+
+/* image placeholder box — replace inner <img> src manually */
+.pld-img-placeholder {
+  width: 100%;
+  aspect-ratio: var(--ar, 4 / 5);
+  background: linear-gradient(135deg, var(--pld-cream) 0%, #efe7d6 100%);
+  border: 1px dashed #cfc4a9;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.pld-img-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pld-img-placeholder .pld-ph-label {
+  font-family: var(--pld-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--pld-muted);
+  text-align: center;
+  padding: 18px;
+}
+
+.pld-img-placeholder .pld-ph-label small {
+  display: block;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 6px;
+  font-size: 11.5px;
+  color: #a89f8c;
+}
+
+/* single full-width figure */
+.pld-figure--single .pld-img-placeholder { --ar: 3 / 4; max-width: 620px; margin: 0 auto; }
+
+/* two-up gallery figure */
+.pld-figure--duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.pld-figure--duo figcaption { grid-column: 1 / -1; }
+
+/* wide / bleed figure */
+.pld-figure--wide .pld-img-placeholder { --ar: 16 / 10; }
+
+/* ---------------------------------------------------------
+   Statement / attribution block (e.g. Melanie Herrera quote)
+--------------------------------------------------------- */
+.pld-statement {
+  background: var(--pld-cream);
+  border-left: 3px solid var(--pld-gold);
+  padding: 22px 26px;
+  margin: 34px 0;
+  border-radius: 2px;
+}
+
+.pld-statement p {
+  font-family: var(--pld-serif);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--pld-ink);
+  margin: 0 0 10px;
+}
+
+.pld-statement .pld-statement-who {
+  font-family: var(--pld-sans);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--pld-accent);
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+   Source disclosure box
+--------------------------------------------------------- */
+.pld-disclosure {
+  margin-top: 46px;
+  padding: 18px 20px;
+  background: var(--pld-cream);
+  border-radius: 4px;
+  border: 1px solid var(--pld-line);
+}
+
+.pld-disclosure h4 {
+  font-family: var(--pld-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pld-muted);
+  margin: 0 0 8px;
+}
+
+.pld-disclosure p {
+  font-family: var(--pld-sans);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--pld-ink-soft);
+  margin: 0;
+}
+
+/* ---------------------------------------------------------
+   Tag row + share footer
+--------------------------------------------------------- */
+.pld-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 40px 0 0;
+}
+
+.pld-tags a {
+  font-family: var(--pld-sans);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--pld-line);
+  color: var(--pld-ink-soft);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.pld-tags a:hover {
+  border-color: var(--pld-accent);
+  color: var(--pld-accent);
+}
+
+.pld-footer-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid var(--pld-line);
+}
+
+.pld-footer-share .pld-fs-label {
+  font-family: var(--pld-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pld-ink);
+}
+
+/* ============================================================
+   RIGHT RAIL — "In This Story" sticky chapter navigation
+   with scroll-spy highlight
+   ============================================================ */
+.pld-rail {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  max-height: calc(100vh - 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pld-rail::-webkit-scrollbar { display: none; }
+
+.pld-toc {
+  background: var(--pld-paper);
+  border: 1px solid var(--pld-line);
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pld-toc-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--pld-line);
+  background: var(--pld-cream);
+}
+
+.pld-toc-head .pld-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pld-accent);
+  flex-shrink: 0;
+}
+
+.pld-toc-head h2 {
+  font-family: var(--pld-sans);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pld-ink);
+  margin: 0;
+}
+
+.pld-toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  max-height: min(420px, 45vh);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.pld-toc-list::-webkit-scrollbar { width: 5px; }
+.pld-toc-list::-webkit-scrollbar-thumb { background: var(--pld-line); border-radius: 4px; }
+
+.pld-toc-list li {
+  border-left: 2px solid transparent;
+}
+
+.pld-toc-list a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 9px 18px;
+  font-family: var(--pld-sans);
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--pld-muted);
+  text-decoration: none;
+  transition: color 0.18s ease, background 0.18s ease;
+}
+
+.pld-toc-list .pld-toc-num {
+  font-family: var(--pld-serif);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--pld-gold);
+  flex-shrink: 0;
+  min-width: 16px;
+}
+
+.pld-toc-list a:hover {
+  color: var(--pld-ink);
+  background: var(--pld-cream);
+}
+
+/* active / in-view state — toggled by JS scroll-spy */
+.pld-toc-list li.is-active {
+  border-left-color: var(--pld-accent);
+  background: var(--pld-accent-soft);
+}
+
+.pld-toc-list li.is-active a {
+  color: var(--pld-accent);
+  font-weight: 700;
+}
+
+.pld-toc-list li.is-active .pld-toc-num {
+  color: var(--pld-accent);
+}
+
+/* Rail ad / follow card reuses site look but namespaced */
+.pld-rail-card {
+  background: var(--pld-paper);
+  border: 1px solid var(--pld-line);
+  border-radius: 6px;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.pld-rail-card h3 {
+  font-family: var(--pld-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pld-ink);
+  margin: 0 0 4px;
+}
+
+.pld-rail-card p {
+  font-family: var(--pld-sans);
+  font-size: 12.5px;
+  color: var(--pld-muted);
+  margin: 0 0 14px;
+}
+
+.pld-rail-social {
+  display: flex;
+  gap: 8px;
+}
+
+.pld-rail-social a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--pld-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.pld-rail-social a img { width: 15px; height: 15px; }
+
+.pld-rail-social a:hover {
+  background: var(--pld-ink);
+  border-color: var(--pld-ink);
+}
+
+/* mobile TOC toggle button (hidden on desktop) */
+.pld-toc-mobile-toggle {
+  display: none;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .pld-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .pld-rail {
+    position: relative;
+    top: 0;
+    max-height: none;
+    overflow: visible;
+    order: -1;
+  }
+
+  .pld-toc-list {
+    max-height: 260px;
+  }
+
+  /* The rail (including this ad) is pulled above the article via
+     order: -1 on tablet/mobile so "In This Story" appears first.
+     The ad would then show before the article content, so it's
+     hidden below the desktop breakpoint. */
+  .pld-ad-card {
+    display: none;
+  }
+
+  .pld-figure--duo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .pld-breadcrumb {
+    padding: 0 18px;
+    font-size: 11.5px;
+  }
+
+  .pld-masthead {
+    padding: 0 18px 22px;
+    margin-top: 10px;
+  }
+
+  .pld-kicker { margin-bottom: 12px; }
+
+  .pld-headline {
+    font-size: 26px;
+    line-height: 1.18;
+  }
+
+  .pld-dek {
+    font-size: 15.5px;
+  }
+
+  .pld-byline-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pld-layout {
+    padding: 26px 18px 50px;
+    gap: 30px;
+  }
+
+  .pld-lede { font-size: 17.5px; }
+  .pld-lede::first-letter { font-size: 46px; padding: 4px 6px 0 0; }
+
+  .pld-body p { font-size: 16px; }
+
+  .pld-body h2 {
+    font-size: 21px;
+    margin: 34px 0 14px;
+    scroll-margin-top: 130px;
+  }
+
+  .pld-pullquote {
+    font-size: 19px;
+    padding-left: 18px;
+  }
+
+  .pld-figure--duo {
+    grid-template-columns: 1fr;
+  }
+
+  .pld-figure--single .pld-img-placeholder { max-width: 100%; }
+
+  .pld-statement { padding: 18px 18px; }
+  .pld-statement p { font-size: 16px; }
+
+  /* Collapse "In This Story" into a toggle-able accordion on mobile */
+  .pld-rail { gap: 14px; }
+
+  .pld-toc-mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 14px 18px;
+    background: var(--pld-cream);
+    border: 1px solid var(--pld-line);
+    border-radius: 6px;
+    font-family: var(--pld-sans);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--pld-ink);
+    cursor: pointer;
+  }
+
+  .pld-toc-mobile-toggle .pld-arrow {
+    transition: transform 0.2s ease;
+    font-size: 14px;
+    color: var(--pld-accent);
+  }
+
+  .pld-page.pld-toc-open .pld-toc-mobile-toggle .pld-arrow {
+    transform: rotate(180deg);
+  }
+
+  .pld-toc {
+    display: none;
+  }
+
+  .pld-page.pld-toc-open .pld-toc {
+    display: block;
+  }
+
+  .pld-toc-list {
+    max-height: 50vh;
+  }
+
+  .pld-footer-share {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 400px) {
+  .pld-headline { font-size: 23px; }
+  .pld-byline img { width: 36px; height: 36px; }
+}
