@@ -489,21 +489,24 @@ body.pld-body-page .nav {
    RIGHT RAIL — "In This Story" sticky chapter navigation
    with scroll-spy highlight
    ============================================================ */
+/* NOTE: intentionally NOT overflow/max-height clipped. The
+   "In This Story" chapter list already scrolls internally via
+   .pld-toc-list (see below), so it can't overflow the rail.
+   Clipping the whole rail here as well (as a previous version
+   did) made it its own internal scroll container: the
+   Advertisement card, in the tail of the flex column, floated
+   in the RAIL'S clipped scroll area and only became fully
+   visible after an extra scroll gesture inside the rail itself,
+   not the page. Letting the rail size to its content and simply
+   scroll with the page (while staying sticky) fixes that. */
 .pld-rail {
   position: sticky;
   top: 24px;
   align-self: start;
-  max-height: calc(100vh - 48px);
   display: flex;
   flex-direction: column;
   gap: 20px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
-
-.pld-rail::-webkit-scrollbar { display: none; }
 
 .pld-toc {
   background: var(--pld-paper);
@@ -540,17 +543,17 @@ body.pld-body-page .nav {
   margin: 0;
 }
 
+/* Full list renders — no internal scrollbar. Scroll-spy
+   highlights entries as the page scrolls, so clipping this to
+   a fixed max-height with overflow-y:auto meant a highlighted
+   chapter further down the list could go invisible until the
+   user manually scrolled inside this box. Letting it size to
+   its content keeps every chapter visible at once. */
 .pld-toc-list {
   list-style: none;
   margin: 0;
   padding: 8px 0;
-  max-height: min(420px, 45vh);
-  overflow-y: auto;
-  scrollbar-width: thin;
 }
-
-.pld-toc-list::-webkit-scrollbar { width: 5px; }
-.pld-toc-list::-webkit-scrollbar-thumb { background: var(--pld-line); border-radius: 4px; }
 
 .pld-toc-list li {
   border-left: 2px solid transparent;
