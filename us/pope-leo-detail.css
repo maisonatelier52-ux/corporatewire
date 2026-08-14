@@ -655,6 +655,13 @@ body.pld-body-page .nav {
   display: none;
 }
 
+/* Mobile-only duplicate of the rail quote image (see .pld-ad-card).
+   Hidden on desktop; shown just above "You might also like" once the
+   rail is reflowed above the article (same breakpoint as .pld-ad-card). */
+.pld-quote-mobile {
+  display: none;
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */
@@ -684,6 +691,14 @@ body.pld-body-page .nav {
      hidden below the desktop breakpoint. */
   .pld-ad-card {
     display: none;
+  }
+
+  .pld-quote-mobile {
+    display: block;
+    margin: 0 0 34px;
+    /* Matches .pld-layout's horizontal padding so this image's left/right
+       edges line up with the Source Disclosure box above it. */
+    padding: 0 24px;
   }
 
   .pld-figure--duo {
@@ -722,6 +737,10 @@ body.pld-body-page .nav {
   .pld-layout {
     padding: 26px 18px 50px;
     gap: 30px;
+  }
+
+  .pld-quote-mobile {
+    padding: 0 18px;
   }
 
   .pld-lede { font-size: 17.5px; }
