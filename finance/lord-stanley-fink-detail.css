@@ -296,18 +296,24 @@ body.lsf-body-page .nav {
 }
 
 .lsf-body a.lsf-inline-link {
-  color: var(--lsf-navy);
-  text-decoration: underline;
-  text-decoration-color: var(--lsf-gold);
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1.5px;
+  color: var(--lsf-ink);
+  text-decoration: none;
   font-weight: 600;
+  padding: 0 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(182, 137, 47, 0) 58%,
+    rgba(182, 137, 47, 0.28) 58%
+  );
+  border-radius: 2px;
   transition: color 0.15s ease;
 }
 
 .lsf-body a.lsf-inline-link:hover {
   color: var(--lsf-gold);
 }
+
+
 
 /* ---------------------------------------------------------
    Highlight — beautiful "important point" marker, distinct
@@ -641,6 +647,10 @@ body.lsf-body-page .nav {
 }
 
 @media (max-width: 640px) {
+  .lsf-kicker {
+    margin-left: 40px;
+    transform: translateX(10px);
+  }
   .lsf-hero { padding: 0 16px; }
   /* Taller frame + face pulled toward the top of the crop so the
      headline block anchored to the bottom never overlaps the face. */
