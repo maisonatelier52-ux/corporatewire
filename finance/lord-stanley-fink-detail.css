@@ -1,0 +1,695 @@
+/* ============================================================
+   lord-stanley-fink-detail.css
+   Dedicated stylesheet for:
+   /finance/lord-stanley-fink-career-britannia-global-markets-chairman.html
+
+   Scope: every rule is namespaced under .lsf- (Lord Stanley Fink)
+   so nothing here can leak onto / be overridden by the global
+   detail.css or style.css. Loaded AFTER style.css.
+
+   Design language: a navy / brushed-gold "leadership profile" —
+   distinct from other dedicated article layouts on the site,
+   built around a full-bleed hero, a serif editorial column and
+   a sticky credentials rail.
+   ============================================================ */
+
+.lsf-page {
+  --lsf-ink: #14181f;
+  --lsf-ink-soft: #454c58;
+  --lsf-muted: #838a97;
+  --lsf-line: #e3e6ec;
+  --lsf-paper: #ffffff;
+  --lsf-panel: #f5f6f9;
+  --lsf-navy: #0e2340;
+  --lsf-navy-deep: #081627;
+  --lsf-gold: #b6892f;
+  --lsf-gold-soft: #f4ecd9;
+  --lsf-serif: "Bitter", Georgia, serif;
+  --lsf-sans: "WorkSans", Arial, sans-serif;
+  background: var(--lsf-paper);
+  color: var(--lsf-ink);
+  font-family: var(--lsf-sans);
+}
+
+.lsf-page * { box-sizing: border-box; }
+.lsf-page a { color: inherit; }
+
+/* Un-stick the global sticky header on this page only, matching
+   the pattern used by other dedicated article layouts. Keeps
+   .header as a relative positioning context so the mobile
+   hamburger still anchors correctly. */
+body.lsf-body-page .header {
+  position: relative;
+}
+
+body.lsf-body-page .nav {
+  top: 0;
+}
+
+/* ---------------------------------------------------------
+   Breadcrumb
+--------------------------------------------------------- */
+.lsf-breadcrumb {
+  max-width: 1200px;
+  margin: 16px auto 0;
+  padding: 0 24px;
+  font-family: var(--lsf-sans);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  color: var(--lsf-muted);
+}
+
+.lsf-breadcrumb a {
+  text-decoration: none;
+  color: var(--lsf-muted);
+}
+
+.lsf-breadcrumb a:hover { color: var(--lsf-navy); }
+
+.lsf-breadcrumb .current { color: var(--lsf-ink-soft); }
+
+/* ---------------------------------------------------------
+   HERO — full-bleed portrait band with gradient scrim and
+   the headline block sitting on top of the image
+--------------------------------------------------------- */
+.lsf-hero {
+  position: relative;
+  margin: 14px auto 0;
+  max-width: 1400px;
+  padding: 0 24px;
+}
+
+.lsf-hero-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--lsf-navy-deep);
+}
+
+.lsf-hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  display: block;
+}
+
+.lsf-hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 22, 39, 0.05) 0%, rgba(8, 22, 39, 0.15) 45%, rgba(8, 22, 39, 0.92) 100%);
+}
+
+.lsf-hero-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 44px 34px;
+  max-width: 980px;
+}
+
+.lsf-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--lsf-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--lsf-gold);
+  margin-bottom: 14px;
+}
+
+.lsf-kicker::before {
+  content: "";
+  width: 22px;
+  height: 2px;
+  background: var(--lsf-gold);
+  display: inline-block;
+}
+
+.lsf-headline {
+  font-family: var(--lsf-serif);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  color: #fdfdfc;
+  margin: 0 0 14px;
+  max-width: 900px;
+}
+
+.lsf-hero-dek {
+  font-family: var(--lsf-serif);
+  font-style: italic;
+  font-size: clamp(15.5px, 1.6vw, 18.5px);
+  line-height: 1.55;
+  color: #dfe3ea;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------
+   Byline row sits below the hero, on white
+--------------------------------------------------------- */
+.lsf-byline-bar {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 24px 26px;
+  border-bottom: 1px solid var(--lsf-line);
+}
+
+.lsf-byline-row {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: space-between;
+}
+
+.lsf-byline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lsf-byline img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--lsf-gold-soft);
+}
+
+.lsf-byline-text { line-height: 1.35; }
+
+.lsf-byline-name { font-weight: 700; font-size: 14.5px; }
+.lsf-byline-name a { text-decoration: none; }
+.lsf-byline-name a:hover { color: var(--lsf-navy); }
+
+.lsf-byline-meta { font-size: 12.5px; color: var(--lsf-muted); }
+
+.lsf-share-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lsf-share-row span {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--lsf-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 2px;
+}
+
+.lsf-share-row a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--lsf-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+}
+
+.lsf-share-row a img { width: 14px; height: 14px; }
+
+.lsf-share-row a:hover {
+  background: var(--lsf-navy);
+  border-color: var(--lsf-navy);
+  transform: translateY(-2px);
+}
+
+.lsf-share-row a:hover img { filter: brightness(0) invert(1); }
+
+/* ---------------------------------------------------------
+   Layout shell: article column + sticky credentials rail
+--------------------------------------------------------- */
+.lsf-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 44px 24px 70px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 56px;
+  align-items: start;
+}
+
+.lsf-article { min-width: 0; }
+
+.lsf-lede {
+  font-family: var(--lsf-serif);
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--lsf-ink);
+  margin: 0 0 28px;
+}
+
+.lsf-lede::first-letter {
+  font-family: var(--lsf-serif);
+  font-size: 62px;
+  font-weight: 700;
+  float: left;
+  line-height: 0.8;
+  padding: 6px 10px 0 0;
+  color: var(--lsf-navy);
+}
+
+.lsf-body p {
+  font-family: var(--lsf-serif);
+  font-size: 17.5px;
+  line-height: 1.82;
+  color: var(--lsf-ink-soft);
+  margin: 0 0 22px;
+}
+
+.lsf-body h2 {
+  font-family: var(--lsf-serif);
+  font-weight: 700;
+  font-size: clamp(21px, 2.4vw, 27px);
+  line-height: 1.3;
+  color: var(--lsf-ink);
+  margin: 44px 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--lsf-gold-soft);
+  position: relative;
+}
+
+.lsf-body h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 54px;
+  height: 2px;
+  background: var(--lsf-gold);
+}
+
+.lsf-body a.lsf-inline-link {
+  color: var(--lsf-navy);
+  text-decoration: underline;
+  text-decoration-color: var(--lsf-gold);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1.5px;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+.lsf-body a.lsf-inline-link:hover {
+  color: var(--lsf-gold);
+}
+
+/* ---------------------------------------------------------
+   Highlight — beautiful "important point" marker, distinct
+   from the yellow-marker reference image: a soft gold wash
+   with a subtle underline, so it reads as editorial emphasis
+   rather than a literal highlighter stroke.
+--------------------------------------------------------- */
+.lsf-hl {
+  background: linear-gradient(180deg, rgba(182, 137, 47, 0) 58%, rgba(182, 137, 47, 0.28) 58%);
+  padding: 0 2px;
+  border-radius: 2px;
+  color: var(--lsf-ink);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   Pull-quote / statement blocks
+--------------------------------------------------------- */
+.lsf-pullquote {
+  font-family: var(--lsf-serif);
+  font-style: italic;
+  font-size: clamp(20px, 2.4vw, 24px);
+  line-height: 1.5;
+  color: var(--lsf-navy);
+  border-left: 3px solid var(--lsf-gold);
+  padding: 4px 0 4px 26px;
+  margin: 36px 0;
+}
+
+.lsf-pullquote cite {
+  display: block;
+  font-family: var(--lsf-sans);
+  font-style: normal;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--lsf-muted);
+  margin-top: 12px;
+}
+
+/* Fact panel — a compact "at a glance" summary card dropped
+   into the body to anchor the reader before the deep-dive */
+.lsf-fact-panel {
+  background: var(--lsf-navy);
+  border-radius: 10px;
+  padding: 26px 28px;
+  margin: 8px 0 34px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 24px;
+}
+
+.lsf-fact-panel .lsf-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lsf-fact-panel .lsf-fact-label {
+  font-family: var(--lsf-sans);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lsf-gold);
+}
+
+.lsf-fact-panel .lsf-fact-value {
+  font-family: var(--lsf-serif);
+  font-size: 15.5px;
+  line-height: 1.4;
+  color: #f3f4f7;
+}
+
+/* Timeline element used in "A new chapter at Britannia" */
+.lsf-timeline {
+  border: 1px solid var(--lsf-line);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 30px 0 34px;
+  background: var(--lsf-panel);
+}
+
+.lsf-timeline-row {
+  display: flex;
+  gap: 18px;
+  padding: 18px 22px;
+  align-items: baseline;
+}
+
+.lsf-timeline-row + .lsf-timeline-row {
+  border-top: 1px solid var(--lsf-line);
+}
+
+.lsf-timeline-date {
+  font-family: var(--lsf-sans);
+  font-weight: 700;
+  font-size: 12.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--lsf-navy);
+  min-width: 128px;
+  flex-shrink: 0;
+}
+
+.lsf-timeline-text {
+  font-family: var(--lsf-sans);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--lsf-ink-soft);
+}
+
+/* Source disclosure */
+.lsf-disclosure {
+  margin-top: 44px;
+  padding: 20px 22px;
+  background: var(--lsf-panel);
+  border-left: 3px solid var(--lsf-navy);
+  border-radius: 4px;
+}
+
+.lsf-disclosure h4 {
+  font-family: var(--lsf-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lsf-navy);
+  margin: 0 0 8px;
+}
+
+.lsf-disclosure p {
+  font-family: var(--lsf-sans);
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--lsf-ink-soft);
+  margin: 0;
+}
+
+.lsf-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.lsf-tags a {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: var(--lsf-gold-soft);
+  color: var(--lsf-navy);
+  font-family: var(--lsf-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.lsf-tags a:hover {
+  background: var(--lsf-navy);
+  color: #fff;
+}
+
+.lsf-footer-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid var(--lsf-line);
+}
+
+.lsf-footer-share .lsf-fs-label {
+  font-family: var(--lsf-sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--lsf-ink);
+}
+
+/* ============================================================
+   RIGHT RAIL — sticky "Career Snapshot" + follow + ad
+   ============================================================ */
+.lsf-rail {
+  position: sticky;
+  top: 24px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lsf-rail-card {
+  background: var(--lsf-paper);
+  border: 1px solid var(--lsf-line);
+  border-radius: 10px;
+  padding: 22px;
+  flex-shrink: 0;
+}
+
+.lsf-rail-card h3 {
+  font-family: var(--lsf-sans);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lsf-navy);
+  margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lsf-rail-card h3::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--lsf-gold);
+  flex-shrink: 0;
+}
+
+.lsf-rail-card > p.lsf-rail-sub {
+  font-family: var(--lsf-sans);
+  font-size: 12.5px;
+  color: var(--lsf-muted);
+  margin: 0 0 16px;
+}
+
+.lsf-snapshot-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.lsf-snapshot-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed var(--lsf-line);
+}
+
+.lsf-snapshot-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.lsf-snap-label {
+  font-family: var(--lsf-sans);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lsf-gold);
+}
+
+.lsf-snap-value {
+  font-family: var(--lsf-serif);
+  font-size: 14.5px;
+  line-height: 1.4;
+  color: var(--lsf-ink);
+}
+
+.lsf-rail-social {
+  display: flex;
+  gap: 8px;
+}
+
+.lsf-rail-social a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--lsf-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.lsf-rail-social a img { width: 15px; height: 15px; }
+
+.lsf-rail-social a:hover {
+  background: var(--lsf-navy);
+  border-color: var(--lsf-navy);
+}
+
+.lsf-rail-social a:hover img { filter: brightness(0) invert(1); }
+
+.lsf-ad-card { text-align: center; }
+
+/* Mobile-only duplicate of the ad image, hidden on desktop */
+.lsf-ad-mobile { display: none; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 992px) {
+  .lsf-hero-frame { aspect-ratio: 3 / 4; border-radius: 8px; }
+  .lsf-hero-frame img { object-position: center 8%; }
+  .lsf-hero-content { padding: 0 28px 28px; }
+
+  .lsf-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .lsf-rail {
+    position: relative;
+    top: 0;
+    order: -1;
+  }
+
+  .lsf-fact-panel {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lsf-ad-card { display: none; }
+  .lsf-ad-mobile {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .lsf-hero { padding: 0 16px; }
+  /* Taller frame + face pulled toward the top of the crop so the
+     headline block anchored to the bottom never overlaps the face. */
+  .lsf-hero-frame { aspect-ratio: 3 / 4.6; }
+  .lsf-hero-frame img { object-position: center 4%; }
+  .lsf-hero-scrim {
+    background: linear-gradient(180deg, rgba(8, 22, 39, 0) 0%, rgba(8, 22, 39, 0) 58%, rgba(8, 22, 39, 0.65) 74%, rgba(8, 22, 39, 0.97) 100%);
+  }
+  .lsf-hero-content { padding: 0 18px 22px 26px; }
+  .lsf-headline { font-size: 23px; line-height: 1.22; }
+  .lsf-hero-dek { font-size: 14px; }
+  .lsf-kicker { margin-bottom: 10px; font-size: 10.5px; }
+
+  .lsf-breadcrumb { padding: 0 16px; font-size: 11px; }
+
+  .lsf-byline-bar { padding: 16px 16px 20px; }
+  .lsf-byline-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+
+    .lsf-layout { 
+    padding: 12px 16px 50px; 
+    gap: 20px; 
+  }
+
+  .lsf-lede { font-size: 17.5px; }
+  .lsf-lede::first-letter { font-size: 44px; padding: 4px 6px 0 0; }
+
+  .lsf-body p { font-size: 16px; }
+
+  .lsf-body h2 { font-size: 20px; margin: 34px 0 14px; }
+
+  .lsf-pullquote { font-size: 18.5px; padding-left: 18px; }
+
+  .lsf-fact-panel {
+    grid-template-columns: 1fr;
+    padding: 20px 20px;
+    gap: 16px;
+  }
+
+  .lsf-timeline-row { flex-direction: column; gap: 4px; padding: 14px 16px; }
+  .lsf-timeline-date { min-width: 0; }
+
+  .lsf-footer-share { flex-direction: column; align-items: flex-start; }
+
+  /* Career Snapshot and Follow Us stay desktop/tablet-only; hidden on mobile per request */
+  .lsf-rail-card.lsf-snapshot-card { display: none; }
+  .lsf-rail-card.lsf-follow-card { display: none; }
+}
+
+@media (max-width: 400px) {
+  .lsf-headline { font-size: 22px; }
+  .lsf-byline img { width: 38px; height: 38px; }
+}
