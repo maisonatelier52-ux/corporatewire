@@ -640,15 +640,9 @@ body.pld-body-page .nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
 }
 
 .pld-rail-social a img { width: 15px; height: 15px; }
-
-.pld-rail-social a:hover {
-  background: var(--pld-ink);
-  border-color: var(--pld-ink);
-}
 
 /* mobile TOC toggle button (hidden on desktop) */
 .pld-toc-mobile-toggle {

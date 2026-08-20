@@ -219,18 +219,12 @@ body.lsf-body-page .nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
 }
 
-.lsf-share-row a img { width: 14px; height: 14px; }
-
-.lsf-share-row a:hover {
-  background: var(--lsf-navy);
-  border-color: var(--lsf-navy);
-  transform: translateY(-2px);
+.lsf-share-row a img {
+  width: 14px;
+  height: 14px;
 }
-
-.lsf-share-row a:hover img { filter: brightness(0) invert(1); }
 
 /* ---------------------------------------------------------
    Layout shell: article column + sticky credentials rail
@@ -471,12 +465,6 @@ body.lsf-body-page .nav {
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
-  transition: background 0.18s ease, color 0.18s ease;
-}
-
-.lsf-tags a:hover {
-  background: var(--lsf-navy);
-  color: #fff;
 }
 
 .lsf-footer-share {
@@ -599,17 +587,12 @@ body.lsf-body-page .nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
 }
 
-.lsf-rail-social a img { width: 15px; height: 15px; }
-
-.lsf-rail-social a:hover {
-  background: var(--lsf-navy);
-  border-color: var(--lsf-navy);
+.lsf-rail-social a img {
+  width: 15px;
+  height: 15px;
 }
-
-.lsf-rail-social a:hover img { filter: brightness(0) invert(1); }
 
 .lsf-ad-card { text-align: center; }
 
