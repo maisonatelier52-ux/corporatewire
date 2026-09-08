@@ -331,48 +331,36 @@ a:hover {
 }
 
 .nav-caret {
-  transition: transform 0.2s ease;
-  stroke: #666;
+  display: none !important;
 }
 
 .nav-list li:hover .nav-caret {
-  transform: rotate(180deg);
-  stroke: #073981;
+  display: none !important;
 }
 
 /* Dropdown arrow legacy override */
 .nav-list i.fa-chevron-down {
-  font-size: 11px;
+  display: none !important;
 }
 
-/* Reuters Mega Dropdown Container (Full Width & Clean Bottom Border) */
+/* Reuters Mega Dropdown Container - completely disabled across all pages */
 .nav-list li.has-dropdown {
-  position: static;
+  position: relative;
 }
 
 .mega-dropdown-panel {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #e0e0e0; /* Clean line instead of thick blue line */
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(8px);
-  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
-  z-index: 1200;
-  pointer-events: none;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 .nav-list li.has-dropdown:hover .mega-dropdown-panel,
 .mega-dropdown-panel:hover {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  pointer-events: auto;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 .mega-dropdown-inner {

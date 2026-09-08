@@ -23,6 +23,7 @@
   background: var(--pld-paper);
   color: var(--pld-ink);
   font-family: var(--pld-sans);
+  padding-top: 14px;
 }
 
 .pld-page * { box-sizing: border-box; }
