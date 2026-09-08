@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const dateElement = document.querySelector('.header-date');
-  if (dateElement) {
+
+  // ── Date display (UPPERCASE — e.g. MONDAY, SEPTEMBER 7, 2026) ──────────────
+  document.querySelectorAll('.header-date').forEach(function (el) {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const today = new Date();
-    dateElement.textContent = today.toLocaleDateString('en-US', options);
-  }
+    el.textContent = new Date().toLocaleDateString('en-US', options).toUpperCase();
+  });
+
 });
-  
+

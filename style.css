@@ -148,6 +148,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 16px;
 }
 
 .header-date {
@@ -159,7 +160,9 @@ a:hover {
   letter-spacing: 0.1em;
   padding: 0;
   display: inline-block;
+  white-space: nowrap;
 }
+
 
 .header-right-icons {
   width: auto;
@@ -248,77 +251,251 @@ a:hover {
 }
 
 .nav {
-  width: 100% ;
-  box-shadow: 0 4px 8px rgba(162, 147, 147, 0.08);
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 90px;
   z-index: 1000;
-  background: #fff;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 2px;
   list-style: none;
-  padding: 10px 0;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
-    margin-left: 30px;
-}
-.nav-list a {
-  color: inherit;
-  text-decoration: none;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Removed position: relative to allow full width mega menu */
 }
 
-.nav-list li {
+
+
+
+.nav-list li.nav-item {
   position: relative;
-  font-size: 16px;
-  font-weight: 900;
-  color: #000;
+  font-size: 14.5px;
+  font-weight: 650; /* Slightly thicker nav typography */
+  color: #1a1a1a;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
 }
 
-/* Active underline (Home) */
-.nav-list li.active::after {
+.nav-link {
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 12px 10px; /* Reduced padding between nav links for compact spacing */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  transition: color 0.15s ease;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+}
+
+/* Active & Hover indicator line matching CorporateWire logo color (#073981) */
+.nav-link::after {
   content: "";
   position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: -8px;
   width: 100%;
-  height: 3px;
-  background: #ff0033;
+  height: 3.5px;
+  background: #073981; /* CorporateWire Logo Blue */
+  opacity: 0;
+  transform: scaleX(0.8);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Dropdown arrow */
+/* Show highlight strictly on active when list is unhovered, or on the hovered item */
+.nav-list:not(:hover) li.active .nav-link::after,
+.nav-list li:hover .nav-link::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.nav-list:not(:hover) li.active .nav-link {
+  color: #073981;
+}
+
+/* Hover text stays dark black — no blue tint */
+.nav-list li:hover .nav-link {
+  color: #111111;
+}
+
+.nav-caret {
+  transition: transform 0.2s ease;
+  stroke: #666;
+}
+
+.nav-list li:hover .nav-caret {
+  transform: rotate(180deg);
+  stroke: #073981;
+}
+
+/* Dropdown arrow legacy override */
 .nav-list i.fa-chevron-down {
   font-size: 11px;
 }
 
-/* Join Us */
-.join {
+/* Reuters Mega Dropdown Container (Full Width & Clean Bottom Border) */
+.nav-list li.has-dropdown {
+  position: static;
+}
+
+.mega-dropdown-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0; /* Clean line instead of thick blue line */
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  z-index: 1200;
+  pointer-events: none;
+}
+
+.nav-list li.has-dropdown:hover .mega-dropdown-panel,
+.mega-dropdown-panel:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mega-dropdown-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 26px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 36px;
+  text-align: left;
+}
+
+/* Left Section: Browse Subtopics */
+.mega-browse {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mega-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
   font-weight: 700;
+  color: #111111;
+  margin: 0 0 16px 0;
+  text-transform: none;
+  letter-spacing: -0.01em;
 }
 
-.join i {
-  color: #000;
+.mega-topics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
 }
 
-/* Hover effect */
-.nav-list li {
+.mega-topics-grid a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a4a4a;
   text-decoration: none;
+  line-height: 1.45;
+  transition: color 0.15s ease;
+  display: inline-block;
 }
 
-.nav-list li:hover {
-  text-decoration-line: underline;
-  text-decoration-color: #ff0033;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 6px;
+.mega-topics-grid a:hover {
+  color: #073981;
+  text-decoration: underline;
+}
+
+/* Center Divider */
+.mega-divider {
+  width: 1px;
+  background: #e6e6e6;
+  align-self: stretch;
+  margin: 0 4px;
+}
+
+/* Right Section: Latest Articles */
+.mega-latest {
+  flex: 1.4;
+  min-width: 480px;
+}
+
+.mega-articles-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 24px;
+}
+
+.mega-article-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.mega-article-card:hover {
+  background: #f9f9f9;
+}
+
+.mega-article-info {
+  flex: 1;
+}
+
+.mega-article-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #111111;
+  line-height: 1.35;
+  margin: 0 0 6px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: color 0.15s ease;
+}
+
+.mega-article-card:hover .mega-article-title {
+  color: #073981;
+}
+
+.mega-article-meta {
+  font-size: 11.5px;
+  font-weight: 400;
+  color: #757575;
+  display: block;
+}
+
+.mega-article-thumb {
+  width: 84px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 2px;
+  flex-shrink: 0;
+  background: #f0f0f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 900px) {

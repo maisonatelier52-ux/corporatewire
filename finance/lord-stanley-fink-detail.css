@@ -34,17 +34,7 @@
 .lsf-page * { box-sizing: border-box; }
 .lsf-page a { color: inherit; }
 
-/* Un-stick the global sticky header on this page only, matching
-   the pattern used by other dedicated article layouts. Keeps
-   .header as a relative positioning context so the mobile
-   hamburger still anchors correctly. */
-body.lsf-body-page .header {
-  position: relative;
-}
-
-body.lsf-body-page .nav {
-  top: 0;
-}
+/* Sticky header and nav inherit global site behavior from style.css (sticky top) */
 
 /* ---------------------------------------------------------
    Breadcrumb

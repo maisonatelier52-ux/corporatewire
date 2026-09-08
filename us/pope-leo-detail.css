@@ -29,33 +29,7 @@
 
 .pld-page a { color: inherit; }
 
-/* ---------------------------------------------------------
-   Un-stick the global site header on this page only.
-   style.css makes .header `position: sticky; top: 0;`
-   sitewide — this page wants it to scroll away normally,
-   so it's overridden here (loaded after style.css) scoped
-   to the body class set only on this article's <body>.
-
-   NOTE: this must be `relative`, not `static`. style.css
-   positions the mobile hamburger (`.mobile-menu`) with
-   `position: absolute` relative to `.header`. If `.header`
-   is `static` it stops being a positioning context, so the
-   hamburger escapes to the page's initial containing block
-   and renders in the wrong place (e.g. down inside the
-   article body). `relative` still un-stickies the header
-   (removes it from fixed/sticky viewport pinning) while
-   keeping it as the positioning anchor the hamburger needs.
---------------------------------------------------------- */
-body.pld-body-page .header {
-  position: relative;
-}
-
-/* .nav was sticky with top:90px, offset to sit below the sticky
-   header. With the header no longer pinned, keep nav sticky but
-   flush to the very top so it doesn't leave a floating gap. */
-body.pld-body-page .nav {
-  top: 0;
-}
+/* Sticky header and nav inherit global site behavior from style.css (sticky top) */
 
 /* ---------------------------------------------------------
    Breadcrumb
