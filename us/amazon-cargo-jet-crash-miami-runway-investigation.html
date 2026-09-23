@@ -101,45 +101,45 @@
     <!-- header section -->
     <input type="checkbox" id="menu-toggle" />
     <header class="header">
-        <!-- Left Icons -->
-        <div class="header-left">
-            <a href="https://substack.com/@corporatewire" target="_blank">
-                <img class="header-icons" src="../images/substack.svg" alt="substack" />
-            </a>
-            <a href="https://x.com/Corporatew40377" target="_blank">
-                <img class="header-icons" src="../images/twitter-icon.svg" alt="twitter" />
-            </a>
-            <a href="https://medium.com/@corporatewire" target="_blank">
-                <img class="header-icons" src="../images/medium.svg" alt="medium" />
-            </a>
-            <a href="https://www.instagram.com/corporatewire/" target="_blank">
-                <img class="header-icons" src="../images/instagram-icon.svg" alt="instagram" />
-            </a>
-        </div>
-        <label for="menu-toggle" class="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+    <!-- Left Icons -->
+    <div class="header-left">
+      <a href="https://substack.com/@corporatewire" target="_blank">
+        <img class="header-icons" src="../images/substack.svg" alt="substack" />
+      </a>
+      <a href="https://x.com/Corporatew40377" target="_blank">
+        <img class="header-icons" src="../images/twitter-icon.svg" alt="twitter" />
+      </a>
+      <a href="https://medium.com/@corporatewire" target="_blank">
+        <img class="header-icons" src="../images/medium.svg" alt="medium" />
+      </a>
+      <a href="https://www.instagram.com/corporatewire/" target="_blank">
+        <img class="header-icons" src="../images/instagram-icon.svg" alt="instagram" />
+      </a>
+    </div>
+    <label for="menu-toggle" class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-        <!-- Center Logo -->
-        <div class="header-center">
-            <a href="../index.html">
-                <img src="../images/news/corporatewire-logo.webp" class="corporatewire-logo" alt="corporatewire Logo" />
-            </a>
-        </div>
+    <!-- Center Logo -->
+    <div class="header-center">
+      <a href="../index.html">
+        <img src="../images/news/corporatewire-logo.webp" class="corporatewire-logo" alt="corporatewire Logo" />
+      </a>
+    </div>
+ 
+    <!-- Right Section (Date only) -->
+    <div class="header-right">
+      <span class="header-date" id="currentDate"></span>
+    </div>
+  </header>
 
-        <!-- Right Section (Date) -->
-        <div class="header-right">
-            <span class="header-date" id="currentDate"></span>
-        </div>
-    </header>
-
-    <!-- categories section -->
+  <!-- categories section -->
     <nav class="nav" aria-label="Primary navigation">
     <ul class="nav-list">
       <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="../us.html" class="nav-link">U.S. &amp; Policy</a></li>
+      <li class="nav-item active"><a href="../us.html" class="nav-link">U.S. &amp; Policy</a></li>
       <li class="nav-item"><a href="../business.html" class="nav-link">Business</a></li>
       <li class="nav-item"><a href="../economy.html" class="nav-link">Economy</a></li>
       <li class="nav-item"><a href="../markets.html" class="nav-link">Markets</a></li>
@@ -150,49 +150,68 @@
     </ul>
   </nav>
 
-    <!-- Mobile / Mega Menu -->
-    <div class="mega-menu" id="megaMenu">
-        <div class="menu-section">
-            <h4 class="menu-title">About</h4>
-            <div class="menu-grid">
-                <div class="menu-column">
-                    <a href="../contact-us.html">Contact us</a>
-                    <a href="../about-us.html">About us</a>
-                    <a href="../our-team.html">Our Team</a>
-                </div>
-                <div class="menu-column">
-                    <a href="../terms-and-conditions.html">Terms & Conditions</a>
-                    <a href="../privacy-policy.html">Privacy Policy</a>
-                    <a href="../correction-policy.html">Correction Policy</a>
-                    <a href="../source-methodology.html">Research Methodology</a>
-                    <a href="../advertising-sponsored-policy.html">Advertising & Sponsored Policy</a>
-                    <a href="../ownership-funding.html">Ownership & Funding</a>
-                    <a href="../right-of-reply-policy.html">Right of Reply Policy</a>
-                    <a href="../legal.html">Legal Policy</a>
-                </div>
-            </div>
+  <!-- Mobile / Mega Menu -->
+  <div class="mega-menu" id="megaMenu">
+    <div class="menu-section">
+      <h4 class="menu-title">Sections</h4>
+      <div class="menu-grid">
+        <div class="menu-column">
+          <a href="../index.html">Home</a>
+          <a href="../us.html">U.S. &amp; Policy</a>
+          <a href="../business.html">Business</a>
+          <a href="../economy.html">Economy</a>
+          <a href="../markets.html">Markets</a>
         </div>
-
-        <div class="menu-footer">
-            <div class="follow-row">
-                <span class="follow-text">Follow us</span>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/corporatewire/" target="_blank">
-                        <img src="../images/instagram-icon.svg" alt="Instagram" />
-                    </a>
-                    <a href="https://x.com/Corporatew40377" target="_blank">
-                        <img src="../images/twitter-icon.svg" alt="X" />
-                    </a>
-                    <a href="https://substack.com/@corporatewire" target="_blank">
-                        <img src="../images/substack.svg" alt="Substack" />
-                    </a>
-                    <a href="https://medium.com/@corporatewire" target="_blank">
-                        <img src="../images/medium.svg" alt="Medium" />
-                    </a>
-                </div>
-            </div>
+        <div class="menu-column">
+          <a href="../finance.html">Finance</a>
+          <a href="../technology.html">Technology</a>
+          <a href="../health.html">Health</a>
+          <a href="../media.html">Media</a>
         </div>
+      </div>
     </div>
+
+    <div class="menu-section">
+      <h4 class="menu-title">About</h4>
+      <div class="menu-grid">
+        <div class="menu-column">
+          <a href="../contact-us.html">Contact us</a>
+          <a href="../about-us.html">About us</a>
+          <a href="../our-team.html">Our Team</a>
+        </div>
+        <div class="menu-column">
+          <a href="../terms-and-conditions.html">Terms & Conditions</a>
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../correction-policy.html">Correction Policy</a>
+          <a href="../source-methodology.html">Research Methodology</a>
+          <a href="../advertising-sponsored-policy.html">Advertising & Sponsored Policy</a>
+          <a href="../ownership-funding.html">Ownership & Funding</a>
+          <a href="../right-of-reply-policy.html">Right of Reply Policy</a>
+          <a href="../legal.html">Legal Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-footer">
+      <div class="follow-row">
+        <span class="follow-text">Follow us</span>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/corporatewire/" target="_blank">
+            <img src="../images/instagram-icon.svg" alt="Instagram" />
+          </a>
+          <a href="https://x.com/Corporatew40377" target="_blank">
+            <img src="../images/twitter-icon.svg" alt="X" />
+          </a>
+          <a href="https://substack.com/@corporatewire" target="_blank">
+            <img src="../images/substack.svg" alt="Substack" />
+          </a>
+          <a href="https://medium.com/@corporatewire" target="_blank">
+            <img src="../images/medium.svg" alt="Medium" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <div class="main-detail">
         <div class="detail-section">
