@@ -252,6 +252,27 @@
   margin: 34px 0 12px;
 }
 
+/* Inline links in body — gold underline wash (from leadership profile pattern) */
+.pld-body a.pld-inline-link {
+  color: var(--pld-ink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 2px;
+  background: linear-gradient(
+    180deg,
+    rgba(179, 134, 44, 0) 58%,
+    rgba(179, 134, 44, 0.28) 58%
+  );
+  border-radius: 2px;
+  transition: color 0.15s ease;
+}
+
+.pld-body a.pld-inline-link:hover {
+  color: var(--pld-gold);
+}
+
+
+
 /* Pull quote */
 .pld-pullquote {
   font-family: var(--pld-serif);
