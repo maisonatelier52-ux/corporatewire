@@ -370,13 +370,16 @@
 
     #soto-redesign .related-news .author .name a {
       color: #1E293B !important;
+    }
 
-      /* Reduce spacing between paragraphs */
-      #soto-redesign .dropcap-paragraph,
-      #soto-redesign .most-common-paragraph {
-        margin-top: 0 !important;
-        margin-bottom: 14px !important;
-      }
+    /* Reduce spacing between paragraphs */
+    #soto-redesign .dropcap-paragraph,
+    #soto-redesign .most-common-paragraph {
+      margin-top: 0 !important;
+      margin-bottom: 14px !important;
+      position: relative;
+      z-index: 2;
+      background: #fff;
     }
 
     /* Scoped Hero Section Redesign */
@@ -517,6 +520,49 @@
         flex-direction: row;
         padding: 8px 16px;
         gap: 20px;
+      }
+
+      #soto-redesign .hero .content h1 {
+        font-size: clamp(22px, 6vw, 28px);
+        line-height: 1.25;
+        padding: 0 8px;
+      }
+
+      #soto-redesign .hero .content .excerpt {
+        font-size: 14.5px;
+        padding: 0 8px;
+      }
+
+      #soto-redesign .hero-image-container {
+        border-radius: 8px;
+        max-width: 100%;
+      }
+
+      #soto-redesign .hero-img {
+        position: static !important;
+        height: auto !important;
+      }
+
+      #soto-redesign .article-layout {
+        padding: 0 14px;
+        gap: 28px;
+      }
+
+      #soto-redesign .mid {
+        width: 100%;
+        max-width: 100%;
+        background: #fff;
+        position: relative;
+        z-index: 2;
+      }
+
+      .detail-image-wrapper--soto {
+        height: auto !important;
+      }
+      .detail-image-wrapper--soto img {
+        width: 100%;
+        height: auto !important;
+        object-fit: cover;
       }
     }
   </style>
