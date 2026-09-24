@@ -1,5 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  // Basic static servers (including VS Code Live Server) do not resolve
+  // extensionless routes to their matching .html files. Keep production links
+  // clean, but make those links usable when the site is previewed locally.
+  const hostname = window.location.hostname;
+  const isPrivatePreview = hostname === 'localhost' ||
+    hostname === '127.0.0.1' ||
+    hostname === '::1' ||
+    /^10\./.test(hostname) ||
+    /^192\.168\./.test(hostname) ||
+    /^172\.(1[6-9]|2\d|3[01])\./.test(hostname);
+
+  if (isPrivatePreview) {
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      const href = link.getAttribute('href');
+      if (!href || href.startsWith('#') || /^(mailto:|tel:|javascript:)/i.test(href)) return;
+
+      const url = new URL(href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+
+      const cleanPath = url.pathname.replace(/\/+$/, '');
+      const finalSegment = cleanPath.split('/').pop();
+      if (cleanPath && cleanPath !== '/' && finalSegment && !finalSegment.includes('.')) {
+        url.pathname = cleanPath + '.html';
+        link.setAttribute('href', url.pathname + url.search + url.hash);
+      }
+    });
+  }
+
   // ── Date display (UPPERCASE — e.g. MONDAY, SEPTEMBER 7, 2026) ──────────────
   document.querySelectorAll('.header-date').forEach(function (el) {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };

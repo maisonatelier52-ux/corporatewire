@@ -6,23 +6,23 @@ Options -Indexes -MultiViews
 # Turn off automatic directory trailing slash to prevent conflict between /business (directory) and business.html (file)
 DirectorySlash Off
 
-# 1. Force HTTPS and WWW (https://www.corporatewire.org)
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\.corporatewire\.org$ [NC]
-RewriteRule ^(.*)$ https://www.corporatewire.org/$1 [L,R=301]
-
-# 2. Redirect internal index.html to Root
+# 1. Redirect internal index.html to the canonical root in one hop
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP
 RewriteRule ^index\.html$ https://www.corporatewire.org/ [R=301,L]
 
-# 3. Redirect actual .html file requests to extensionless URLs
+# 2. Redirect actual .html requests directly to canonical extensionless URLs
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
 RewriteRule ^([^.]+)\.html$ https://www.corporatewire.org/$1 [R=301,L]
 
-# 4. Remove trailing slash if a matching .html file exists for the directory name
+# 3. Redirect trailing-slash duplicates directly to canonical URLs
 RewriteCond %{REQUEST_URI} ^/(.*)/$
 RewriteCond %{DOCUMENT_ROOT}/%1.html -f
 RewriteRule ^(.*)/$ https://www.corporatewire.org/$1 [R=301,L]
+
+# 4. Force HTTPS and WWW for all remaining requests
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.corporatewire\.org$ [NC]
+RewriteRule ^(.*)$ https://www.corporatewire.org/$1 [L,R=301]
 
 # 5. Internally append .html to extensionless URLs if the file exists
 # We DO NOT use !-d here because we want to serve the .html even if a directory shares the name
