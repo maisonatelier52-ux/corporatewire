@@ -92,5 +92,95 @@ document.addEventListener('DOMContentLoaded', function () {
     link.setAttribute('rel', Array.from(rel).join(' '));
   });
 
-});
+  // ── Mobile menu (hamburger) ────────────────────────────────────────────────
+  // The open/closed state is a CSS-only checkbox (#menu-toggle). This block adds
+  // what CSS cannot: page scroll lock, keyboard + screen-reader support, closing
+  // on link tap / Escape / back-navigation, and highlighting the current section.
+  (function () {
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.querySelector('.mega-menu');
+    const button = document.querySelector('.mobile-menu');
+    if (!toggle || !menu || !button) return;
 
+    const root = document.documentElement;
+    const mobile = window.matchMedia('(max-width: 768px)');
+
+    button.setAttribute('role', 'button');
+    button.setAttribute('tabindex', '0');
+    button.setAttribute('aria-controls', menu.id || 'megaMenu');
+    menu.setAttribute('aria-label', 'Site menu');
+
+    function sync() {
+      const open = toggle.checked && mobile.matches;
+      root.classList.toggle('cw-menu-open', open);
+      button.setAttribute('aria-expanded', toggle.checked ? 'true' : 'false');
+      button.setAttribute('aria-label', toggle.checked ? 'Close menu' : 'Open menu');
+      if (open) menu.scrollTop = 0;
+    }
+
+    function setOpen(state) {
+      toggle.checked = state;
+      sync();
+    }
+
+    toggle.addEventListener('change', sync);
+
+    button.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        setOpen(!toggle.checked);
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && toggle.checked) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+
+    // Tapping any link closes the menu (also covers links to the current page).
+    menu.addEventListener('click', function (event) {
+      if (event.target.closest('a')) setOpen(false);
+    });
+
+    // iOS Safari can still rubber-band the page when the header is dragged.
+    const header = document.querySelector('.header');
+    if (header) {
+      header.addEventListener('touchmove', function (event) {
+        if (root.classList.contains('cw-menu-open')) event.preventDefault();
+      }, { passive: false });
+    }
+
+    // Never leave the menu (or the scroll lock) behind when the layout changes
+    // to desktop width, or when the page is restored from the back/forward cache.
+    const onBreakpoint = function () { if (!mobile.matches) setOpen(false); else sync(); };
+    if (mobile.addEventListener) mobile.addEventListener('change', onBreakpoint);
+    else if (mobile.addListener) mobile.addListener(onBreakpoint);
+    window.addEventListener('pageshow', function (event) {
+      if (event.persisted) setOpen(false);
+    });
+
+    // Stagger index for the entrance animation + highlight the current section
+    // (each page already marks its section as .nav-item.active).
+    const links = menu.querySelectorAll('a');
+    links.forEach(function (link, index) { link.style.setProperty('--i', index); });
+
+    const activeNav = document.querySelector('.nav-item.active > a');
+    if (activeNav) {
+      const clean = function (url) {
+        return url.replace(/[?#].*$/, '').replace(/index\.html$/, '').replace(/\.html$/, '').replace(/\/+$/, '');
+      };
+      const target = clean(activeNav.href);
+      links.forEach(function (link) {
+        if (clean(link.href) === target) {
+          link.classList.add('is-current');
+          link.setAttribute('aria-current', 'true');
+        }
+      });
+    }
+
+    sync();
+  })();
+
+});
