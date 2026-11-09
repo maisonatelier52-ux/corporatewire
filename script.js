@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // extensionless routes to their matching .html files. Keep production links
   // clean, but make those links usable when the site is previewed locally.
   const hostname = window.location.hostname;
-  const isPrivatePreview = hostname === 'localhost' ||
+  const isPrivatePreview = window.location.protocol === 'file:' ||
+    hostname === 'localhost' ||
     hostname === '127.0.0.1' ||
     hostname === '::1' ||
     /^10\./.test(hostname) ||
