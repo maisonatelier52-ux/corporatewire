@@ -889,7 +889,7 @@ a:hover {
 
 .featured-card {
   position: relative;
-  height: 480px;
+  height: 520px;
   overflow: hidden;
   flex: 1;
 }
@@ -1003,9 +1003,14 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
+  .featured-card {
+    flex: none;
+    height: 360px;
+  }
+
   .featured-card h3 {
-  font-size: 22px;
-}
+    font-size: 20px;
+  }
 }
 
 /* e.s money */
@@ -2379,8 +2384,12 @@ font-family: "WorkSans", Arial, sans-serif;
   .featured-grid {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     /* margin-bottom: 32px; */
+  }
+  .featured-card {
+    flex: none;
+    height: 380px;
   }
   .money-section {
     margin: auto;
@@ -2834,10 +2843,29 @@ font-family: "WorkSans", Arial, sans-serif;
 @media (max-width: 992px) {
   .main-author-name{
     font-size: 11px;
+  }
+  .main-author-date {
+    font-size: 11px;
+  }
 }
-.main-author-date {
-  font-size: 11px;
-}
+
+@media (max-width: 768px) {
+  .main-author-name {
+    font-size: 10px;
+  }
+  .main-author-date {
+    font-size: 9.5px;
+  }
+  .article-header .main-author-name,
+  .hero .content .main-author-name {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+  .article-header .main-author-date,
+  .hero .content .main-author-date {
+    font-size: 9.5px;
+    line-height: 1.2;
+  }
 }
 
 .news-title a {
