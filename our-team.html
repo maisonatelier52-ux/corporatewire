@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18402217570"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-18402217570');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18402217570"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-18402217570');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +18,6 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://www.corporatewire.org/our-team" />
   <link rel="icon" type="image/x-icon" href="https://www.corporatewire.org/images/news/favicon.ico" />
-
   <!-- Open Graph Tags -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.corporatewire.org/our-team" />
@@ -29,7 +27,6 @@
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="CorporateWire" />
-
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@Corporatew40377" />
@@ -37,7 +34,6 @@
   <meta name="twitter:title" content="Our Editorial Team: The Faces Behind CorporateWire" />
   <meta name="twitter:description" content="Meet the contributors behind CorporateWire explainers, analysis, commentary and profiles." />
   <meta name="twitter:image" content="https://www.corporatewire.org/images/logo.png" />
-
   <!-- Structured Data: AboutPage & Contributors -->
   <script type="application/ld+json">
   {
@@ -89,190 +85,179 @@
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
   <style>
-        /* Team Page Specific Styles */
-        .legal-container {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 20px;
-            font-family: 'WorkSans', Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
-        }
+    .legal-container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      font-family: 'WorkSans', Arial, sans-serif;
+      line-height: 1.8;
+      color: #333;
+    }
 
-        .legal-header {
-            text-align: center;
-            margin-bottom: 60px;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 40px;
-        }
+    .legal-header {
+      text-align: center;
+      margin-bottom: 60px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 40px;
+    }
 
-        .legal-header h1 {
-            font-family: 'Bitter', serif;
-            font-size: 42px;
-            color: #111;
-            margin-bottom: 15px;
-        }
+    .legal-header h1 {
+      font-family: 'Bitter', serif;
+      font-size: 42px;
+      color: #111;
+      margin-bottom: 15px;
+    }
 
-        .legal-header p {
-            font-size: 20px;
-            font-weight: 500;
-            color: #555;
-            max-width: 750px;
-            margin: 0 auto;
-        }
+    .legal-header p {
+      font-size: 20px;
+      font-weight: 500;
+      color: #555;
+      max-width: 750px;
+      margin: 0 auto;
+    }
 
-        .team-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 50px;
-            margin-top: 40px;
-        }
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 50px;
+      margin-top: 40px;
+    }
 
-        .team-member {
-            display: grid;
-            grid-template-columns: 240px 1fr;
-            gap: 40px;
-            align-items: start;
-            padding-bottom: 50px;
-            border-bottom: 1px solid #eee;
-        }
+    .team-member {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 40px;
+      align-items: start;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #eee;
+    }
 
-        .team-member:last-child {
-            border-bottom: none;
-        }
+    .team-member:last-child {
+      border-bottom: none;
+    }
 
-        .member-photo {
-            width: 240px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            background-color: #f8f8f8;
-        }
+    .member-photo {
+      width: 240px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      background-color: #f8f8f8;
+    }
 
-        .member-info h2 {
-            font-family: 'Bitter', serif;
-            font-size: 30px;
-            color: #111;
-            margin-bottom: 5px;
-        }
+    .member-info h2 {
+      font-family: 'Bitter', serif;
+      font-size: 30px;
+      color: #111;
+      margin-bottom: 5px;
+    }
 
-        .member-role {
-            color: #dc2626;
-            font-weight: 700;
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-            display: block;
-        }
+    .member-role {
+      color: #dc2626;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      display: block;
+    }
 
-        .member-bio {
-            font-size: 17px;
-            color: #444;
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
+    .member-bio {
+      font-size: 17px;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
 
-        .view-profile {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            color: #111;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 15px;
-            transition: color 0.3s;
-        }
+    .view-profile {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #111;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
 
-        .view-profile:hover {
-            color: #dc2626;
-        }
+    .view-profile:hover {
+      color: #dc2626;
+    }
+   
+    .staff-section {
+      background: #fdfdfd;
+      border: 1px solid #eee;
+      padding: 40px;
+      border-radius: 12px;
+      margin-top: 60px;
+    }
 
-        /* Staff Section */
-        .staff-section {
-            background: #fdfdfd;
-            border: 1px solid #eee;
-            padding: 40px;
-            border-radius: 12px;
-            margin-top: 60px;
-        }
+    .staff-section h2 {
+      font-family: 'Bitter', serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
 
-        .staff-section h2 {
-            font-family: 'Bitter', serif;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
+    .staff-section h3 {
+      font-size: 20px;
+      margin: 25px 0 10px;
+      color: #ff003c;
+    }
 
-        .staff-section h3 {
-            font-size: 20px;
-            margin: 25px 0 10px;
-            color: #ff003c;
-        }
+    .cta-box {
+      text-align: center;
+      margin-top: 80px;
+      background: #111;
+      color: white;
+      padding: 60px 40px;
+      border-radius: 8px;
+    }
 
-        .cta-box {
-            text-align: center;
-            margin-top: 80px;
-            background: #111;
-            color: white;
-            padding: 60px 40px;
-            border-radius: 8px;
-        }
+    .cta-box h2 {
+      font-family: 'Bitter', serif;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
 
-        .cta-box h2 {
-            font-family: 'Bitter', serif;
-            font-size: 32px;
-            margin-bottom: 15px;
-        }
+    .cta-btn {
+      display: inline-block;
+      background: #dc2626;
+      color: white;
+      padding: 15px 35px;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 4px;
+      margin-top: 20px;
+      transition: transform 0.3s;
+    }
 
-        .cta-btn {
-            display: inline-block;
-            background: #dc2626;
-            color: white;
-            padding: 15px 35px;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 4px;
-            margin-top: 20px;
-            transition: transform 0.3s;
-        }
+    .cta-btn:hover {
+      transform: translateY(-3px);
+    }
 
-        .cta-btn:hover {
-            transform: translateY(-3px);
-        }
+    @media (max-width: 768px) {
+      .team-member {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
-        @media (max-width: 768px) {
-            .team-member {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .member-photo {
-                margin: 0 auto;
-            }
-        }
-    </style>
+      .member-photo {
+        margin: 0 auto;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-    <!-- header section -->
+  
   <input type="checkbox" id="menu-toggle" />
   <header class="header">
     <!-- Left Icons -->
     <div class="header-left">
-      <a href="https://substack.com/@corporatewire" target="_blank">
-        <img class="header-icons" src="images/substack.svg" alt="substack" />
-      </a>
-      <a href="https://x.com/Corporatew40377" target="_blank">
-        <img class="header-icons" src="images/twitter-icon.svg" alt="twitter" />
-      </a>
-      <a href="https://medium.com/@corporatewire" target="_blank">
-        <img class="header-icons" src="images/medium.svg" alt="medium" />
-      </a>
-      <a href="https://www.instagram.com/corporatewire/" target="_blank">
-        <img class="header-icons" src="images/instagram-icon.svg" alt="instagram" />
-      </a>
+      <a href="https://substack.com/@corporatewire" target="_blank"><img class="header-icons" src="images/substack.svg" alt="substack" /></a>
+      <a href="https://x.com/Corporatew40377" target="_blank"><img class="header-icons" src="images/twitter-icon.svg" alt="twitter" /></a>
+      <a href="https://medium.com/@corporatewire" target="_blank"><img class="header-icons" src="images/medium.svg" alt="medium" /></a>
+      <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="header-icons" src="images/instagram-icon.svg" alt="instagram" /></a>
     </div>
     <label for="menu-toggle" class="mobile-menu">
       <span></span>
@@ -281,20 +266,13 @@
     </label>
 
     <!-- Center Logo -->
-    <div class="header-center">
-      <a href="/">
-        <img src="images/news/corporatewire-logo.webp" class="corporatewire-logo" alt="corporatewire Logo" />
-      </a>
-    </div>
- 
+    <div class="header-center"><a href="/"><img src="images/news/corporatewire-logo.webp" class="corporatewire-logo" alt="corporatewire Logo" /></a></div>
     <!-- Right Section (Date only) -->
-    <div class="header-right">
-      <span class="header-date" id="currentDate"></span>
-    </div>
+    <div class="header-right"><span class="header-date" id="currentDate"></span></div>
   </header>
 
   <!-- categories section -->
-    <nav class="nav" aria-label="Primary navigation">
+  <nav class="nav" aria-label="Primary navigation">
     <ul class="nav-list">
       <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
       <li class="nav-item"><a href="us" class="nav-link">U.S. &amp; Policy</a></li>
@@ -354,170 +332,179 @@
       <div class="follow-row">
         <span class="follow-text">Follow us</span>
         <div class="social-icons">
-          <a href="https://www.instagram.com/corporatewire/" target="_blank">
-            <img src="images/instagram-icon.svg" alt="Instagram" />
-          </a>
-          <a href="https://x.com/Corporatew40377" target="_blank">
-            <img src="images/twitter-icon.svg" alt="X" />
-          </a>
-          <a href="https://substack.com/@corporatewire" target="_blank">
-            <img src="images/substack.svg" alt="Substack" />
-          </a>
-          <a href="https://medium.com/@corporatewire" target="_blank">
-            <img src="images/medium.svg" alt="Medium" />
-          </a>
+          <a href="https://www.instagram.com/corporatewire/" target="_blank"><img src="images/instagram-icon.svg" alt="Instagram" /></a>
+          <a href="https://x.com/Corporatew40377" target="_blank"><img src="images/twitter-icon.svg" alt="X" /></a>
+          <a href="https://substack.com/@corporatewire" target="_blank"><img src="images/substack.svg" alt="Substack" /></a>
+          <a href="https://medium.com/@corporatewire" target="_blank"><img src="images/medium.svg" alt="Medium" /></a>
         </div>
       </div>
     </div>
   </div>
-    <main class="legal-container">
-        <section class="legal-header">
-            <h1>Our Contributors</h1>
-            <p>Meet the people behind CorporateWire’s explainers, analysis, commentary and profiles.</p>
-        </section>
+  <main class="legal-container">
+    <section class="legal-header">
+      <h1>Our Contributors</h1>
+      <p>Meet the people behind CorporateWire’s explainers, analysis, commentary and profiles.</p>
+    </section>
 
-        <div class="team-grid">
-            <div class="team-member"><img src="images/authors/christopher-reed.webp" alt="Christopher Reed" class="member-photo"><div class="member-info"><span class="member-role">Business &amp; Economy Contributor</span><h2>Christopher Reed</h2><p class="member-bio">Christopher writes about global commerce, economic policy, corporate governance and international trade, focusing on the context behind market and policy developments.</p><a href="author/christopher-reed" class="view-profile">View Articles &rarr;</a></div></div>
-            <div class="team-member"><img src="images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" class="member-photo"><div class="member-info"><span class="member-role">Finance &amp; Health Contributor</span><h2>Amanda Whitaker</h2><p class="member-bio">Amanda writes about financial markets, healthcare policy and the intersection of technology and medicine, with an emphasis on source material and regulatory context.</p><a href="author/amanda-whitaker" class="view-profile">View Articles &rarr;</a></div></div>
-            <div class="team-member"><img src="images/authors/danielle-brooks.webp" alt="Danielle Brooks" class="member-photo"><div class="member-info"><span class="member-role">Policy &amp; Society Contributor</span><h2>Danielle Brooks</h2><p class="member-bio">Danielle writes about American policy, governance and the ways legislative decisions affect communities and domestic markets.</p><a href="author/danielle-brooks" class="view-profile">View Articles &rarr;</a></div></div>
-            <div class="team-member"><img src="images/authors/matthew-collins.webp" alt="Matthew Collins" class="member-photo"><div class="member-info"><span class="member-role">Technology &amp; Corporate Affairs Contributor</span><h2>Matthew Collins</h2><p class="member-bio">Matthew writes about emerging technology, corporate accountability and the economic effects of innovation, from artificial intelligence to aerospace.</p><a href="author/matthew-collins" class="view-profile">View Articles &rarr;</a></div></div>
-            <div class="team-member"><img src="images/authors/nicole-patterson.webp" alt="Nicole Patterson" class="member-photo"><div class="member-info"><span class="member-role">Markets &amp; Culture Contributor</span><h2>Nicole Patterson</h2><p class="member-bio">Nicole writes about consumer trends, markets and technology, translating industry claims into practical context for readers.</p><a href="author/nicole-patterson" class="view-profile">View Articles &rarr;</a></div></div>
+    <div class="team-grid">
+      <div class="team-member"><img src="images/authors/christopher-reed.webp" alt="Christopher Reed" class="member-photo">
+        <div class="member-info"><span class="member-role">Business &amp; Economy Contributor</span>
+          <h2>Christopher Reed</h2>
+          <p class="member-bio">Christopher writes about global commerce, economic policy, corporate governance and
+            international trade, focusing on the context behind market and policy developments.</p><a href="author/christopher-reed" class="view-profile">View Articles &rarr;</a>
+        </div>
+      </div>
+      <div class="team-member"><img src="images/authors/amanda-whitaker.webp" alt="Amanda Whitaker" class="member-photo">
+        <div class="member-info"><span class="member-role">Finance &amp; Health Contributor</span>
+          <h2>Amanda Whitaker</h2>
+          <p class="member-bio">Amanda writes about financial markets, healthcare policy and the intersection of
+            technology and medicine, with an emphasis on source material and regulatory context.</p><a href="author/amanda-whitaker" class="view-profile">View Articles &rarr;</a>
+        </div>
+      </div>
+      <div class="team-member"><img src="images/authors/danielle-brooks.webp" alt="Danielle Brooks" class="member-photo">
+        <div class="member-info"><span class="member-role">Policy &amp; Society Contributor</span>
+          <h2>Danielle Brooks</h2>
+          <p class="member-bio">Danielle writes about American policy, governance and the ways legislative decisions
+            affect communities and domestic markets.</p><a href="author/danielle-brooks" class="view-profile">View Articles &rarr;</a>
+        </div>
+      </div>
+      <div class="team-member"><img src="images/authors/matthew-collins.webp" alt="Matthew Collins" class="member-photo">
+        <div class="member-info"><span class="member-role">Technology &amp; Corporate Affairs Contributor</span>
+          <h2>Matthew Collins</h2>
+          <p class="member-bio">Matthew writes about emerging technology, corporate accountability and the economic
+            effects of innovation, from artificial intelligence to aerospace.</p><a href="author/matthew-collins" class="view-profile">View Articles &rarr;</a>
+        </div>
+      </div>
+      <div class="team-member"><img src="images/authors/nicole-patterson.webp" alt="Nicole Patterson" class="member-photo">
+        <div class="member-info"><span class="member-role">Markets &amp; Culture Contributor</span>
+          <h2>Nicole Patterson</h2>
+          <p class="member-bio">Nicole writes about consumer trends, markets and technology, translating industry claims
+            into practical context for readers.</p><a href="author/nicole-patterson" class="view-profile">View Articles &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="staff-section">
+      <h2>Collaborative Posts</h2>
+      <p>Some explainers and site announcements may use a “CorporateWire Contributors” byline when several people helped
+        research, write or review the article.</p>
+      <h3>Explainers</h3>
+      <p>Plain-language guides that organize public information around a specific question.</p>
+      <h3>Editorial Notes</h3>
+      <p>Updates about the site, its standards or corrections that are published on behalf of the publication.</p>
+    </section>
+
+    <div class="cta-box">
+      <h2>Suggest an Article</h2>
+      <p>Have a question, source or subject that deserves a clear explanation? Send it to the editorial team.</p>
+      <a href="contact-us" class="cta-btn">Get in Touch</a>
+    </div>
+  </main>
+
+  <footer>
+    <!-- TOP HEADER -->
+    <div class="footer">
+      <div class="footer-sec">
+        <div class="footer-header">
+          <div class="footer-categories">
+            <span class="dot"></span>
+            <span class="footer-title">Categories</span>
+          </div>
+
+          <ul class="footer-categories-list">
+            <li><a href="us">U.S. & Policy</a></li>
+            <li><a href="business">Business</a></li>
+            <li><a href="economy">Economy</a></li>
+            <li><a href="markets">Markets</a></li>
+            <li><a href="finance">Finance</a></li>
+            <li><a href="technology">Technology</a></li>
+            <li><a href="health">Health</a></li>
+            <li><a href="media">Media</a></li>
+          </ul>
         </div>
 
-        <section class="staff-section">
-            <h2>Collaborative Posts</h2>
-            <p>Some explainers and site announcements may use a “CorporateWire Contributors” byline when several people helped research, write or review the article.</p>
-            <h3>Explainers</h3>
-            <p>Plain-language guides that organize public information around a specific question.</p>
-            <h3>Editorial Notes</h3>
-            <p>Updates about the site, its standards or corrections that are published on behalf of the publication.</p>
-        </section>
+        <div class="footer-divider"></div>
 
-        <div class="cta-box">
-            <h2>Suggest an Article</h2>
-            <p>Have a question, source or subject that deserves a clear explanation? Send it to the editorial team.</p>
-            <a href="contact-us" class="cta-btn">Get in Touch</a>
+        <!-- CONTENT -->
+        <div class="footer-content">
+          <!-- LEFT -->
+          <div class="footer-left">
+            <h4>About CorporateWire</h4>
+            <p>CorporateWire is an independent business and public-affairs blog offering explainers, analysis and commentary on companies, markets, technology and policy.</p>
+
+            <div class="footer-icons">
+              <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon" src="images/instagram-icon.svg" alt="instagram" /></a>
+              <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon" src="images/twitter-icon.svg" alt="x" /></a>
+              <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon" src="images/substack.svg" alt="substack" /></a>
+              <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon" src="images/medium.svg" alt="medium" /></a>
+            </div>
+          </div>
+
+          <div class="footer-mid-section">
+            <!-- Categories Section -->
+            <div class="footer-mid-right">
+              <h4>Categories</h4>
+              <ul>
+                <li><a href="us">U.S. &amp; Policy</a></li>
+                <li><a href="business">Business</a></li>
+                <li><a href="economy">Economy</a></li>
+                <li><a href="markets">Markets</a></li>
+                <li><a href="finance">Finance</a></li>
+                <li><a href="technology">Technology</a></li>
+                <li><a href="health">Health</a></li>
+                <li><a href="media">Media</a></li>
+              </ul>
+            </div>
+            <!-- Information Section -->
+            <div class="footer-mid-right">
+              <h4>Company Info</h4>
+              <ul>
+                <li><a href="about-us">About us</a></li>
+                <li><a href="contact-us">Contact us</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions">Terms and conditions</a></li>
+                <li><a href="our-team">Our Team</a></li>
+                <li><a href="correction-policy">Correction Policy</a></li>
+                <li><a href="source-methodology">Research Methodology</a></li>
+                <li><a href="advertising-sponsored-policy">Advertising & Sponsored Policy</a></li>
+                <li><a href="ownership-funding">Ownership & Funding</a></li>
+                <li><a href="right-of-reply-policy">Right of Reply Policy</a></li>
+                <li><a href="legal">Legal Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="footer-right">
+            <h4>Subscribe to our Newsletter</h4>
+
+            <form id="newsletter-form">
+              <div class="subscribe-box">
+                <input type="email" id="newsletter-email" placeholder="Your email address" required />
+                <button type="submit" id="newsletter-btn">Sign Up Now</button>
+              </div>
+
+              <label class="terms">
+                <input type="checkbox" id="newsletter-agree" required />
+                <span>I have read and agree to the terms & conditions</span>
+              </label>
+            </form>
+            <div id="newsletter-message"style="font-size: 12px; margin-top: 10px; display: none; font-family: 'WorkSans', Arial, sans-serif;"></div>
+          </div>
         </div>
-    </main>
-
-    <footer>
-        <!-- TOP HEADER -->
-        <div class="footer">
-            <div class="footer-sec">
-                <div class="footer-header">
-                    <div class="footer-categories">
-                        <span class="dot"></span>
-                        <span class="footer-title">Categories</span>
-                    </div>
-
-                    <ul class="footer-categories-list">
-                        <li><a href="us">U.S. & Policy</a></li>
-                        <li><a href="business">Business</a></li>
-                        <li><a href="economy">Economy</a></li>
-                        <li><a href="markets">Markets</a></li>
-                        <li><a href="finance">Finance</a></li>
-                        <li><a href="technology">Technology</a></li>
-                        <li><a href="health">Health</a></li>
-                        <li><a href="media">Media</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-divider"></div>
-
-                <!-- CONTENT -->
-                <div class="footer-content">
-                    <!-- LEFT -->
-                    <div class="footer-left">
-                        <h4>About CorporateWire</h4>
-                        <p>
-                            CorporateWire is an independent business and public-affairs blog offering explainers, analysis and commentary on companies, markets, technology and policy.
-                        </p>
-
-                        <div class="footer-icons">
-                            <a href="https://www.instagram.com/corporatewire/" target="_blank"><img class="item-icon"
-                                    src="images/instagram-icon.svg" alt="instagram" /></a>
-                            <a href="https://x.com/Corporatew40377" target="_blank"><img class="item-icon"
-                                    src="images/twitter-icon.svg" alt="x" /></a>
-                            <a href="https://substack.com/@corporatewire" target="_blank"><img class="item-icon"
-                                    src="images/substack.svg" alt="substack" /></a>
-                            <a href="https://medium.com/@corporatewire" target="_blank"><img class="item-icon"
-                                    src="images/medium.svg" alt="medium" /></a>
-                        </div>
-                    </div>
-
-                    <div class="footer-mid-section">
-                        <!-- Categories Section -->
-                        <div class="footer-mid-right">
-                            <h4>Categories</h4>
-                            <ul>
-                                <li><a href="us">U.S. &amp; Policy</a></li>
-                                <li><a href="business">Business</a></li>
-                                <li><a href="economy">Economy</a></li>
-                                <li><a href="markets">Markets</a></li>
-                                <li><a href="finance">Finance</a></li>
-                                <li><a href="technology">Technology</a></li>
-                                <li><a href="health">Health</a></li>
-                                <li><a href="media">Media</a></li>
-                            </ul>
-                        </div>
-                        <!-- Information Section -->
-                        <div class="footer-mid-right">
-                            <h4>Company Info</h4>
-                            <ul>
-                                <li><a href="about-us">About us</a></li>
-                                <li><a href="contact-us">Contact us</a></li>
-                                <li><a href="privacy-policy">Privacy Policy</a></li>
-                                <li><a href="terms-and-conditions">Terms and conditions</a></li>
-                                <li><a href="our-team">Our Team</a></li>
-                                <li><a href="correction-policy">Correction Policy</a></li>
-                                <li><a href="source-methodology">Research Methodology</a></li>
-                                <li><a href="advertising-sponsored-policy">Advertising & Sponsored Policy</a></li>
-                                <li><a href="ownership-funding">Ownership & Funding</a></li>
-                                <li><a href="right-of-reply-policy">Right of Reply Policy</a></li>
-                                <li><a href="legal">Legal Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- RIGHT -->
-                    <div class="footer-right">
-                        <h4>Subscribe to our Newsletter</h4>
-
-
-                        <form id="newsletter-form">
-                            <div class="subscribe-box">
-                                <input type="email" id="newsletter-email" placeholder="Your email address" required />
-                                <button type="submit" id="newsletter-btn">Sign Up Now</button>
-                            </div>
-
-                            <label class="terms">
-                                <input type="checkbox" id="newsletter-agree" required />
-                                <span>I have read and agree to the terms & conditions</span>
-                            </label>
-                        </form>
-                        <div id="newsletter-message"
-                            style="font-size: 12px; margin-top: 10px; display: none; font-family: 'WorkSans', Arial, sans-serif;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- BOTTOM -->
-            <div class="footer-bottom">
-                &copy; Copyright 2026 CORPORATEWIRE. All Rights Reserved.
-            </div>
-            <script>
-                document.getElementById('newsletter-form').addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    const message = document.getElementById('newsletter-message');
-
-                    message.textContent = 'Success! You have been subscribed successfully.';
-                    message.style.color = 'green';
-                    message.style.display = 'block';
-
-                    this.reset();
-                });
-            </script>
-    </footer>
+      </div>
+      <!-- BOTTOM -->
+      <div class="footer-bottom">&copy; Copyright 2026 CORPORATEWIRE. All Rights Reserved.</div>
+      <script>
+        document.getElementById('newsletter-form').addEventListener('submit', function (e) {
+          e.preventDefault();
+          const message = document.getElementById('newsletter-message');
+          message.textContent = 'Success! You have been subscribed successfully.';
+          message.style.color = 'green';
+          message.style.display = 'block';
+          this.reset();
+        });
+      </script>
+  </footer>
 </body>
-
 </html>
